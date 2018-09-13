@@ -14,7 +14,7 @@ if ( !function_exists( 'wpk_init' ) ) {
       'manage_options', 
       'wpkeliosis', 
       'wpk_dashboard', 
-      'dashicons-vault',
+      'dashicons-vault', /* A remplacer avec le ligne ci-dessous */
   //    plugins_url('admin/images/favicon.png', __FILE__), 
       99 
     );
@@ -39,12 +39,24 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
       'opensans-css',
       'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' 
     );
-
+    
+    /* jQuery UI */
     wp_enqueue_script(
       'jqueri-ui-script',
       plugins_url('bower_components/jquery-ui/jquery-ui.min.js', dirname(__FILE__)), false, '', true
     );
-
+    
+    /* Font Awesome */
+    /* FontAwesome */
+    wp_enqueue_style(
+      'fontawesome',
+      plugins_url('bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css', dirname(__FILE__))
+    );
+    wp_enqueue_script(
+      'fontawesome',
+      plugins_url('bower_components/font-awesome/svg-with-js/js/fontawesome-all.js', dirname(__FILE__)), false, '', true
+    );
+    
     /* Sweet Alert 2 */
     wp_enqueue_script(
       'wpk-sweetalert2-script', 

@@ -10,21 +10,21 @@ if ( !function_exists( 'wpk_public_enqueue_style_script' ) ) {
     /* FontAwesome */
     wp_enqueue_style(
       'fontawesome',
-      plugins_url('/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css', dirname(__FILE__))
+      plugins_url('bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css', dirname(__FILE__))
     );
     wp_enqueue_script(
       'fontawesome',
       plugins_url('bower_components/font-awesome/svg-with-js/js/fontawesome-all.js', dirname(__FILE__)), false, '', true
     );
-    /* Dynamic CSS file */
+    /* WPK (dynamic) CSS file */
     wp_enqueue_style( 
-      'style-php', 
-      plugins_url('public/css/wpk-style-custom.css', dirname(__FILE__))
+      'wpk-public-style', 
+      plugins_url('public/css/style.css', dirname(__FILE__))
     );
-    /* JS file */
+    /* WPK JS file */
     wp_enqueue_script(
       'wpk-public-script', 
-      plugins_url('public/js/scipt.min.js', dirname(__FILE__)), false, '', true
+      plugins_url('public/js/script.min.js', dirname(__FILE__)), false, '', true
     );
 
   }
