@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-09-13 12:09+0200\n"
+"POT-Creation-Date: 2018-09-13 15:50+0200\n"
 "PO-Revision-Date: 2018-09-13 12:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -27,6 +27,10 @@ msgstr ""
 
 #: admin/admin.php:24 admin/admin.php:25
 msgid "Options"
+msgstr ""
+
+#: admin/partials/wpk_dashboard.php:10
+msgid "Bonjour"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
