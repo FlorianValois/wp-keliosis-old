@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 function wpk_dashboard(){
 ?>
 <div class="wrap">
-  Ok
+  <?php echo __( 'Bonjour', 'wp-keliosis' ); ?>
 </div>
 <?php
 }
