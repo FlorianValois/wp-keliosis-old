@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,cAAsB;EACpB,MAAM,EAAE,cAAc;;;ACAlB,uBAAE;EACA,MAAM,EAAE,cAAc",
+"sources": ["../../assets/admin/scss/wpk-admin-style.scss","../../assets/admin/scss/navigation.scss"],
 "names": [],
 "file": "style.min.css"
 }

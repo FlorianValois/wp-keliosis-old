@@ -1,0 +1,9 @@
+$pref_var: 'wpk-';
+
+##{$pref_var}dashboard{
+  border: 1px solid #000;
+}
+
+  
+@import 'navigation';
+@import 'content';

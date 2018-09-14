@@ -1,3 +1,9 @@
+#wpk-dashboard {
+  border: 1px solid #000;
+}
 
+#wpk-navigation ul li a {
+  border: 1px solid #000;
+}
 
 /*# sourceMappingURL=style.min.css.map */
