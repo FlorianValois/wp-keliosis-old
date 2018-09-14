@@ -19,28 +19,51 @@
 #wpk-dashboard #wpk-navigation ul li a {
   display: block;
   font-family: "Open sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 11px;
   text-decoration: none;
+  padding: 15px 20px;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#wpk-dashboard #wpk-navigation ul li a:hover {
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 #wpk-dashboard #wpk-navigation ul li a:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-#wpk-dashboard #wpk-navigation > ul > li {
-  position: relative;
-  overflow: hidden;
-}
 #wpk-dashboard #wpk-navigation > ul > li > a {
+  position: relative;
   color: #3d3d3d;
 }
+#wpk-dashboard #wpk-navigation > ul > li > a:hover {
+  color: #5EC5EC;
+}
+#wpk-dashboard #wpk-navigation > ul > li > a svg {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+  font-size: 18px;
+}
 #wpk-dashboard #wpk-navigation > ul > li > ul {
-  display: none;
   background: #5EC5EC;
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #wpk-dashboard #wpk-navigation > ul > li > ul > li > a {
   color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wpk-dashboard #wpk-navigation > ul > li > ul > li > a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+#wpk-dashboard #wpk-navigation > ul > li > ul > li:last-child > a {
+  border-bottom: none;
 }
 #wpk-dashboard #wpk-content {
   width: calc(100% - 250px);

@@ -7,13 +7,13 @@ if (!defined('ABSPATH')) {
 function wpk_dashboard(){
 ?>
 <div class="wrap">
-  <?php echo __( 'Bonjour', 'wp-keliosis' ); ?>
-  <i class="fas fa-cog"></i>
+  
+  
   <div id="<?= WPK_PREFIX.'dashboard' ?>">
     <nav id="<?= WPK_PREFIX.'navigation' ?>">
       <ul>
         <li>
-          <a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>">Lorem ipsum</a>
+          <a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>"><?php echo __( 'Scroll to top', 'wp-keliosis' ); ?><i class="fas fa-level-up-alt"></i></a>
           <ul class="<?= WPK_PREFIX.'subMenu' ?>">
             <li>
               <a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
