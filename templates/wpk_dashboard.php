@@ -13,7 +13,10 @@ function wpk_dashboard(){
     <nav id="<?= WPK_PREFIX.'navigation' ?>">
       <ul>
         <li>
-          <a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>"><?php echo __( 'Scroll to top', 'wp-keliosis' ); ?><i class="fas fa-level-up-alt"></i></a>
+          <a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>">
+          	<?php echo __( 'Scroll to top', 'wp-keliosis' ); ?>
+          	<i class="far fa-caret-square-up"></i>
+          </a>
           <ul class="<?= WPK_PREFIX.'subMenu' ?>">
             <li>
               <a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>

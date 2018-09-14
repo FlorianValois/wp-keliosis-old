@@ -1,7 +1,7 @@
 ##{$prefix_plugin}navigation {
 	background: $white;
 	width: 250px;
-
+	box-shadow: 0 0 20px rgba($black, .1);
 	ul {
 		margin: 0;
 
@@ -44,7 +44,7 @@
 					top: 50%;
 					right: 30px;
 					transform: translateX(50%) translateY(-50%);
-					font-size: 18px;
+					font-size: 20px;
 				}
 			}
 

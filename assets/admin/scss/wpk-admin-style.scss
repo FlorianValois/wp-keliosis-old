@@ -4,6 +4,7 @@
 ##{$prefix_plugin}dashboard{
   display: flex;
   justify-content: flex-start;
+	overflow: hidden;
   @import 'navigation';
   @import 'content';
 }

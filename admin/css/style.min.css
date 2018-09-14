@@ -5,10 +5,13 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  overflow: hidden;
 }
 #wpk-dashboard #wpk-navigation {
   background: #ffffff;
   width: 250px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #wpk-dashboard #wpk-navigation ul {
   margin: 0;
@@ -48,7 +51,7 @@
   right: 30px;
   -webkit-transform: translateX(50%) translateY(-50%);
           transform: translateX(50%) translateY(-50%);
-  font-size: 18px;
+  font-size: 20px;
 }
 #wpk-dashboard #wpk-navigation > ul > li > ul {
   background: #5EC5EC;
