@@ -1,9 +1,49 @@
 #wpk-dashboard {
-  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-
-#wpk-navigation ul li a {
-  border: 1px solid #000;
+#wpk-dashboard #wpk-navigation {
+  background: #ffffff;
+  width: 250px;
+}
+#wpk-dashboard #wpk-navigation ul {
+  margin: 0;
+}
+#wpk-dashboard #wpk-navigation ul li {
+  margin: 0;
+}
+#wpk-dashboard #wpk-navigation ul li a {
+  display: block;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-decoration: none;
+}
+#wpk-dashboard #wpk-navigation ul li a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#wpk-dashboard #wpk-navigation > ul > li {
+  position: relative;
+  overflow: hidden;
+}
+#wpk-dashboard #wpk-navigation > ul > li > a {
+  color: #3d3d3d;
+}
+#wpk-dashboard #wpk-navigation > ul > li > ul {
+  display: none;
+  background: #5EC5EC;
+}
+#wpk-dashboard #wpk-navigation > ul > li > ul > li > a {
+  color: #ffffff;
+}
+#wpk-dashboard #wpk-content {
+  width: calc(100% - 250px);
 }
 
 /*# sourceMappingURL=style.min.css.map */

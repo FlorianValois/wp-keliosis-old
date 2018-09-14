@@ -1,9 +1,10 @@
-$pref_var: 'wpk-';
+@import 'var';
 
-##{$pref_var}dashboard{
-  border: 1px solid #000;
+
+##{$prefix_plugin}dashboard{
+  display: flex;
+  justify-content: flex-start;
+  @import 'navigation';
+  @import 'content';
 }
 
-  
-@import 'navigation';
-@import 'content';
