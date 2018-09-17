@@ -8,7 +8,6 @@
   overflow: hidden;
 }
 #wpk-dashboard #wpk-navigation {
-  background: #ffffff;
   width: 250px;
 }
 #wpk-dashboard #wpk-navigation ul {
@@ -34,34 +33,45 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-#wpk-dashboard #wpk-navigation > ul > li > span {
-  display: block;
-  font-family: "Open sans", sans-serif;
-  font-style: italic;
-  font-size: 11px;
-  padding: 15px 20px;
-  background: #d6d6d6;
-  color: #7d7d7d;
-}
 #wpk-dashboard #wpk-navigation > ul > li > a {
   position: relative;
   text-transform: uppercase;
   font-weight: 700;
+  background: #222D32;
 }
 #wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle {
-  color: #3d3d3d;
+  color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle:hover {
   color: #5EC5EC;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle svg {
+#wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle:hover:after {
+  color: #5EC5EC;
+}
+#wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle:after {
   position: absolute;
   top: 50%;
   right: 30px;
   -webkit-transform: translateX(50%) translateY(-50%);
           transform: translateX(50%) translateY(-50%);
-  font-size: 20px;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#wpk-dashboard #wpk-navigation > ul > li > a.open {
+  color: #ffffff;
+  background: #181f23;
+}
+#wpk-dashboard #wpk-navigation > ul > li > a.open:after {
+  -webkit-transform: translateX(50%) translateY(-50%) rotate(90deg);
+          transform: translateX(50%) translateY(-50%) rotate(90deg);
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 #wpk-dashboard #wpk-navigation > ul > li > a#wpk-comingsoon {
   font-weight: normal;
@@ -71,7 +81,8 @@
   color: #7d7d7d;
 }
 #wpk-dashboard #wpk-navigation > ul > li > ul {
-  background: #3d3d3d;
+  display: none;
+  background: #2c3b41;
 }
 #wpk-dashboard #wpk-navigation > ul > li > ul > li > a.wpk-menuSubTitle {
   color: rgba(255, 255, 255, 0.5);
@@ -80,11 +91,11 @@
 #wpk-dashboard #wpk-navigation > ul > li > ul > li > a.wpk-menuSubTitle:hover {
   color: #5EC5EC;
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.wpk-menuSubTitleActif {
+#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.focus {
   color: #ffffff;
   font-weight: 700;
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.wpk-menuSubTitleActif:hover {
+#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.focus:hover {
   color: #ffffff;
 }
 #wpk-dashboard #wpk-navigation > ul > li > ul > li:last-child > a {

@@ -1,5 +1,4 @@
 ##{$prefix_plugin}navigation {
-	background: $white;
 	width: 250px;
 
 	ul {
@@ -29,36 +28,47 @@
 
 	> ul {
 		> li {
-			> span {
-				display: block;
-				font-family: "Open sans", sans-serif;
-				font-style: italic;
-				font-size: 11px;
-				padding: 15px 20px;
-				background: lighten($grey, 60%);
-				color: lighten($grey, 25%);
-			}
-
 			> a {
 				position: relative;
 				text-transform: uppercase;
 				font-weight: 700;
+				background: $navBar;
 
 				&.#{$prefix_plugin}menuTitle {
 
-					color: $grey;
+					color: $white;
 					border-bottom: 1px solid rgba($black, .1);
 
 					&:hover {
 						color: $blue;
+
+						&:after {
+							color: $blue;
+
+						}
 					}
 
-					svg {
+					&:after {
 						position: absolute;
 						top: 50%;
 						right: 30px;
 						transform: translateX(50%) translateY(-50%);
-						font-size: 20px;
+						content: "\f105";
+						font-family: "Font Awesome 5 Free";
+						color: #ffffff;
+						font-size: 15px;
+						font-weight: 900;
+						transition: all ease .3s;
+					}
+				}
+
+				&.open {
+					color: $white;
+					background: darken($navBar, 5%);
+
+					&:after {
+						transform: translateX(50%) translateY(-50%) rotate(90deg);
+						transition: all ease .3s;
 					}
 				}
 
@@ -72,8 +82,8 @@
 			}
 
 			> ul {
-				//				display: none;
-				background: $grey;
+				display: none;
+				background: lighten($navBar, 5%);
 
 				> li {
 					> a {
@@ -87,9 +97,10 @@
 
 						}
 
-						&.#{$prefix_plugin}menuSubTitleActif {
+						&.focus {
 							color: $white;
 							font-weight: 700;
+
 							&:hover {
 								color: $white;
 							}
