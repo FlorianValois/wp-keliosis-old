@@ -10,6 +10,11 @@
 #wpk-dashboard #wpk-navigation {
   width: 250px;
 }
+#wpk-dashboard #wpk-navigation #wpk-logo {
+  display: block;
+  width: 250px;
+  height: 250px;
+}
 #wpk-dashboard #wpk-navigation ul {
   margin: 0;
 }
@@ -33,23 +38,23 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a {
   position: relative;
   text-transform: uppercase;
   font-weight: 700;
   background: #222D32;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle {
   color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-#wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle:hover {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover {
   color: #5EC5EC;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle:hover:after {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:after {
   color: #5EC5EC;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a.wpk-menuTitle:after {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:after {
   position: absolute;
   top: 50%;
   right: 30px;
@@ -63,45 +68,45 @@
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a.open {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.open {
   color: #ffffff;
   background: #181f23;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a.open:after {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.open:after {
   -webkit-transform: translateX(50%) translateY(-50%) rotate(90deg);
           transform: translateX(50%) translateY(-50%) rotate(90deg);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation > ul > li > a#wpk-comingsoon {
+#wpk-dashboard #wpk-navigation > nav > ul > li > a#wpk-comingsoon {
   font-weight: normal;
   text-transform: inherit;
   font-style: italic;
-  background: #d6d6d6;
-  color: #7d7d7d;
+  background: #b8c7ce;
+  color: #56717e;
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul {
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul {
   display: none;
   background: #2c3b41;
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.wpk-menuSubTitle {
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle {
   color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.wpk-menuSubTitle:hover {
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle:hover {
   color: #5EC5EC;
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.focus {
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.focus {
   color: #ffffff;
   font-weight: 700;
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul > li > a.focus:hover {
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.focus:hover {
   color: #ffffff;
 }
-#wpk-dashboard #wpk-navigation > ul > li > ul > li:last-child > a {
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li:last-child > a {
   border-bottom: none;
 }
-#wpk-dashboard #wpk-navigation > ul > li:last-child a {
+#wpk-dashboard #wpk-navigation > nav > ul > li:last-child a {
   border-bottom: none;
 }
 #wpk-dashboard #wpk-content {
