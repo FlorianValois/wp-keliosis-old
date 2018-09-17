@@ -14,7 +14,7 @@ function wpk_dashboard(){
       <ul>
         <li>
           <a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>">
-          	<?php echo __( 'Scroll to top', 'wp-keliosis' ); ?>
+          	<?= __( 'Scroll to top', 'wp-keliosis' ); ?>
           	<i class="far fa-caret-square-up"></i>
           </a>
           <ul class="<?= WPK_PREFIX.'subMenu' ?>">
@@ -47,6 +47,9 @@ function wpk_dashboard(){
               <a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
             </li>
           </ul>
+        </li>
+        <li>
+         <a href="" title="" id="<?= WPK_PREFIX.'comingsoon' ?>"><?= __( 'Coming soon...', 'wp-keliosis' ); ?></a>
         </li>
       </ul>
     </nav>
