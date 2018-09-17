@@ -8,7 +8,6 @@ function wpk_dashboard(){
 ?>
 <div class="wrap">
   
-  
   <div id="<?= WPK_PREFIX.'dashboard' ?>">
     <nav id="<?= WPK_PREFIX.'navigation' ?>">
       <ul>
