@@ -14,7 +14,7 @@ function wpk_dashboard(){
 			<nav>
 				<ul>
 					<li>
-						<a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>">
+						<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>">
 							<?= __( 'Scroll to top', 'wp-keliosis' ); ?>
 						</a>
 						<ul class="<?= WPK_PREFIX.'subMenu' ?>">

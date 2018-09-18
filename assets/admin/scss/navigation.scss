@@ -1,10 +1,12 @@
 ##{$prefix_plugin}navigation {
 	width: 250px;
-	##{$prefix_plugin}logo{
+
+	##{$prefix_plugin}logo {
 		display: block;
 		width: 250px;
 		height: 250px;
 	}
+
 	ul {
 		margin: 0;
 
@@ -14,7 +16,7 @@
 			a {
 				display: block;
 				font-family: "Open sans", sans-serif;
-				font-size: 11px;
+
 				text-decoration: none;
 				padding: 15px 20px;
 				transition: all ease .3s;
@@ -35,22 +37,39 @@
 			> li {
 				> a {
 					position: relative;
-					text-transform: uppercase;
-					font-weight: 700;
+					font-weight: 600;
 					background: $navBar;
 
-					&.#{$prefix_plugin}menuTitle {
+					&##{$prefix_plugin}scrollToTop {
+						&:before {
+							content: "\f151";
+							font-weight: 500;
+						}
+					}
 
-						color: $white;
+					&.#{$prefix_plugin}menuTitle {
+						padding-left: 40px;
+						color: rgba($white, .5);
 						border-bottom: 1px solid rgba($black, .1);
 
 						&:hover {
-							color: $blue;
+							color: $white;
 
 							&:after {
-								color: $blue;
+								color: $white;
 
 							}
+						}
+
+						&:before {
+							position: absolute;
+							top: 50%;
+							left: 10px;
+							transform: translateX(50%) translateY(-50%);
+							font-family: "Font Awesome 5 Free";
+							color: rgba($white, .5);
+							font-size: 18px;
+							transition: all ease .3s;
 						}
 
 						&:after {
@@ -60,7 +79,7 @@
 							transform: translateX(50%) translateY(-50%);
 							content: "\f105";
 							font-family: "Font Awesome 5 Free";
-							color: #ffffff;
+							color: rgba($white, .5);
 							font-size: 15px;
 							font-weight: 900;
 							transition: all ease .3s;
@@ -71,7 +90,13 @@
 						color: $white;
 						background: darken($navBar, 5%);
 
+						&:before {
+							color: $white;
+							transition: all ease .3s;
+						}
+
 						&:after {
+							color: $white;
 							transform: translateX(50%) translateY(-50%) rotate(90deg);
 							transition: all ease .3s;
 						}
@@ -93,6 +118,8 @@
 					> li {
 						> a {
 							&.#{$prefix_plugin}menuSubTitle {
+								padding-left: 40px;
+								font-size: 11px;
 								color: rgba($white, .5);
 								border-bottom: 1px solid rgba($black, .1);
 
