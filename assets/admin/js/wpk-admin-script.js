@@ -12,14 +12,10 @@ jQuery(document).ready(function ($) {
 	
 	// Open sub menu navigation
 	$('.' + WPK_PREFIX + 'menuTitle').on('click', function (event) {
+		$('.' + WPK_PREFIX + 'menuTitle').next().slideUp();
 		$(this).next().slideToggle();
+		$('.' + WPK_PREFIX + 'menuTitle').removeClass('open');
 		$(this).toggleClass('open');
-	});
-	
-	// Focus on sub link
-	$('.' + WPK_PREFIX + 'menuSubTitle').on('click', function (event) {
-		$('.' + WPK_PREFIX + 'menuSubTitle').removeClass('focus');
-		$(this).addClass('focus');
 	});
 	
 	/* END - NAVIGATION - */

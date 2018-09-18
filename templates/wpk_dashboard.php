@@ -13,38 +13,25 @@ function wpk_dashboard(){
 		<nav>
 			<ul>
 				<li>
-					<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>">
+					<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'menuTitleSingle' ?>">
+						<i class="fas fa-tachometer-alt"></i>
+						<?= __( 'Dashboard', 'wp-keliosis' ); ?>
+					</a>
+				</li>
+				<li>
+					<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'menuTitleMulti' ?>">
 						<i class="fas fa-level-up-alt"></i>
 						<?= __( 'Scroll to top', 'wp-keliosis' ); ?>
 					</a>
 					<ul class="<?= WPK_PREFIX.'subMenu' ?>">
 						<li>
-							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
+							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitleMulti' ?>">Lorem ipsum</a>
 						</li>
 						<li>
-							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
+							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitleMulti' ?>">Lorem ipsum</a>
 						</li>
 						<li>
-							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>">Lorem ipsum</a>
-					<ul class="<?= WPK_PREFIX.'subMenu' ?>">
-						<li>
-							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="" title="" id="" class="<?= WPK_PREFIX.'menuTitle' ?>">Lorem ipsum</a>
-					<ul class="<?= WPK_PREFIX.'subMenu' ?>">
-						<li>
-							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
-						</li>
-						<li>
-							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitle' ?>">Lorem ipsum</a>
+							<a href="" title="" class="<?= WPK_PREFIX.'menuSubTitleMulti' ?>">Lorem ipsum</a>
 						</li>
 					</ul>
 				</li>
