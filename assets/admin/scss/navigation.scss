@@ -1,6 +1,21 @@
 ##{$prefix_plugin}navigation {
+	position: relative;
 	width: 250px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
+	&:before {
+		position: absolute;
+		top: 0;
+		right: -6px;
+		display: block;
+		content: "";
+		width: 6px;
+		height: 100%;
+		background: rgb(0, 0, 0);
+		background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
+		background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+	}
 
 	##{$prefix_plugin}logo {
 		display: block;
@@ -81,6 +96,7 @@
 
 					&.open {
 						background: lighten($grey, 65%);
+						font-weight: bold;
 
 						&:before {
 							display: block;
@@ -101,21 +117,21 @@
 						font-weight: normal;
 						text-transform: inherit;
 						font-style: italic;
-						background: lighten($grey, 60%);
-						color: lighten($grey, 25%);
+						background: lighten($grey, 65%);
+						color: lighten($grey, 40%);
 					}
 				}
 
 				> ul {
 					display: none;
+					padding: 10px 0;
+					background: lighten($grey, 70%);
 
 					> li {
-						list-style: circle;
 
 						> a {
 							&.#{$prefix_plugin}menuSubTitle {
 								padding-left: 40px;
-								background: lighten($grey, 70%);
 								color: lighten($grey, 20%);
 
 								&:before {
@@ -127,8 +143,8 @@
 									width: 4px;
 									height: 4px;
 									border-radius: 50%;
-									transform: translateX(-50%) translateY(-50%);
 									background: lighten($grey, 20%);
+									transform: translateX(-50%) translateY(-50%);
 								}
 
 								&:hover {
@@ -142,18 +158,6 @@
 							}
 
 						}
-
-						&:last-child {
-							> a {
-								border-bottom: none;
-							}
-						}
-					}
-				}
-
-				&:last-child {
-					a {
-						border-bottom: none;
 					}
 				}
 			}

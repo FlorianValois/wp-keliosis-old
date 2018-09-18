@@ -1,11 +1,3 @@
-.toplevel_page_wpkeliosis #wpwrap {
-  background: #ffffff;
-}
-
-.toplevel_page_wpkeliosis #wpcontent {
-  padding: 0;
-}
-
 #wpk-dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,12 +5,24 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 0;
+  margin-top: 20px;
 }
 #wpk-dashboard #wpk-navigation {
+  position: relative;
   width: 250px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#wpk-dashboard #wpk-navigation:before {
+  position: absolute;
+  top: 0;
+  right: -6px;
+  display: block;
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0452381636)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.0452381636) 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
 }
 #wpk-dashboard #wpk-navigation #wpk-logo {
   display: block;
@@ -90,6 +94,7 @@
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > a.open {
   background: #e3e3e3;
+  font-weight: bold;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > a.open:before {
   display: block;
@@ -107,18 +112,16 @@
   font-weight: normal;
   text-transform: inherit;
   font-style: italic;
-  background: #d6d6d6;
-  color: #7d7d7d;
+  background: #e3e3e3;
+  color: #a3a3a3;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul {
   display: none;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li {
-  list-style: circle;
+  padding: 10px 0;
+  background: #f0f0f0;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle {
   padding-left: 40px;
-  background: #f0f0f0;
   color: #707070;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle:before {
@@ -130,21 +133,15 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
+  background: #707070;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  background: #707070;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle:hover {
   background: #e3e3e3;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle:hover:before {
   display: block;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li:last-child > a {
-  border-bottom: none;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li:last-child a {
-  border-bottom: none;
 }
 #wpk-dashboard #wpk-content {
   width: calc(100% - 250px);

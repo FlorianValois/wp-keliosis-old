@@ -1,17 +1,9 @@
 @import 'var';
 
-.toplevel_page_wpkeliosis #wpwrap {
-	background: $white;
-}
-
-.toplevel_page_wpkeliosis #wpcontent {
-	padding: 0;
-}
-
 ##{$prefix_plugin}dashboard {
 	display: flex;
 	justify-content: flex-start;
 	@import 'navigation';
 	@import 'content';
-	margin: 0;
+	margin-top: 20px;
 }
