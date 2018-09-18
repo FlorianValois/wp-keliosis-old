@@ -79,21 +79,39 @@
 							font-size: 18px;
 						}
 
+						span {
+							position: relative;
+							z-index: 1;
+						}
+
 						&:hover {
 							background: lighten($grey, 70%);
 
 							&:before {
 								display: block;
+								width: 3px;
+							}
+						}
+
+						&.active {
+							color: $white;
+							span {
+								font-weight: bold;
+								color: $white;
+							}
+
+							&:before {
+								width: 100%;
 							}
 						}
 					}
 
-					&.#{$prefix_plugin}menuTitleSingle {
-						&.open {
-							background: lighten($grey, 65%);
-							font-weight: bold;
-						}
-					}
+//					&.#{$prefix_plugin}menuTitleSingle {
+//						&.active {
+//							background: lighten($grey, 65%);
+//							font-weight: bold;
+//						}
+//					}
 
 					&.#{$prefix_plugin}menuTitleMulti {
 						&:after {
@@ -111,21 +129,15 @@
 
 					}
 
-					&.open {
-						background: lighten($grey, 65%);
-						font-weight: bold;
-
+					&.active {
 						&:before {
 							display: block;
 						}
 
 						&:after {
+							color: $white;
 							transform: translateX(50%) translateY(-50%) rotate(-180deg);
 							transition: all ease .3s;
-						}
-
-						&:hover {
-							background: lighten($grey, 65%);
 						}
 
 					}

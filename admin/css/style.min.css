@@ -1,12 +1,12 @@
 .toplevel_page_wpkeliosis #wpwrap {
-  background: #ffffff;
+  background: #fcfcfc;
 }
 
 .toplevel_page_wpkeliosis #wpcontent {
   padding: 0;
 }
 
-#wpk-dashboard {
+#wpk-keliosis {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,11 +16,11 @@
   margin: 0;
   height: 100%;
 }
-#wpk-dashboard #wpk-navigation {
+#wpk-keliosis #wpk-navigation {
   position: relative;
   width: 250px;
 }
-#wpk-dashboard #wpk-navigation:before {
+#wpk-keliosis #wpk-navigation:before {
   position: absolute;
   top: 0;
   right: -6px;
@@ -33,18 +33,18 @@
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.0452381636) 0%, rgba(255, 255, 255, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
 }
-#wpk-dashboard #wpk-navigation #wpk-logo {
+#wpk-keliosis #wpk-navigation #wpk-logo {
   display: block;
   width: 250px;
   height: 250px;
 }
-#wpk-dashboard #wpk-navigation ul {
+#wpk-keliosis #wpk-navigation ul {
   margin: 0;
 }
-#wpk-dashboard #wpk-navigation ul li {
+#wpk-keliosis #wpk-navigation ul li {
   margin: 0;
 }
-#wpk-dashboard #wpk-navigation ul li a {
+#wpk-keliosis #wpk-navigation ul li a {
   position: relative;
   display: block;
   font-family: "Open sans", sans-serif;
@@ -54,22 +54,22 @@
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation ul li a:hover {
+#wpk-keliosis #wpk-navigation ul li a:hover {
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation ul li a:focus {
+#wpk-keliosis #wpk-navigation ul li a:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a {
   background: #ffffff;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle {
   padding-left: 60px;
   color: #707070;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:before {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,7 +81,7 @@
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle svg {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle svg {
   position: absolute;
   top: 50%;
   left: 30px;
@@ -89,17 +89,28 @@
           transform: translateX(-50%) translateY(-50%);
   font-size: 18px;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle span {
+  position: relative;
+  z-index: 1;
+}
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover {
   background: #f0f0f0;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:before {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:before {
   display: block;
+  width: 3px;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitleSingle.open {
-  background: #e3e3e3;
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active {
+  color: #ffffff;
+}
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active span {
   font-weight: bold;
+  color: #ffffff;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitleMulti:after {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active:before {
+  width: 100%;
+}
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitleMulti:after {
   position: absolute;
   top: 50%;
   right: 30px;
@@ -113,39 +124,33 @@
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.open {
-  background: #e3e3e3;
-  font-weight: bold;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.open:before {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.active:before {
   display: block;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.open:after {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a.active:after {
+  color: #ffffff;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(-180deg);
           transform: translateX(50%) translateY(-50%) rotate(-180deg);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.open:hover {
-  background: #e3e3e3;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > a#wpk-comingsoon {
+#wpk-keliosis #wpk-navigation > nav > ul > li > a#wpk-comingsoon {
   font-weight: normal;
   text-transform: inherit;
   font-style: italic;
   background: #e3e3e3;
   color: #a3a3a3;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul {
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul {
   display: none;
   padding: 10px 0;
   background: #f0f0f0;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti {
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti {
   padding-left: 40px;
   color: #707070;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:before {
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:before {
   position: absolute;
   display: block;
   content: "";
@@ -158,13 +163,13 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:hover {
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:hover {
   background: #e3e3e3;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:hover:before {
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:hover:before {
   display: block;
 }
-#wpk-dashboard #wpk-content {
+#wpk-keliosis #wpk-content {
   width: calc(100% - 250px);
 }
 

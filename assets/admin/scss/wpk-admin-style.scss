@@ -1,14 +1,14 @@
 @import 'var';
 
 .toplevel_page_wpkeliosis #wpwrap {
-	background: $white;
+	background: lighten($grey, 75%);
 }
 
 .toplevel_page_wpkeliosis #wpcontent {
 	padding: 0;
 }
 
-##{$prefix_plugin}dashboard {
+##{$prefix_plugin}keliosis {
 	display: flex;
 	justify-content: flex-start;
 	@import 'navigation';

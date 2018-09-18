@@ -6,22 +6,22 @@ if (!defined('ABSPATH')) {
 
 function wpk_dashboard(){
 ?>
-<div id="<?= WPK_PREFIX.'dashboard' ?>" class="wrap">
+<div id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap">
 
 	<section id="<?= WPK_PREFIX.'navigation' ?>">
 		<a id="<?= WPK_PREFIX.'logo' ?>" href=""><img src="https://via.placeholder.com/250x250" alt=""></a>
 		<nav>
 			<ul>
 				<li>
-					<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'menuTitleSingle' ?>">
+					<a href="" title="" id="<?= WPK_PREFIX.'dashboard' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'menuTitleSingle' ?>">
 						<i class="fas fa-tachometer-alt"></i>
-						<?= __( 'Dashboard', 'wp-keliosis' ); ?>
+						<span><?= __( 'Dashboard', 'wp-keliosis' ); ?></span>
 					</a>
 				</li>
 				<li>
 					<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'menuTitleMulti' ?>">
 						<i class="fas fa-level-up-alt"></i>
-						<?= __( 'Scroll to top', 'wp-keliosis' ); ?>
+						<span><?= __( 'Scroll to top', 'wp-keliosis' ); ?></span>
 					</a>
 					<ul class="<?= WPK_PREFIX.'subMenu' ?>">
 						<li>
