@@ -84,6 +84,14 @@
 							transition: all ease .3s;
 						}
 
+						svg {
+							position: absolute;
+							top: 50%;
+							left: 30px;
+							transform: translateX(-50%) translateY(-50%);
+							font-size: 18px;
+						}
+
 						&:hover {
 							background: lighten($grey, 70%);
 

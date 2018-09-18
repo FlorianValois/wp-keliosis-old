@@ -14,6 +14,7 @@ function wpk_dashboard(){
 			<ul>
 				<li>
 					<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>">
+						<i class="fas fa-level-up-alt"></i>
 						<?= __( 'Scroll to top', 'wp-keliosis' ); ?>
 					</a>
 					<ul class="<?= WPK_PREFIX.'subMenu' ?>">
