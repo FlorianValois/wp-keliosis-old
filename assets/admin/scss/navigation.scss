@@ -1,10 +1,28 @@
 ##{$prefix_plugin}navigation {
+	position: relative;
 	width: 250px;
-	##{$prefix_plugin}logo{
+
+	&:before {
+		position: absolute;
+		top: 0;
+		right: -6px;
+		display: block;
+		content: "";
+		width: 6px;
+		height: 100%;
+		background: rgb(0, 0, 0);
+		background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
+		background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+	}
+
+	##{$prefix_plugin}logo {
 		display: block;
 		width: 250px;
 		height: 250px;
 	}
+
 	ul {
 		margin: 0;
 
@@ -12,9 +30,10 @@
 			margin: 0;
 
 			a {
+				position: relative;
 				display: block;
 				font-family: "Open sans", sans-serif;
-				font-size: 11px;
+				font-size: 13px;
 				text-decoration: none;
 				padding: 15px 20px;
 				transition: all ease .3s;
@@ -34,96 +53,140 @@
 		> ul {
 			> li {
 				> a {
-					position: relative;
-					text-transform: uppercase;
-					font-weight: 700;
-					background: $navBar;
+					background: $white;
 
 					&.#{$prefix_plugin}menuTitle {
+						padding-left: 60px;
+						color: lighten($grey, 20%);
 
-						color: $white;
-						border-bottom: 1px solid rgba($black, .1);
+						&:before {
+							position: absolute;
+							top: 0;
+							left: 0;
+							content: "";
+							display: none;
+							background: $blue;
+							width: 3px;
+							height: 100%;
+							transition: all ease .3s;
+						}
+
+						svg {
+							position: absolute;
+							top: 50%;
+							left: 30px;
+							transform: translateX(-50%) translateY(-50%);
+							font-size: 18px;
+						}
+
+						span {
+							position: relative;
+							z-index: 1;
+						}
 
 						&:hover {
-							color: $blue;
+							background: lighten($grey, 70%);
 
-							&:after {
-								color: $blue;
-
+							&:before {
+								display: block;
+								width: 3px;
 							}
 						}
 
+						&.active {
+							color: $white;
+							span {
+								font-weight: bold;
+								color: $white;
+							}
+
+							&:before {
+								width: 100%;
+							}
+						}
+					}
+
+//					&.#{$prefix_plugin}menuTitleSingle {
+//						&.active {
+//							background: lighten($grey, 65%);
+//							font-weight: bold;
+//						}
+//					}
+
+					&.#{$prefix_plugin}menuTitleMulti {
 						&:after {
 							position: absolute;
 							top: 50%;
 							right: 30px;
 							transform: translateX(50%) translateY(-50%);
-							content: "\f105";
+							content: "\f0d7";
 							font-family: "Font Awesome 5 Free";
-							color: #ffffff;
+							color: lighten($grey, 20%);
 							font-size: 15px;
 							font-weight: 900;
 							transition: all ease .3s;
 						}
+
 					}
 
-					&.open {
-						color: $white;
-						background: darken($navBar, 5%);
+					&.active {
+						&:before {
+							display: block;
+						}
 
 						&:after {
-							transform: translateX(50%) translateY(-50%) rotate(90deg);
+							color: $white;
+							transform: translateX(50%) translateY(-50%) rotate(-180deg);
 							transition: all ease .3s;
 						}
+
 					}
 
 					&##{$prefix_plugin}comingsoon {
 						font-weight: normal;
 						text-transform: inherit;
 						font-style: italic;
-						background: lighten($navBar, 60%);
-						color: lighten($navBar, 25%);
+						background: lighten($grey, 65%);
+						color: lighten($grey, 40%);
 					}
 				}
 
 				> ul {
 					display: none;
-					background: lighten($navBar, 5%);
+					padding: 10px 0;
+					background: lighten($grey, 70%);
 
 					> li {
+
 						> a {
-							&.#{$prefix_plugin}menuSubTitle {
-								color: rgba($white, .5);
-								border-bottom: 1px solid rgba($black, .1);
+							&.#{$prefix_plugin}menuSubTitleMulti {
+								padding-left: 40px;
+								color: lighten($grey, 20%);
+
+								&:before {
+									position: absolute;
+									display: block;
+									content: "";
+									top: 50%;
+									left: 30px;
+									width: 4px;
+									height: 4px;
+									border-radius: 50%;
+									background: lighten($grey, 20%);
+									transform: translateX(-50%) translateY(-50%);
+								}
 
 								&:hover {
-									color: $blue;
+									background: lighten($grey, 65%);
+
+									&:before {
+										display: block;
+									}
 								}
 
 							}
 
-							&.focus {
-								color: $white;
-								font-weight: 700;
-
-								&:hover {
-									color: $white;
-								}
-							}
-
 						}
-
-						&:last-child {
-							> a {
-								border-bottom: none;
-							}
-						}
-					}
-				}
-
-				&:last-child {
-					a {
-						border-bottom: none;
 					}
 				}
 			}

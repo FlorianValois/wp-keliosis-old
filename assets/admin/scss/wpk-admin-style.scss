@@ -1,11 +1,18 @@
 @import 'var';
 
-
-##{$prefix_plugin}dashboard{
-  display: flex;
-  justify-content: flex-start;
-	overflow: hidden;
-  @import 'navigation';
-  @import 'content';
+.toplevel_page_wpkeliosis #wpwrap {
+	background: lighten($grey, 75%);
 }
 
+.toplevel_page_wpkeliosis #wpcontent {
+	padding: 0;
+}
+
+##{$prefix_plugin}keliosis {
+	display: flex;
+	justify-content: flex-start;
+	@import 'navigation';
+	@import 'content';
+	margin: 0;
+	height: 100%;
+}

@@ -19,6 +19,8 @@ define( 'WPK_VERSION', '0.1' );
 
 define( 'WPK_PREFIX', 'wpk-' );
 
+define( 'WPK_NAME', 'keliosis' );
+
 define( 'WPK_REQUIRED_WP_VERSION', '4.9.8' );
 
 define( 'WPK_PLUGIN', __FILE__ );
