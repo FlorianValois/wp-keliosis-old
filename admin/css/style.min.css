@@ -1,3 +1,11 @@
+.toplevel_page_wpkeliosis #wpwrap {
+  background: #ffffff;
+}
+
+.toplevel_page_wpkeliosis #wpcontent {
+  padding: 0;
+}
+
 #wpk-dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,10 +13,12 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  overflow: hidden;
+  margin: 0;
 }
 #wpk-dashboard #wpk-navigation {
   width: 250px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 #wpk-dashboard #wpk-navigation #wpk-logo {
   display: block;
@@ -22,8 +32,10 @@
   margin: 0;
 }
 #wpk-dashboard #wpk-navigation ul li a {
+  position: relative;
   display: block;
   font-family: "Open sans", sans-serif;
+  font-size: 13px;
   text-decoration: none;
   padding: 15px 20px;
   -webkit-transition: all ease .3s;
@@ -38,34 +50,21 @@
           box-shadow: none;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > a {
-  position: relative;
-  font-weight: 600;
-  background: #222D32;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > a#wpk-scrollToTop:before {
-  content: "\f151";
-  font-weight: 500;
+  background: #ffffff;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle {
-  padding-left: 40px;
-  color: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover {
-  color: #ffffff;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:after {
-  color: #ffffff;
+  padding-left: 60px;
+  color: rgba(61, 61, 61, 0.5);
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:before {
   position: absolute;
-  top: 50%;
-  left: 10px;
-  -webkit-transform: translateX(50%) translateY(-50%);
-          transform: translateX(50%) translateY(-50%);
-  font-family: "Font Awesome 5 Free";
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 18px;
+  top: 0;
+  left: 0;
+  content: "";
+  display: none;
+  background: #5EC5EC;
+  width: 3px;
+  height: 100%;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
@@ -75,56 +74,71 @@
   right: 30px;
   -webkit-transform: translateX(50%) translateY(-50%);
           transform: translateX(50%) translateY(-50%);
-  content: "\f105";
+  content: "\f0d7";
   font-family: "Font Awesome 5 Free";
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(61, 61, 61, 0.5);
   font-size: 15px;
   font-weight: 900;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover {
+  background: #f0f0f0;
+}
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:before {
+  display: block;
+}
 #wpk-dashboard #wpk-navigation > nav > ul > li > a.open {
-  color: #ffffff;
-  background: #181f23;
+  background: #e3e3e3;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > a.open:before {
-  color: #ffffff;
+  display: block;
+}
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.open:after {
+  -webkit-transform: translateX(50%) translateY(-50%) rotate(-180deg);
+          transform: translateX(50%) translateY(-50%) rotate(-180deg);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > a.open:after {
-  color: #ffffff;
-  -webkit-transform: translateX(50%) translateY(-50%) rotate(90deg);
-          transform: translateX(50%) translateY(-50%) rotate(90deg);
-  -webkit-transition: all ease .3s;
-  transition: all ease .3s;
+#wpk-dashboard #wpk-navigation > nav > ul > li > a.open:hover {
+  background: #e3e3e3;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > a#wpk-comingsoon {
   font-weight: normal;
   text-transform: inherit;
   font-style: italic;
-  background: #b8c7ce;
-  color: #56717e;
+  background: #d6d6d6;
+  color: #7d7d7d;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul {
   display: none;
-  background: #2c3b41;
+}
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li {
+  list-style: circle;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle {
   padding-left: 40px;
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f0f0f0;
+  color: #707070;
+}
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 30px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background: #707070;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle:hover {
-  color: #5EC5EC;
+  background: #e3e3e3;
 }
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.focus {
-  color: #ffffff;
-  font-weight: 700;
-}
-#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.focus:hover {
-  color: #ffffff;
+#wpk-dashboard #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitle:hover:before {
+  display: block;
 }
 #wpk-dashboard #wpk-navigation > nav > ul > li > ul > li:last-child > a {
   border-bottom: none;

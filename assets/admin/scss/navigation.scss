@@ -1,5 +1,6 @@
 ##{$prefix_plugin}navigation {
 	width: 250px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 
 	##{$prefix_plugin}logo {
 		display: block;
@@ -14,9 +15,10 @@
 			margin: 0;
 
 			a {
+				position: relative;
 				display: block;
 				font-family: "Open sans", sans-serif;
-
+				font-size: 13px;
 				text-decoration: none;
 				padding: 15px 20px;
 				transition: all ease .3s;
@@ -36,39 +38,21 @@
 		> ul {
 			> li {
 				> a {
-					position: relative;
-					font-weight: 600;
-					background: $navBar;
-
-					&##{$prefix_plugin}scrollToTop {
-						&:before {
-							content: "\f151";
-							font-weight: 500;
-						}
-					}
+					background: $white;
 
 					&.#{$prefix_plugin}menuTitle {
-						padding-left: 40px;
-						color: rgba($white, .5);
-						border-bottom: 1px solid rgba($black, .1);
-
-						&:hover {
-							color: $white;
-
-							&:after {
-								color: $white;
-
-							}
-						}
+						padding-left: 60px;
+						color: rgba($grey, .5);
 
 						&:before {
 							position: absolute;
-							top: 50%;
-							left: 10px;
-							transform: translateX(50%) translateY(-50%);
-							font-family: "Font Awesome 5 Free";
-							color: rgba($white, .5);
-							font-size: 18px;
+							top: 0;
+							left: 0;
+							content: "";
+							display: none;
+							background: $blue;
+							width: 3px;
+							height: 100%;
 							transition: all ease .3s;
 						}
 
@@ -77,65 +61,84 @@
 							top: 50%;
 							right: 30px;
 							transform: translateX(50%) translateY(-50%);
-							content: "\f105";
+							content: "\f0d7";
 							font-family: "Font Awesome 5 Free";
-							color: rgba($white, .5);
+							color: rgba($grey, .5);
 							font-size: 15px;
 							font-weight: 900;
 							transition: all ease .3s;
 						}
+
+						&:hover {
+							background: lighten($grey, 70%);
+
+							&:before {
+								display: block;
+							}
+						}
+
 					}
 
 					&.open {
-						color: $white;
-						background: darken($navBar, 5%);
+						background: lighten($grey, 65%);
 
 						&:before {
-							color: $white;
-							transition: all ease .3s;
+							display: block;
 						}
 
 						&:after {
-							color: $white;
-							transform: translateX(50%) translateY(-50%) rotate(90deg);
+							transform: translateX(50%) translateY(-50%) rotate(-180deg);
 							transition: all ease .3s;
 						}
+
+						&:hover {
+							background: lighten($grey, 65%);
+						}
+
 					}
 
 					&##{$prefix_plugin}comingsoon {
 						font-weight: normal;
 						text-transform: inherit;
 						font-style: italic;
-						background: lighten($navBar, 60%);
-						color: lighten($navBar, 25%);
+						background: lighten($grey, 60%);
+						color: lighten($grey, 25%);
 					}
 				}
 
 				> ul {
 					display: none;
-					background: lighten($navBar, 5%);
 
 					> li {
+						list-style: circle;
+
 						> a {
 							&.#{$prefix_plugin}menuSubTitle {
 								padding-left: 40px;
-								font-size: 11px;
-								color: rgba($white, .5);
-								border-bottom: 1px solid rgba($black, .1);
+								background: lighten($grey, 70%);
+								color: lighten($grey, 20%);
 
-								&:hover {
-									color: $blue;
+								&:before {
+									position: absolute;
+									display: block;
+									content: "";
+									top: 50%;
+									left: 30px;
+									width: 4px;
+									height: 4px;
+									border-radius: 50%;
+									transform: translateX(-50%) translateY(-50%);
+									background: lighten($grey, 20%);
 								}
 
-							}
-
-							&.focus {
-								color: $white;
-								font-weight: 700;
-
 								&:hover {
-									color: $white;
+									background: lighten($grey, 65%);
+
+									&:before {
+										display: block;
+									}
 								}
+
 							}
 
 						}
