@@ -55,7 +55,10 @@ function wpk_dashboard(){
 			</div>
 			
 			<div id="<?= WPK_PREFIX.'scrollToTop' ?>" class="active">
+			<div class="<?= WPK_PREFIX.'card-header' ?>">
+				<i class="fas fa-level-up-alt"></i>
 				<h1>Scroll to top</h1>
+			</div>
 				<div class="<?= WPK_PREFIX.'card' ?>">
 					<h2>Lorem ipsum</h2>
 					<div class="<?= WPK_PREFIX.'content' ?>">
