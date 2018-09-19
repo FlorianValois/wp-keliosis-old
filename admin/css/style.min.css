@@ -36,7 +36,7 @@
 #wpk-keliosis #wpk-navigation #wpk-logo {
   display: block;
   width: 250px;
-  height: 250px;
+  height: 100px;
 }
 #wpk-keliosis #wpk-navigation ul {
   margin: 0;
@@ -98,7 +98,6 @@
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:before {
   display: block;
-  width: 3px;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active {
   color: #ffffff;
@@ -109,6 +108,8 @@
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active:before {
   width: 100%;
+  -webkit-transition: none;
+  transition: none;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitleMulti:after {
   position: absolute;
@@ -171,6 +172,17 @@
 }
 #wpk-keliosis #wpk-content {
   width: calc(100% - 250px);
+}
+#wpk-keliosis #wpk-content > form > div {
+  display: none;
+  padding: 30px;
+}
+#wpk-keliosis #wpk-content > form > div.active {
+  display: block;
+}
+#wpk-keliosis #wpk-content > form > div h1 {
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.min.css.map */

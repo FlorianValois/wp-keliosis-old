@@ -14,14 +14,43 @@ jQuery(document).ready(function ($) {
 	// Open sub menu navigation
 
 	$('.' + WPK_PREFIX + 'menuTitle').on('click', function () {
-				
+
 		$('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
 		$('.' + WPK_PREFIX + 'menuTitle').next().slideUp();
 		$(this).addClass('active');
-		$(this).next().slideDown();
+		$(this).next().slideToggle();
+
+	});
+	
+	$('#' + WPK_PREFIX + 'comingsoon').on('click', function () {
+
+		$('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
+		$('.' + WPK_PREFIX + 'menuTitle').next().slideUp();
 
 	});
 
+	// Tabs
+	$('#' + WPK_PREFIX + 'navigation nav a').on('click', function () {
+
+		var data_name = $(this).attr('data-name');
+		
+		$('#' + WPK_PREFIX + 'content > form > div').each(function () {
+			
+			var id_content = $(this).attr('id');
+
+			if(id_content == data_name){
+				$(this).addClass('active');
+			}
+			else{
+				$(this).removeClass('active');
+			}
+			
+		});
+
+
+
+
+	});
 
 
 	/* END - NAVIGATION - */

@@ -43,7 +43,7 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
     /* jQuery UI */
     wp_enqueue_script(
       'jqueri-ui-script',
-      plugins_url('bower_components/jquery-ui/jquery-ui.min.js', dirname(__FILE__)), false, '', true
+      plugins_url('bower_components/jquery-ui/jquery-ui.js', dirname(__FILE__)), false, '', true
     );
     
     /* Font Awesome */

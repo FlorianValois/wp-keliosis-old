@@ -20,7 +20,7 @@
 	##{$prefix_plugin}logo {
 		display: block;
 		width: 250px;
-		height: 250px;
+		height: 100px;
 	}
 
 	ul {
@@ -89,7 +89,6 @@
 
 							&:before {
 								display: block;
-								width: 3px;
 							}
 						}
 
@@ -102,6 +101,7 @@
 
 							&:before {
 								width: 100%;
+								transition: none;
 							}
 						}
 					}
