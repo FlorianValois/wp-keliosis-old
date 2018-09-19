@@ -94,6 +94,7 @@
 
 						&.active {
 							color: $white;
+
 							span {
 								font-weight: bold;
 								color: $white;
@@ -106,12 +107,12 @@
 						}
 					}
 
-//					&.#{$prefix_plugin}menuTitleSingle {
-//						&.active {
-//							background: lighten($grey, 65%);
-//							font-weight: bold;
-//						}
-//					}
+					//					&.#{$prefix_plugin}menuTitleSingle {
+					//						&.active {
+					//							background: lighten($grey, 65%);
+					//							font-weight: bold;
+					//						}
+					//					}
 
 					&.#{$prefix_plugin}menuTitleMulti {
 						&:after {
@@ -140,14 +141,6 @@
 							transition: all ease .3s;
 						}
 
-					}
-
-					&##{$prefix_plugin}comingsoon {
-						font-weight: normal;
-						text-transform: inherit;
-						font-style: italic;
-						background: lighten($grey, 65%);
-						color: lighten($grey, 40%);
 					}
 				}
 

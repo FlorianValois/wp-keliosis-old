@@ -43,10 +43,6 @@ function wpk_dashboard(){
 					</ul>
 				</li>
 -->
-				<li>
-					<a href="" title="" id="<?= WPK_PREFIX.'comingsoon' ?>" data-name="<?= WPK_PREFIX.'comingsoon' ?>">
-						<?= __( 'Coming soon...', 'wp-keliosis' ); ?></a>
-				</li>
 			</ul>
 		</nav>
 	</section>
@@ -60,10 +56,6 @@ function wpk_dashboard(){
 			
 			<div id="<?= WPK_PREFIX.'scrollToTop' ?>" class="active">
 				<h1>Scroll to top</h1>
-			</div>
-			
-			<div id="<?= WPK_PREFIX.'comingsoon' ?>">
-				<h1>Coming soon</h1>
 			</div>
 			
 		</form>

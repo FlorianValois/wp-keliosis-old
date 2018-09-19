@@ -21,13 +21,6 @@ jQuery(document).ready(function ($) {
 		$(this).next().slideToggle();
 
 	});
-	
-	$('#' + WPK_PREFIX + 'comingsoon').on('click', function () {
-
-		$('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
-		$('.' + WPK_PREFIX + 'menuTitle').next().slideUp();
-
-	});
 
 	// Tabs
 	$('#' + WPK_PREFIX + 'navigation nav a').on('click', function () {

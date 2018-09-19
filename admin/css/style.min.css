@@ -135,13 +135,6 @@
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
-#wpk-keliosis #wpk-navigation > nav > ul > li > a#wpk-comingsoon {
-  font-weight: normal;
-  text-transform: inherit;
-  font-style: italic;
-  background: #e3e3e3;
-  color: #a3a3a3;
-}
 #wpk-keliosis #wpk-navigation > nav > ul > li > ul {
   display: none;
   padding: 10px 0;
