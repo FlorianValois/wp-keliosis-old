@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.toplevel_page_wpkeliosis #wpfooter {
+  display: none;
+}
+
 #wpk-keliosis {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,19 +24,8 @@
   position: relative;
   width: 250px;
   background: #ffffff;
-}
-#wpk-keliosis #wpk-navigation:before {
-  position: absolute;
-  top: 0;
-  right: -6px;
-  display: block;
-  content: "";
-  width: 6px;
-  height: 100%;
-  background: black;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0452381636)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.0452381636) 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+  -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
 }
 #wpk-keliosis #wpk-navigation #wpk-logo {
   display: block;
@@ -185,8 +178,8 @@
 #wpk-keliosis #wpk-content > form > div .wpk-card {
   border: none;
   background: #ffffff;
-  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
 }
 #wpk-keliosis #wpk-content > form > div .wpk-card:last-child {
@@ -203,6 +196,18 @@
 }
 #wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content {
   padding: 20px;
+}
+
+.toplevel_page_wpkeliosis #wpwrap,
+.toplevel_page_wpkeliosis #wpcontent,
+.toplevel_page_wpkeliosis #wpbody,
+.toplevel_page_wpkeliosis #wpbody-content {
+  height: 100%;
+  min-height: inherit;
+}
+
+.toplevel_page_wpkeliosis #wpbody-content {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=style.min.css.map */

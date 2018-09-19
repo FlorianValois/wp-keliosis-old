@@ -18,7 +18,7 @@
 			.#{$prefix_plugin}card {
 				border: none;
 				background: $white;
-				box-shadow: 0 1px 20px 1px rgba($black, .08);
+				box-shadow: 0 1px 15px 1px rgba($black, .05);
 				margin-bottom: 30px;
 				&:last-child{
 					margin-bottom: 0;
