@@ -62,6 +62,12 @@ function wpk_dashboard(){
 						test
 					</div>
 				</div>
+				<div class="<?= WPK_PREFIX.'card' ?>">
+					<h2>Lorem ipsum</h2>
+					<div class="<?= WPK_PREFIX.'content' ?>">
+						test
+					</div>
+				</div>
 			</div>
 			
 		</form>

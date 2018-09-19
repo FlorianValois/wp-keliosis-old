@@ -1,5 +1,5 @@
 .toplevel_page_wpkeliosis #wpwrap {
-  background: #fcfcfc;
+  background: #f0f0f0;
 }
 
 .toplevel_page_wpkeliosis #wpcontent {
@@ -19,6 +19,7 @@
 #wpk-keliosis #wpk-navigation {
   position: relative;
   width: 250px;
+  background: #ffffff;
 }
 #wpk-keliosis #wpk-navigation:before {
   position: absolute;
@@ -186,6 +187,10 @@
   background: #ffffff;
   -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.08);
           box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+#wpk-keliosis #wpk-content > form > div .wpk-card:last-child {
+  margin-bottom: 0;
 }
 #wpk-keliosis #wpk-content > form > div .wpk-card h2 {
   padding: 20px;
@@ -194,10 +199,10 @@
   font-size: 18px;
   color: #707070;
   border-bottom: 1px solid #f0f0f0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 #wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content {
-  padding: 0 20px 20px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
