@@ -189,13 +189,13 @@
   -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
+  font-family: "Open sans", sans-serif !important;
 }
 #wpk-keliosis #wpk-content > form > div .wpk-card:last-child {
   margin-bottom: 0;
 }
 #wpk-keliosis #wpk-content > form > div .wpk-card h2 {
   padding: 20px;
-  font-family: "Open sans", sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #707070;
@@ -204,6 +204,15 @@
 }
 #wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content {
   padding: 20px;
+}
+#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table tr td span {
+  display: block;
+}
+#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table tr td span.wpk-title {
+  font-weight: 600;
+}
+#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table tr td span.wpk-description {
+  color: #707070;
 }
 
 .toplevel_page_wpkeliosis #wpwrap,

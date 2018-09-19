@@ -60,13 +60,23 @@ function wpk_dashboard(){
 				<h1>Scroll to top</h1>
 			</div>
 				<div class="<?= WPK_PREFIX.'card' ?>">
-					<h2>Lorem ipsum</h2>
+					<h2><?= __( 'Activation', 'wp-keliosis' ); ?></h2>
 					<div class="<?= WPK_PREFIX.'content' ?>">
-						test
+						<table>
+							<tr>
+								<td>
+									<span class="<?= WPK_PREFIX.'title' ?>">Name</span>
+									<span class="<?= WPK_PREFIX.'description' ?>">Description</span>
+								</td>
+								<td>
+									
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 				<div class="<?= WPK_PREFIX.'card' ?>">
-					<h2>Lorem ipsum</h2>
+					<h2><?= __( 'Styling', 'wp-keliosis' ); ?></h2>
 					<div class="<?= WPK_PREFIX.'content' ?>">
 						test
 					</div>

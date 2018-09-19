@@ -28,6 +28,7 @@
 				background: $white;
 				box-shadow: 0 1px 15px 1px rgba($black, .05);
 				margin-bottom: 30px;
+				font-family: "Open sans", sans-serif!important;
 
 				&:last-child {
 					margin-bottom: 0;
@@ -35,7 +36,6 @@
 
 				h2 {
 					padding: 20px;
-					font-family: "Open sans", sans-serif;
 					font-weight: 300;
 					font-size: 18px;
 					color: lighten($grey, 20%);
@@ -45,6 +45,21 @@
 
 				.#{$prefix_plugin}content {
 					padding: 20px;
+					table{
+						tr{
+							td{
+								span{
+									display: block;
+									&.#{$prefix_plugin}title{
+										font-weight: 600;
+									}
+									&.#{$prefix_plugin}description{
+										color: lighten($grey, 20%);
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
