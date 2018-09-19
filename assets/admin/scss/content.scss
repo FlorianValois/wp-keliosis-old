@@ -1,15 +1,36 @@
 ##{$prefix_plugin}content {
-  width: calc(100% - 250px);
-	> form{
-		> div{
+	width: calc(100% - 250px);
+
+	> form {
+		> div {
 			display: none;
 			padding: 30px;
-			&.active{
+
+			&.active {
 				display: block;
 			}
-			h1{
+
+			h1 {
 				padding: 0;
 				margin-bottom: 30px;
+			}
+
+			.#{$prefix_plugin}card {
+				border: none;
+				background: $white;
+				box-shadow: 0 1px 20px 1px rgba($black, .08);
+				h2{
+					padding: 20px;
+					font-family: "Open sans", sans-serif;
+					font-weight: 300;
+					font-size: 18px;
+					color: lighten($grey, 20%);
+					border-bottom: 1px solid lighten($grey, 70%);
+					margin-bottom: 20px;
+				}
+				.#{$prefix_plugin}content {
+					padding: 0 20px 20px;
+				}
 			}
 		}
 	}

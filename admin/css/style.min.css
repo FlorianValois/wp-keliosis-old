@@ -74,7 +74,8 @@
   top: 0;
   left: 0;
   content: "";
-  display: none;
+  display: block;
+  opacity: 0;
   background: #5EC5EC;
   width: 3px;
   height: 100%;
@@ -97,10 +98,13 @@
   background: #f0f0f0;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:before {
-  display: block;
+  opacity: 1;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active {
   color: #ffffff;
+  background: #5EC5EC;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active span {
   font-weight: bold;
@@ -176,6 +180,24 @@
 #wpk-keliosis #wpk-content > form > div h1 {
   padding: 0;
   margin-bottom: 30px;
+}
+#wpk-keliosis #wpk-content > form > div .wpk-card {
+  border: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.08);
+}
+#wpk-keliosis #wpk-content > form > div .wpk-card h2 {
+  padding: 20px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #707070;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content {
+  padding: 0 20px 20px;
 }
 
 /*# sourceMappingURL=style.min.css.map */

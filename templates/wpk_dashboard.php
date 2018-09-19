@@ -56,6 +56,12 @@ function wpk_dashboard(){
 			
 			<div id="<?= WPK_PREFIX.'scrollToTop' ?>" class="active">
 				<h1>Scroll to top</h1>
+				<div class="<?= WPK_PREFIX.'card' ?>">
+					<h2>Lorem ipsum</h2>
+					<div class="<?= WPK_PREFIX.'content' ?>">
+						test
+					</div>
+				</div>
 			</div>
 			
 		</form>
