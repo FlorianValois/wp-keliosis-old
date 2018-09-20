@@ -11,7 +11,7 @@ define( 'WPK_STT', WPK_PREFIX.'scrollToTop_' );
 
 <?= __( '', 'wp-keliosis' ); ?>
 
-<div id="<?= WPK_PREFIX.'scrollToTop' ?>" class="active">
+<div id="<?= WPK_PREFIX.'scrollToTop' ?>" class="<?= WPK_PREFIX.'tabs' ?> active">
 				
 	<div class="<?= WPK_PREFIX.'card-header' ?>">
 		<i class="fas fa-level-up-alt"></i>

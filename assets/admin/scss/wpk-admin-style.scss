@@ -1,5 +1,7 @@
 @import 'var';
 @import 'input/checkbox-001';
+@import 'button/submit';
+@import 'button/reset';
 
 .toplevel_page_wpkeliosis #wpwrap {
 	background: lighten($grey, 70%);

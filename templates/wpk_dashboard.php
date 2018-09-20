@@ -53,10 +53,17 @@ function wpk_dashboard(){
 			
 			
 			<?php 
-				require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php'; 
+				//require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php'; 
 				require_once WPK_PLUGIN_DIR . '/templates/includes/scrolltotop.inc.php'; 
 			?>
-
+		
+		<div id="<?= WPK_PREFIX.'btnForm' ?>">
+		
+			<button type="button" id="<?= WPK_PREFIX.'btnReset' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><?= __( 'Restore defaults', 'wp-keliosis' ); ?></button>
+			
+			<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><?= __( 'Save changes', 'wp-keliosis' ); ?></button>
+			
+		</div>
 			
 		</form>
 	</section>

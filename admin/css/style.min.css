@@ -32,7 +32,7 @@
   display: block;
   width: 50px;
   height: 24px;
-  background: #bdbdbd;
+  background: #d6d6d6;
   border-radius: 24px;
   cursor: pointer;
   -webkit-transition: all ease .3s;
@@ -77,6 +77,46 @@
   height: 16px;
   background: #ffffff;
   border-radius: 50%;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.wpk-btn-save {
+  background: #92C83C;
+  color: #ffffff;
+  font-family: "Open sans", sans-serif;
+  border: none;
+  line-height: 40px;
+  font-weight: 600;
+  min-width: 200px;
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+.wpk-btn-save:hover {
+  background: #76a32e;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.wpk-btn-reset {
+  background: #5EC5EC;
+  color: #ffffff;
+  font-family: "Open sans", sans-serif;
+  border: none;
+  line-height: 40px;
+  font-weight: 600;
+  min-width: 200px;
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+.wpk-btn-reset:hover {
+  background: #30b5e7;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
@@ -245,28 +285,31 @@
   display: block;
 }
 #wpk-keliosis #wpk-content {
-  width: calc(100% - 250px);
+  width: 900px;
 }
-#wpk-keliosis #wpk-content > form > div {
-  display: none;
+#wpk-keliosis #wpk-content > form {
   padding: 30px;
+  /* End tabs */
 }
-#wpk-keliosis #wpk-content > form > div.active {
+#wpk-keliosis #wpk-content > form > .wpk-tabs {
+  display: none;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs.active {
   display: block;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card-header {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card-header {
   margin-bottom: 30px;
   line-height: calc(100px - 60px);
   font-size: 22px;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card-header h1 {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card-header h1 {
   display: inline-block;
   padding: 0;
   margin: 0;
   color: #575757;
   margin-left: 10px;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card {
   border: none;
   background: #ffffff;
   -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
@@ -274,10 +317,7 @@
   margin-bottom: 30px;
   font-family: "Open sans", sans-serif !important;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card:last-child {
-  margin-bottom: 0;
-}
-#wpk-keliosis #wpk-content > form > div .wpk-card h2 {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card h2 {
   padding: 20px;
   font-weight: 300;
   font-size: 18px;
@@ -285,25 +325,34 @@
   border-bottom: 1px solid #f0f0f0;
   margin: 0;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content {
   padding: 20px;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table {
   width: 100%;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table tr th {
-  width: 300px;
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th {
+  width: 60%;
   text-align: left;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table tr th span {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th span {
   display: block;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table tr th span.wpk-title {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th span.wpk-title {
   font-weight: 700;
+  text-transform: uppercase;
 }
-#wpk-keliosis #wpk-content > form > div .wpk-card .wpk-content table tr th span.wpk-description {
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th span.wpk-description {
   color: #707070;
   font-weight: normal;
+}
+#wpk-keliosis #wpk-content > form #wpk-btnForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .toplevel_page_wpkeliosis #wpwrap,
