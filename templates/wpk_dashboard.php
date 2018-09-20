@@ -50,38 +50,13 @@ function wpk_dashboard(){
 	<section id="<?= WPK_PREFIX.'content' ?>">
 		<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
 		
-			<div id="<?= WPK_PREFIX.'dashboard' ?>">
-				<h1>Dashboard</h1>
-			</div>
 			
-			<div id="<?= WPK_PREFIX.'scrollToTop' ?>" class="active">
-			<div class="<?= WPK_PREFIX.'card-header' ?>">
-				<i class="fas fa-level-up-alt"></i>
-				<h1>Scroll to top</h1>
-			</div>
-				<div class="<?= WPK_PREFIX.'card' ?>">
-					<h2><?= __( 'Activation', 'wp-keliosis' ); ?></h2>
-					<div class="<?= WPK_PREFIX.'content' ?>">
-						<table>
-							<tr>
-								<td>
-									<span class="<?= WPK_PREFIX.'title' ?>">Name</span>
-									<span class="<?= WPK_PREFIX.'description' ?>">Description</span>
-								</td>
-								<td>
-									
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="<?= WPK_PREFIX.'card' ?>">
-					<h2><?= __( 'Styling', 'wp-keliosis' ); ?></h2>
-					<div class="<?= WPK_PREFIX.'content' ?>">
-						test
-					</div>
-				</div>
-			</div>
+			
+			<?php 
+				require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php'; 
+				require_once WPK_PLUGIN_DIR . '/templates/includes/scrolltotop.inc.php'; 
+			?>
+
 			
 		</form>
 	</section>

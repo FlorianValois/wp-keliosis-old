@@ -46,15 +46,19 @@
 				.#{$prefix_plugin}content {
 					padding: 20px;
 					table{
+						width: 100%;
 						tr{
-							td{
+							th{
+								width: 300px;
+								text-align: left;
 								span{
 									display: block;
 									&.#{$prefix_plugin}title{
-										font-weight: 600;
+										font-weight: 700;
 									}
 									&.#{$prefix_plugin}description{
 										color: lighten($grey, 20%);
+										font-weight: normal;
 									}
 								}
 							}
