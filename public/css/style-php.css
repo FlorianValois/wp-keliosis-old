@@ -1,0 +1,7 @@
+#btn_backToTop{
+  position: fixed;
+  z-index: 999;
+  padding: 0;
+  display: block;  
+  left: 0;  
+}

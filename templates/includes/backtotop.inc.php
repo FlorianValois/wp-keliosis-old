@@ -36,11 +36,6 @@ if (!defined('ABSPATH')) {
 			</table>
 		</div>
 	</div>
-	
-	<?php
-	
-	
-	?>
 
 	<div class="<?= WPK_PREFIX.'card' ?>">
 		<h2><?= __( 'Styling', 'wp-keliosis' ); ?></h2>
