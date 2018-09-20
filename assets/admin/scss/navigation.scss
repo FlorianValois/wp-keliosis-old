@@ -97,21 +97,6 @@
 						}
 					}
 
-					&.#{$prefix_plugin}menuTitleMulti {
-						&:after {
-							position: absolute;
-							top: 50%;
-							right: 30px;
-							transform: translateX(50%) translateY(-50%);
-							content: "\f0d7";
-							font-family: "Font Awesome 5 Free";
-							color: lighten($grey, 20%);
-							font-size: 15px;
-							font-weight: 900;
-							transition: all ease .3s;
-						}
-					}
-
 					&.active {
 						&:before {
 							display: block;
@@ -121,42 +106,6 @@
 							color: $white;
 							transform: translateX(50%) translateY(-50%) rotate(-180deg);
 							transition: all ease .3s;
-						}
-					}
-				}
-
-				> ul {
-					display: none;
-					padding: 10px 0;
-					background: lighten($grey, 70%);
-
-					> li {
-						> a {
-							&.#{$prefix_plugin}menuSubTitleMulti {
-								padding-left: 40px;
-								color: lighten($grey, 20%);
-
-								&:before {
-									position: absolute;
-									display: block;
-									content: "";
-									top: 50%;
-									left: 30px;
-									width: 4px;
-									height: 4px;
-									border-radius: 50%;
-									background: lighten($grey, 20%);
-									transform: translateX(-50%) translateY(-50%);
-								}
-
-								&:hover {
-									background: lighten($grey, 65%);
-
-									&:before {
-										display: block;
-									}
-								}
-							}
 						}
 					}
 				}

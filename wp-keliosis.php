@@ -31,6 +31,6 @@ define( 'WPK_PLUGIN_NAME', trim( dirname( WPK_PLUGIN_BASENAME ), '/' ) );
 
 define( 'WPK_PLUGIN_DIR', untrailingslashit( dirname( WPK_PLUGIN ) ) );
 
-
+define( 'WPK_BTT', WPK_PREFIX.'backToTop' );
 
 require_once WPK_PLUGIN_DIR . '/settings.php';

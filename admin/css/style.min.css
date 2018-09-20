@@ -232,20 +232,6 @@
   -webkit-transition: none;
   transition: none;
 }
-#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitleMulti:after {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  -webkit-transform: translateX(50%) translateY(-50%);
-          transform: translateX(50%) translateY(-50%);
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
-  color: #707070;
-  font-size: 15px;
-  font-weight: 900;
-  -webkit-transition: all ease .3s;
-  transition: all ease .3s;
-}
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.active:before {
   display: block;
 }
@@ -255,34 +241,6 @@
           transform: translateX(50%) translateY(-50%) rotate(-180deg);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
-}
-#wpk-keliosis #wpk-navigation > nav > ul > li > ul {
-  display: none;
-  padding: 10px 0;
-  background: #f0f0f0;
-}
-#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti {
-  padding-left: 40px;
-  color: #707070;
-}
-#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 50%;
-  left: 30px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #707070;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-}
-#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:hover {
-  background: #e3e3e3;
-}
-#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.wpk-menuSubTitleMulti:hover:before {
-  display: block;
 }
 #wpk-keliosis #wpk-content {
   width: 900px;
@@ -331,7 +289,19 @@
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table {
   width: 100%;
 }
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr {
+  display: block;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th {
+  display: inline-block;
   width: 60%;
   text-align: left;
 }
@@ -345,6 +315,9 @@
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th span.wpk-description {
   color: #707070;
   font-weight: normal;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr td {
+  display: inline-block;
 }
 #wpk-keliosis #wpk-content > form #wpk-btnForm {
   display: -webkit-box;
