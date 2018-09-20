@@ -112,7 +112,7 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 		parse_str($_POST['data'], $params);
 
 		// Sauvegarde des données
-		$option_name = 'wp-keliosis' ;
+		$option_name = 'wp_keliosis' ;
 
 		if($_POST['data']){
 
@@ -120,16 +120,16 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 			echo json_encode(array(
 				'update' => update_option( $option_name, $params )
 			));
-
+						
 			// Génération du fichier CSS des options
-	//    ob_start();
-	//      $data = get_option($option_name);
-	//      include(BPW_PLUGIN_DIR.'/assets/style.php');
-	//      $content = ob_get_contents();
-	//    ob_end_clean();
-	//    $f = fopen(BPW_PLUGIN_DIR.'/assets/style-php.css', 'w');
-	//    fwrite($f, $content);
-	//    fclose($f);
+	    ob_start();
+				$data = get_option($option_name);
+				require(WPK_PLUGIN_DIR.'/admin/css/style.php');
+				$content = ob_get_contents();
+			ob_end_clean();
+			$f = fopen(WPK_PLUGIN_DIR.'/public/css/style-php.css', 'w');
+			fwrite($f, $content);
+			fclose($f);
 
 		}
 		else{
@@ -140,6 +140,7 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 			));
 		}
 
+		
 		die(); 
 
 	}

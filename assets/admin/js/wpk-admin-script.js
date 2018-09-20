@@ -66,6 +66,7 @@ jQuery(document).ready(function ($) {
       action: 'wpa_49691',
       data: json
     }
+		console.log(postData);
     $.ajax({
       type: "POST",
       data: postData,

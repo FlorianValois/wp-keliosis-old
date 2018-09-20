@@ -6,6 +6,9 @@ if (!defined('ABSPATH')) {
 
 if ( !function_exists( 'wpk_dashboard' ) ) {
 	function wpk_dashboard(){
+		
+	$data = get_option('wp_keliosis');
+
 	?>
 	<div id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap">
 

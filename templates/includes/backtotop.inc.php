@@ -3,7 +3,6 @@
 if (!defined('ABSPATH')) {
 	exit;
 }
-$data = get_option('boilerplate_plugin');
 
 ?>
 
@@ -27,7 +26,7 @@ $data = get_option('boilerplate_plugin');
 					</th>
 					<td valign="middle">
 						<div class="checkbox-001">
-							<input type="checkbox" id="<?= WPK_BTT.'_Activation' ?>" name="<?= WPK_BTT.'_Activation' ?>">
+							<input type="checkbox" id="<?= WPK_BTT.'_Activation' ?>" name="<?= WPK_BTT.'_Activation' ?>" value="<?= WPK_BTT.'_Activation' ?>"<?php if(isset($data[WPK_BTT.'_Activation'])){echo'checked';} ?>>
 							<label for="<?= WPK_BTT.'_Activation' ?>">
 								<span></span>
 							</label>
@@ -37,6 +36,11 @@ $data = get_option('boilerplate_plugin');
 			</table>
 		</div>
 	</div>
+	
+	<?php
+	
+	
+	?>
 
 	<div class="<?= WPK_PREFIX.'card' ?>">
 		<h2><?= __( 'Styling', 'wp-keliosis' ); ?></h2>
@@ -51,8 +55,8 @@ $data = get_option('boilerplate_plugin');
 					  <select name="<?= WPK_BTT.'_Position' ?>" id="<?= WPK_BTT.'_Position' ?>">
 							<?php
 								$arraySelect = array(
-									'right' => 'Right',
 									'left' => 'Left',
+									'right' => 'Right'
 								);
 								foreach($arraySelect as $key=>$value){
 							?>
