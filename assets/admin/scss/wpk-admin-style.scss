@@ -1,11 +1,18 @@
 @import 'var';
+@import 'input/checkbox-001';
+@import 'button/submit';
+@import 'button/reset';
 
 .toplevel_page_wpkeliosis #wpwrap {
-	background: lighten($grey, 75%);
+	background: lighten($grey, 70%);
 }
 
 .toplevel_page_wpkeliosis #wpcontent {
 	padding: 0;
+}
+
+.toplevel_page_wpkeliosis #wpfooter {
+	display: none;
 }
 
 ##{$prefix_plugin}keliosis {
@@ -15,4 +22,16 @@
 	@import 'content';
 	margin: 0;
 	height: 100%;
+}
+
+.toplevel_page_wpkeliosis #wpwrap,
+.toplevel_page_wpkeliosis #wpcontent,
+.toplevel_page_wpkeliosis #wpbody,
+.toplevel_page_wpkeliosis #wpbody-content {
+	height: 100%;
+	min-height: inherit;
+}
+
+.toplevel_page_wpkeliosis #wpbody-content {
+	padding-bottom: 0;
 }

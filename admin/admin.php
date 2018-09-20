@@ -43,7 +43,7 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
     /* jQuery UI */
     wp_enqueue_script(
       'jqueri-ui-script',
-      plugins_url('bower_components/jquery-ui/jquery-ui.min.js', dirname(__FILE__)), false, '', true
+      plugins_url('bower_components/jquery-ui/jquery-ui.js', dirname(__FILE__)), false, '', true
     );
     
     /* Font Awesome */
@@ -96,4 +96,52 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
       plugins_url('/admin/css/style.min.css', dirname(__FILE__))
     );
   }
+}
+
+
+
+add_action( 'wp_ajax_' . 'wpa_49691', 'wpk_ajax_form_update_options' );
+add_action( 'wp_ajax_nopriv_' . 'wpa_49691', 'wpk_ajax_form_update_options' );
+if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
+	function wpk_ajax_form_update_options(){
+
+		// Récupération des données du form
+		$params = array();
+
+		// Mise en place des datas dans le tableau
+		parse_str($_POST['data'], $params);
+
+		// Sauvegarde des données
+		$option_name = 'wp_keliosis' ;
+
+		if($_POST['data']){
+
+			// Sauvegarde des data
+			echo json_encode(array(
+				'update' => update_option( $option_name, $params )
+			));
+						
+			// Génération du fichier CSS des options
+	    ob_start();
+				$data = get_option($option_name);
+				require(WPK_PLUGIN_DIR.'/admin/css/style.php');
+				$content = ob_get_contents();
+			ob_end_clean();
+			$f = fopen(WPK_PLUGIN_DIR.'/public/css/style-php.css', 'w');
+			fwrite($f, $content);
+			fclose($f);
+
+		}
+		else{
+
+			// Suppression des data
+			echo json_encode(array(
+				'delete' => delete_option( $option_name )
+			));
+		}
+
+		
+		die(); 
+
+	}
 }

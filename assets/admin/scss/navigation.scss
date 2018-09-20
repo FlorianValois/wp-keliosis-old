@@ -1,26 +1,13 @@
 ##{$prefix_plugin}navigation {
 	position: relative;
 	width: 250px;
-
-	&:before {
-		position: absolute;
-		top: 0;
-		right: -6px;
-		display: block;
-		content: "";
-		width: 6px;
-		height: 100%;
-		background: rgb(0, 0, 0);
-		background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
-		background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
-		background: linear-gradient(90deg, rgba(0, 0, 0, 0.04523816362482491) 0%, rgba(255, 255, 255, 0) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
-	}
+	background: $white;
+	box-shadow: 0 1px 15px 1px rgba($black, .05);
 
 	##{$prefix_plugin}logo {
 		display: block;
 		width: 250px;
-		height: 250px;
+		height: 100px;
 	}
 
 	ul {
@@ -64,7 +51,8 @@
 							top: 0;
 							left: 0;
 							content: "";
-							display: none;
+							display: block;
+							opacity: 0;
 							background: $blue;
 							width: 3px;
 							height: 100%;
@@ -88,13 +76,15 @@
 							background: lighten($grey, 70%);
 
 							&:before {
-								display: block;
-								width: 3px;
+								opacity: 1;
+								transition: all ease .3s;
 							}
 						}
 
 						&.active {
 							color: $white;
+							background: $blue;
+
 							span {
 								font-weight: bold;
 								color: $white;
@@ -102,31 +92,9 @@
 
 							&:before {
 								width: 100%;
+								transition: none;
 							}
 						}
-					}
-
-//					&.#{$prefix_plugin}menuTitleSingle {
-//						&.active {
-//							background: lighten($grey, 65%);
-//							font-weight: bold;
-//						}
-//					}
-
-					&.#{$prefix_plugin}menuTitleMulti {
-						&:after {
-							position: absolute;
-							top: 50%;
-							right: 30px;
-							transform: translateX(50%) translateY(-50%);
-							content: "\f0d7";
-							font-family: "Font Awesome 5 Free";
-							color: lighten($grey, 20%);
-							font-size: 15px;
-							font-weight: 900;
-							transition: all ease .3s;
-						}
-
 					}
 
 					&.active {
@@ -138,54 +106,6 @@
 							color: $white;
 							transform: translateX(50%) translateY(-50%) rotate(-180deg);
 							transition: all ease .3s;
-						}
-
-					}
-
-					&##{$prefix_plugin}comingsoon {
-						font-weight: normal;
-						text-transform: inherit;
-						font-style: italic;
-						background: lighten($grey, 65%);
-						color: lighten($grey, 40%);
-					}
-				}
-
-				> ul {
-					display: none;
-					padding: 10px 0;
-					background: lighten($grey, 70%);
-
-					> li {
-
-						> a {
-							&.#{$prefix_plugin}menuSubTitleMulti {
-								padding-left: 40px;
-								color: lighten($grey, 20%);
-
-								&:before {
-									position: absolute;
-									display: block;
-									content: "";
-									top: 50%;
-									left: 30px;
-									width: 4px;
-									height: 4px;
-									border-radius: 50%;
-									background: lighten($grey, 20%);
-									transform: translateX(-50%) translateY(-50%);
-								}
-
-								&:hover {
-									background: lighten($grey, 65%);
-
-									&:before {
-										display: block;
-									}
-								}
-
-							}
-
 						}
 					}
 				}
