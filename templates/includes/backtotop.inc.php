@@ -3,6 +3,7 @@
 if (!defined('ABSPATH')) {
 	exit;
 }
+$data = get_option('boilerplate_plugin');
 
 ?>
 
@@ -43,10 +44,23 @@ if (!defined('ABSPATH')) {
 			<table cellspacing="0" cellpadding="0">
 				<tr>
 					<th>
-						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( '', 'wp-keliosis' ); ?></span>
-						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( '', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Button position', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose the position of the button between left or right', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
+					  <select name="<?= WPK_BTT.'_Position' ?>" id="<?= WPK_BTT.'_Position' ?>">
+							<?php
+								$arraySelect = array(
+									'right' => 'Right',
+									'left' => 'Left',
+								);
+								foreach($arraySelect as $key=>$value){
+							?>
+								<option value="<?php echo $key; ?>" <?php if($key === $data[WPK_BTT.'_Position']){ echo 'selected';} ?>><?php echo $value; ?></option>
+							<?php
+								}
+							?>
+						</select>
 					</td>
 				</tr>
 			</table>

@@ -290,7 +290,12 @@
   width: 100%;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #f0f0f0;
@@ -317,7 +322,7 @@
   font-weight: normal;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr td {
-  display: inline-block;
+  display: inherit;
 }
 #wpk-keliosis #wpk-content > form #wpk-btnForm {
   display: -webkit-box;
