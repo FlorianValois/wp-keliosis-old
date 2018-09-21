@@ -37,7 +37,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 			</nav>
 		</td>
 
-		<td id="<?= WPK_PREFIX.'content' ?>">
+		<td id="<?= WPK_PREFIX.'content' ?>"  valign="top">
 			<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
 
 				<?php 
