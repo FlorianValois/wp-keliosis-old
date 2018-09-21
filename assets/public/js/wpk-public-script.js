@@ -1,0 +1,1 @@
+// @koala-prepend "wpk-function/wpk-backtotop.js"

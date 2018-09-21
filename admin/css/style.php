@@ -1,7 +1,8 @@
 <?php 
 $rn = "\r\n";
+$prefix = 'wpk-';
 //Mettre un retour à la ligne de plus pour simuler retour à la ligne du CSS ?>
-#btn_backToTop{
+#<?php echo $prefix.'btn_backToTop'; ?>{
 	position: fixed;
 	z-index: 999;
 	padding: 0;
@@ -82,7 +83,7 @@ $rn = "\r\n";
 	?>
 }
 
-#btn_backToTop:before{
+#<?php echo $prefix.'btn_backToTop'; ?>:before{
 	position: absolute;
 	top: 50%;
 	left: 50%;

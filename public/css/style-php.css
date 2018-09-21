@@ -1,4 +1,4 @@
-#btn_backToTop{
+#wpk-btn_backToTop{
 	position: fixed;
 	z-index: 999;
 	padding: 0;
@@ -12,7 +12,7 @@
 	background-color: #dd3333;
 }
 
-#btn_backToTop:before{
+#wpk-btn_backToTop:before{
 	position: absolute;
 	top: 50%;
 	left: 50%;
