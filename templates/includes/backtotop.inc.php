@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
 		<i class="fas fa-level-up-alt"></i>
 		<h1><?= __( 'Back to top', 'wp-keliosis' ); ?></h1>
 	</div>
-
+	<!--	Activation -->
 	<div class="<?= WPK_PREFIX.'card' ?>">
 		<h2><?= __( 'Activation', 'wp-keliosis' ); ?></h2>
 		<div class="<?= WPK_PREFIX.'content' ?>">
@@ -36,15 +36,15 @@ if (!defined('ABSPATH')) {
 			</table>
 		</div>
 	</div>
-
+	<!--Positiohn -->
 	<div class="<?= WPK_PREFIX.'card' ?>">
-		<h2><?= __( 'Styling', 'wp-keliosis' ); ?></h2>
+		<h2><?= __( 'Position', 'wp-keliosis' ); ?></h2>
 		<div class="<?= WPK_PREFIX.'content' ?>">
 			<table cellspacing="0" cellpadding="0">
 				<tr>
 					<th>
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Button position', 'wp-keliosis' ); ?></span>
-						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose the position of the button between left or right', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose position of the button between left or right', 'wp-keliosis' ); ?></span>
 					</th>
 					<td>
 					  <select name="<?= WPK_BTT.'_Position' ?>" id="<?= WPK_BTT.'_Position' ?>">
@@ -62,8 +62,42 @@ if (!defined('ABSPATH')) {
 						</select>
 					</td>
 				</tr>
+				<tr>
+					<th>
+						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Horizontal gap', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose horizontal gap of the button', 'wp-keliosis' ); ?></span>
+					</th>
+					<td>
+					  <input type="number" name="<?= WPK_BTT.'_HorizontalGap' ?>" value="<?php echo $data[WPK_BTT.'_HorizontalGap']; ?>" min="0">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Vertical gap', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose vertical gap of the button', 'wp-keliosis' ); ?></span>
+					</th>
+					<td>
+					  <input type="number" name="<?= WPK_BTT.'_VerticalGap' ?>" value="<?php echo $data[WPK_BTT.'_VerticalGap']; ?>" min="0">
+					</td>
+				</tr>
 			</table>
 		</div>
 	</div>
-
+  <!-- Styling -->
+  <div class="<?= WPK_PREFIX.'card' ?>">
+		<h2><?= __( 'Styling', 'wp-keliosis' ); ?></h2>
+		<div class="<?= WPK_PREFIX.'content' ?>">
+			<table cellspacing="0" cellpadding="0">
+				<tr>
+					<th>
+						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Button width', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose width of button', 'wp-keliosis' ); ?></span>
+					</th>
+					<td valign="middle">
+						<input type="number" name="<?= WPK_BTT.'_Width' ?>" value="<?php echo $data[WPK_BTT.'_Width']; ?>" min="0">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </div>

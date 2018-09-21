@@ -117,12 +117,14 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 		if($_POST['data']){
 
 			// Sauvegarde des data
-			echo json_encode(array(
+			$update_options = json_encode(array(
 				'update' => update_option( $option_name, $params )
 			));
-          						
+			
+			echo $update_options;   
+			
 			// Génération du fichier CSS des options
-	        ob_start();
+	    ob_start();
 				$data = get_option($option_name);
 				include WPK_PLUGIN_DIR.'/admin/css/style.php';
 				$content = ob_get_contents();
