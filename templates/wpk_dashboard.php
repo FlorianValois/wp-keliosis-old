@@ -10,9 +10,12 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 	$data = get_option('wp_keliosis');
 
 	?>
-	<div id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap">
 
-		<section id="<?= WPK_PREFIX.'navigation' ?>">
+	<table id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap" cellspancing="0" cellpadding="0">
+		<tr>
+			
+		
+		<td id="<?= WPK_PREFIX.'navigation' ?>" valign="top">
 			<a id="<?= WPK_PREFIX.'logo' ?>" href=""><img src="https://via.placeholder.com/250x100" alt=""></a>
 			<nav>
 				<ul>
@@ -30,12 +33,11 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 							<span><?= __( 'Back to top', 'wp-keliosis' ); ?></span>
 						</a>
 					</li>
-
 				</ul>
 			</nav>
-		</section>
+		</td>
 
-		<section id="<?= WPK_PREFIX.'content' ?>">
+		<td id="<?= WPK_PREFIX.'content' ?>" valign="top">
 			<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
 
 				<?php 
@@ -43,18 +45,13 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop.inc.php'; 
 				?>
 
-			<div id="<?= WPK_PREFIX.'btnForm' ?>">
-
-	<!--			<button type="button" id="<?= WPK_PREFIX.'btnReset' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><?= __( 'Restore defaults', 'wp-keliosis' ); ?></button>-->
-
 				<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><?= __( 'Save changes', 'wp-keliosis' ); ?></button>
-
-			</div>
-
+				
 			</form>
-		</section>
-
-	</div>
+		</td>
+		
+		</tr>
+	</table>
 	<?php
 	}
 }

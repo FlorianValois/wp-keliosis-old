@@ -1,5 +1,5 @@
 {
-  "name": "WP Keliosis",
+  "name": "wp-keliosis",
   "directory": "bower_components",
   "dependencies": {
     "sweetalert2": "^7.26.10",

@@ -31,13 +31,3 @@ define( 'WPK_PLUGIN_DIR_PUBLIC', WPK_PLUGIN_DIR.'/public/' );
 define( 'WPK_BTT', WPK_PREFIX.'backToTop' );
 
 require_once WPK_PLUGIN_DIR . '/settings.php';
-
-
-if ( !function_exists( 'wpk_backToTop_init' ) ) {
-add_action('wp_footer', 'wpk_backToTop_init');
-	function wpk_backToTop_init(){
-	?>
-	<button type="button" id="btn_backToTop"></button>
-	<?php
-	};
-}
