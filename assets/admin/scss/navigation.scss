@@ -1,11 +1,8 @@
 ##{$prefix_plugin}navigation {
-	position: fixed;
-	top: 32px;
-	bottom: 0;
+	position: relative;
 	width: 250px;
 	background: $white;
 	box-shadow: 0 1px 15px 1px rgba($black, .05);
-
 	##{$prefix_plugin}logo {
 		display: block;
 		width: 250px;
