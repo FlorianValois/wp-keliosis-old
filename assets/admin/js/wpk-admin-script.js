@@ -3,6 +3,9 @@ jQuery(document).ready(function ($) {
 	// Define var
 	var WPK_PREFIX = 'wpk-';
 	var WPK_NAME = 'keliosis';
+	
+	/* WP Color Picker */
+	$('.color-picker').wpColorPicker();
 
 	/* START - NAVIGATION -*/
 	// Open sub menu navigation

@@ -62,4 +62,58 @@ $rn = "\r\n";
 			echo 'height: '.$data[WPK_BTT.'_Height'].'px;'.$rn;
 		}
 	?>
+	<?php
+		// Radius
+		if(!$data[WPK_BTT.'_Radius']){
+			echo 'border-radius: 0;'.$rn;
+		}
+		else{
+			echo 'border-radius: '.$data[WPK_BTT.'_Radius'].'px;'.$rn;
+		}
+	?>
+	<?php
+		// Background color
+		if(!$data[WPK_BTT.'_BackgroundColor']){
+			echo 'background-color: #000000;'.$rn;
+		}
+		else{
+			echo 'background-color: '.$data[WPK_BTT.'_BackgroundColor'].';'.$rn;
+		}
+	?>
+}
+
+#btn_backToTop:before{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	<?php
+		// Icon size
+		if(!$data[WPK_BTT.'_IconSize']){
+			echo 'font-size: 13px;'.$rn;
+		}
+		else{
+			echo 'font-size: '.$data[WPK_BTT.'_IconSize'].'px;'.$rn;
+		}
+	?>
+	<?php
+		// Icon
+  	if(isset($data[WPK_BTT.'_Icon'])){
+      echo 'content: "\\'.$data[WPK_BTT.'_Icon'].'";'.$rn;
+    }
+    else{
+      echo 'content: "\f0d8";'.$rn;
+    }
+  ?>
+	<?php
+		// Icon color
+		if(!$data[WPK_BTT.'_IconColor']){
+			echo 'color: #000000;'.$rn;
+		}
+		else{
+			echo 'color: '.$data[WPK_BTT.'_IconColor'].';'.$rn;
+		}
+	?>
 }

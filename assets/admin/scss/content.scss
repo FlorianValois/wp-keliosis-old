@@ -1,7 +1,7 @@
 ##{$prefix_plugin}content {
-	//	width: calc(100% - 250px);
-	width: 900px;
 	> form {
+		min-width: 700px;
+		max-width: 800px;
 		padding: 30px;
 
 		> .#{$prefix_plugin}tabs {
@@ -29,6 +29,7 @@
 				border: none;
 				background: $white;
 				box-shadow: 0 1px 15px 1px rgba($black, .05);
+				border-radius: 3px;
 				margin-bottom: 30px;
 				font-family: "Open sans", sans-serif !important;
 
@@ -83,20 +84,10 @@
 								display: inherit;
 							}
 						}
-						input{
-							&[type="number"]{
-								
-							}
-						}
 					}
 				}
 			}
 		}
-
 		/* End tabs */
-		##{$prefix_plugin}btnForm {
-			display: flex;
-			justify-content: space-between;
-		}
 	}
 }

@@ -37,7 +37,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 			</nav>
 		</td>
 
-		<td id="<?= WPK_PREFIX.'content' ?>"  valign="top">
+		<td id="<?= WPK_PREFIX.'content' ?>" valign="top">
 			<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
 
 				<?php 
@@ -45,17 +45,10 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop.inc.php'; 
 				?>
 
-			<div id="<?= WPK_PREFIX.'btnForm' ?>">
-
-	<!--			<button type="button" id="<?= WPK_PREFIX.'btnReset' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><?= __( 'Restore defaults', 'wp-keliosis' ); ?></button>-->
-
 				<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><?= __( 'Save changes', 'wp-keliosis' ); ?></button>
-
-			</div>
-
+				
 			</form>
 		</td>
-		
 		
 		</tr>
 	</table>
