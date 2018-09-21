@@ -316,8 +316,9 @@
   text-transform: uppercase;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th span.wpk-description {
-  color: #707070;
+  color: #a3a3a3;
   font-weight: normal;
+  font-style: italic;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr td {
   display: inherit;

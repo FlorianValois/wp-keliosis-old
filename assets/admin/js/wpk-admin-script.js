@@ -64,14 +64,14 @@ jQuery(document).ready(function ($) {
       action: 'wpa_49691',
       data: json
     }
-		console.log(postData);
+//		console.log(postData);
     $.ajax({
       type: "POST",
       data: postData,
       dataType: "json",
       url: wpk_ajax.ajaxurl,
       success: function (postData) {
-        console.log(postData.update);
+//        console.log(postData.update);
         if (postData.update) {
           swal({
             position: 'center',

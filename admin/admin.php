@@ -123,13 +123,13 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 			
 			echo $update_options;   
 			
-			// Génération du fichier CSS des options
+			// Génération du fichier CSS "public"
 	    ob_start();
 				$data = get_option($option_name);
 				include WPK_PLUGIN_DIR.'/admin/css/style.php';
 				$content = ob_get_contents();
 			ob_end_clean();
-			$f = fopen(WPK_PLUGIN_DIR.'/public/css/style-php.css', 'w');
+			$f = fopen(WPK_PLUGIN_DIR.'/public/css/style-public.css', 'w');
 			fwrite($f, $content);
 			fclose($f);
 

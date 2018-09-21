@@ -19,7 +19,7 @@ if ( !function_exists( 'wpk_public_enqueue_style_script' ) ) {
     /* WPK (dynamic) CSS file */
     wp_enqueue_style( 
       'wpk-public-style', 
-      plugins_url('public/css/style-php.css', dirname(__FILE__))
+      plugins_url('public/css/style-public.css', dirname(__FILE__))
     );
 		/* jQuery UI */
     wp_enqueue_script(
