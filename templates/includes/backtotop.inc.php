@@ -97,6 +97,15 @@ if (!defined('ABSPATH')) {
 						<input type="number" name="<?= WPK_BTT.'_Width' ?>" value="<?php echo $data[WPK_BTT.'_Width']; ?>" min="0">
 					</td>
 				</tr>
+				<tr>
+					<th>
+						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Button height', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose height of button', 'wp-keliosis' ); ?></span>
+					</th>
+					<td valign="middle">
+						<input type="number" name="<?= WPK_BTT.'_Height' ?>" value="<?php echo $data[WPK_BTT.'_Height']; ?>" min="0">
+					</td>
+				</tr>
 			</table>
 		</div>
 	</div>

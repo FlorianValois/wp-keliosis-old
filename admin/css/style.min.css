@@ -144,7 +144,9 @@
   height: 100%;
 }
 #wpk-keliosis #wpk-navigation {
-  position: relative;
+  position: fixed;
+  top: 32px;
+  bottom: 0;
   width: 250px;
   background: #ffffff;
   -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
@@ -244,6 +246,7 @@
 }
 #wpk-keliosis #wpk-content {
   width: 900px;
+  margin-left: 250px;
 }
 #wpk-keliosis #wpk-content > form {
   padding: 30px;
