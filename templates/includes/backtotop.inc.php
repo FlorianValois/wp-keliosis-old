@@ -148,7 +148,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose size of icon (default : 13px)', 'wp-keliosis' ); ?></span>
 					</th>
 					<td valign="middle">
-						<input type="number" name="<?= WPK_BTT.'_IconSize' ?>" value="<?php echo $data[WPK_BTT.'_IconSize']; ?>" min="0">
+						<input type="number" name="<?= WPK_BTT.'_IconSize' ?>" value="<?php echo $data[WPK_BTT.'_IconSize']; ?>" min="0" max="32">
 					</td>
 				</tr>
 			</table>
