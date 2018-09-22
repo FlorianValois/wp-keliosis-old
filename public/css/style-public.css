@@ -3,13 +3,13 @@
 	z-index: 999;
 	padding: 0;
 	content: "";
-	display: block;
-	right: 50px;
-	bottom: 50px;
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	background-color: #dd3333;
+	display: none;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-radius: 0;
+	background-color: #000000;
 }
 
 #wpk-btn_backToTop:before{
@@ -19,7 +19,7 @@
 	transform: translateX(-50%) translateY(-50%);
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
-	font-size: 20px;
+	font-size: 13px;
 	content: "\f0d8";
-	color: #ffffff;
+	color: #000000;
 }

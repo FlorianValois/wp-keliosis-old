@@ -98,8 +98,6 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
   }
 }
 
-
-
 add_action( 'wp_ajax_' . 'wpa_49691', 'wpk_ajax_form_update_options' );
 add_action( 'wp_ajax_nopriv_' . 'wpa_49691', 'wpk_ajax_form_update_options' );
 if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
@@ -116,22 +114,22 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 
 		if($_POST['data']){
 
-			// Sauvegarde des data
-			$update_options = json_encode(array(
-				'update' => update_option( $option_name, $params )
-			));
-			
-			echo $update_options;   
-			
-			// Génération du fichier CSS "public"
-	    ob_start();
-				$data = get_option($option_name);
-				include WPK_PLUGIN_DIR.'/admin/css/style.php';
-				$content = ob_get_contents();
-			ob_end_clean();
-			$f = fopen(WPK_PLUGIN_DIR.'/public/css/style-public.css', 'w');
-			fwrite($f, $content);
-			fclose($f);
+          // Sauvegarde des data
+          $update_options = json_encode(array(
+              'update' => update_option( $option_name, $params )
+          ));
+
+          echo $update_options;   
+
+          // Generation CSS "public"
+          ob_start();
+              $data = get_option($option_name);
+              include WPK_PLUGIN_DIR.'/admin/css/style-public.php';
+              $content = ob_get_contents();
+          ob_end_clean();
+          $f = fopen(WPK_PLUGIN_DIR.'/public/css/style-public.css', 'w');
+          fwrite($f, $content);
+          fclose($f);
 
 		}
 		else{
@@ -141,9 +139,7 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 				'delete' => delete_option( $option_name )
 			));
 		}
-
 		
 		die(); 
-
 	}
 }
