@@ -33,6 +33,29 @@ if (!defined('ABSPATH')) {
 						</div>
 					</td>
 				</tr>
+				<tr>
+					<th>
+						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Display on smartphone', 'wp-keliosis' ); ?></span>
+					<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose if the button is display on smartphone.', 'wp-keliosis' ); ?></span>
+					</th>
+					<td valign="middle">
+						<div class="checkbox-001">
+							<input type="checkbox" id="<?= WPK_BTT.'_ActivationSmartphone' ?>" name="<?= WPK_BTT.'_ActivationSmartphone' ?>" value="<?= WPK_BTT.'_ActivationSmartphone' ?>"<?php if(isset($data[WPK_BTT.'_ActivationSmartphone'])){echo'checked';} ?>>
+							<label for="<?= WPK_BTT.'_ActivationSmartphone' ?>">
+								<span></span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Width smartphone', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose the minimum width of smartphone to display', 'wp-keliosis' ); ?><br>(min: 320 - max: 1024)</span>
+					</th>
+					<td>
+					  <input type="number" name="<?= WPK_BTT.'_SmartphoneWidth' ?>" value="<?php echo $data[WPK_BTT.'_SmartphoneWidth']; ?>" min="320" max="1024">
+					</td>
+				</tr>
 			</table>
 		</div>
 	</div>

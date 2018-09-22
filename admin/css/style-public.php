@@ -1,7 +1,11 @@
 <?php 
 $rn = "\r\n";
 $prefix = 'wpk-';
-//Mettre un retour à la ligne de plus pour simuler retour à la ligne du CSS ?>
+//Mettre un retour à la ligne de plus pour simuler retour à la ligne du CSS 
+if(isset($data[WPK_BTT.'_ActivationSmartphone'])){
+?>
+@media screen and (min-width: <?php if(isset($data[WPK_BTT.'_SmartphoneWidth'])){ echo $data[WPK_BTT.'_SmartphoneWidth'].'px'; }else{ echo '320px';}?>){
+
 #<?php echo $prefix.'btn_backToTop'; ?>{
 	position: fixed;
 	z-index: 999;
@@ -118,3 +122,8 @@ $prefix = 'wpk-';
 		}
 	?>
 }
+
+}
+<?php
+}
+?>

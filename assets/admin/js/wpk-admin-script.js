@@ -63,15 +63,13 @@ jQuery(document).ready(function ($) {
       action: 'wpa_49691',
       data: json
     }
-    //		console.log(postData);
     $.ajax({
       type: "POST",
       data: postData,
       dataType: "json",
       url: wpk_ajax.ajaxurl,
       success: function (postData) {
-        //        console.log(postData.update);
-        if (postData.update) {
+//        if (postData.update) {
           swal({
             position: 'center',
             type: 'success',
@@ -79,16 +77,8 @@ jQuery(document).ready(function ($) {
             text: 'Vos modifications ont été sauvegardées avec succès.',
             backdrop: 'rgba(0, 0, 0, .75)',
           })
-        } else if (postData.delete) {
-          swal({
-            position: 'center',
-            type: 'warning',
-            title: 'Supprimé !',
-            text: 'Tous les champs ont été vidés avec succès !',
-            backdrop: 'rgba(0, 0, 0, .75)'
-          })
         }
-      }
+//      }
     });
   });
   /* #formAjax */
