@@ -1,5 +1,4 @@
 @media screen and (min-width: 640px){
-
 #wpk-btn_backToTop{
 	position: fixed;
 	z-index: 999;
@@ -8,9 +7,9 @@
 	display: block;
 	right: 50px;
 	bottom: 50px;
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
 	background-color: #dd3333;
 }
 
@@ -21,9 +20,8 @@
 	transform: translateX(-50%) translateY(-50%);
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
-	font-size: 13px;
+	font-size: 18px;
 	content: "\f0d8";
 	color: #ffffff;
 }
-
 }
