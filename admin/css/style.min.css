@@ -272,17 +272,15 @@
   border-radius: 3px;
   margin-bottom: 30px;
   font-family: "Open sans", sans-serif !important;
+  overflow: hidden;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card h2 {
   padding: 20px;
   font-weight: 300;
   font-size: 18px;
-  color: #707070;
-  border-bottom: 1px solid #f0f0f0;
+  color: #ffffff;
   margin: 0;
-}
-#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content {
-  padding: 20px;
+  background: #5EC5EC;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table {
   width: 100%;
@@ -294,14 +292,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 30px 20px;
 }
-#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-  margin-bottom: 0;
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr:nth-child(even) {
+  background: rgba(61, 61, 61, 0.05);
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th {
   display: inline-block;

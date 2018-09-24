@@ -32,18 +32,19 @@
 				border-radius: 3px;
 				margin-bottom: 30px;
 				font-family: "Open sans", sans-serif !important;
+				overflow: hidden;
 
 				h2 {
 					padding: 20px;
 					font-weight: 300;
 					font-size: 18px;
-					color: lighten($grey, 20%);
-					border-bottom: 1px solid lighten($grey, 70%);
+					color: $white;
 					margin: 0;
+					background: $blue;
 				}
 
 				.#{$prefix_plugin}content {
-					padding: 20px;
+//					padding: 20px;
 
 					table {
 						width: 100%;
@@ -51,14 +52,17 @@
 						tr {
 							display: flex;
 							align-items: center;
-							padding-bottom: 30px;
-							margin-bottom: 30px;
-							border-bottom: 1px solid lighten($grey, 70%);
-							&:last-child{
-								padding-bottom: 0;
-								border-bottom: 0;
-								margin-bottom: 0;
+							padding: 30px 20px;
+//							margin-bottom: 30px;
+//							border-bottom: 1px solid lighten($grey, 70%);
+							&:nth-child(even){
+								background: rgba($grey, .05);
 							}
+//							&:last-child {
+//								padding-bottom: 0;
+//								border-bottom: 0;
+//								margin-bottom: 0;
+//							}
 
 							th {
 								display: inline-block;
@@ -89,6 +93,7 @@
 				}
 			}
 		}
+
 		/* End tabs */
 	}
 }
