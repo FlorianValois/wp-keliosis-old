@@ -6,8 +6,6 @@ if (!defined('ABSPATH')) {
 
 ?>
 
-<?= __( '', 'wp-keliosis' ); ?>
-
 <div id="<?= WPK_BTT ?>" class="<?= WPK_PREFIX.'tabs' ?> active">
 				
 	<div class="<?= WPK_PREFIX.'card-header' ?>">

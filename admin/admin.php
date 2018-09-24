@@ -74,7 +74,7 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
       plugins_url('/admin/js/wp-color-picker-alpha.js', dirname(__FILE__)), array( 'wp-color-picker' ), '1.2.2', $in_footer
     );
 
-    /* Fonction uplaod image WordPress */
+    /* Fonction upload image WordPress */
     wp_enqueue_media();
 
     /* Script en Ajax */
@@ -82,13 +82,20 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
       'ajax-script', 
       plugins_url('/admin/js/script.min.js', dirname(__FILE__)), array('wp-color-picker'), false, '', true
     );
+		include_once( WPK_PLUGIN_DIR_ADMIN . 'localization.php' );
     wp_localize_script(
       'ajax-script',
       'wpk_ajax', 
-        array(
-            'ajaxurl' => admin_url( 'admin-ajax.php' ),
-        ) 
-    ); 
+			$wpk_localization
+    );
+		
+		/* Translation */
+//		wp_register_script( 'wpk_translation', plugins_url('/admin/js/localization.js', dirname(__FILE__)) );
+//		$wpk_translation = array(
+//			'some_string' => __( 'Some string to translate', 'wp-keliosis' )
+//		);
+//		wp_localize_script( 'wpk_translation', 'wpk_localization', $wpk_translation );
+//		wp_enqueue_script( 'wpk_translation' );
 
     /* CSS plugin */
     wp_enqueue_style( 
