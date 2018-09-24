@@ -22,7 +22,16 @@ jQuery(document).ready(function ($) {
 	$('#' + WPK_PREFIX + 'navigation nav a').on('click', function () {
 
 		var data_name = $(this).attr('data-name');
-
+		
+		if(data_name == WPK_PREFIX + 'dashboard'){
+			console.log('ok');
+			$('#' + WPK_PREFIX + 'listButtonForm').addClass('hide');
+		}else{
+			console.log('pas ok');
+			$('#' + WPK_PREFIX + 'listButtonForm').removeClass('hide');		
+		}
+		
+		
 		$('#' + WPK_PREFIX + 'content > form > div').each(function () {
 
 			var id_content = $(this).attr('id');
@@ -32,6 +41,8 @@ jQuery(document).ready(function ($) {
 			} else {
 				$(this).removeClass('active');
 			}
+			console.log(id_content);
+			
 
 		});
 	});
