@@ -100,5 +100,21 @@
 		}
 
 		/* End tabs */
+		> ##{$prefix_plugin}listButtonForm {
+			display: flex;
+			justify-content: flex-start;
+
+			> button {
+				margin-right: 20px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+
+		/* End lit form button */
 	}
+
+	/* End form */
 }

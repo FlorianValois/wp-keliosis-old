@@ -83,13 +83,13 @@
 
 .wpk-btn-save {
   display: block;
-  width: 300px;
+  width: 200px;
   background: #92C83C;
   color: #ffffff;
   font-family: "Open sans", sans-serif;
   border: none;
   border-radius: 3px;
-  line-height: 60px;
+  line-height: 40px;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 13px;
@@ -105,21 +105,24 @@
 }
 
 .wpk-btn-reset {
+  display: block;
+  width: 200px;
   background: #5EC5EC;
   color: #ffffff;
   font-family: "Open sans", sans-serif;
   border: none;
+  border-radius: 3px;
   line-height: 40px;
   font-weight: 600;
-  min-width: 200px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
 .wpk-btn-reset:hover {
-  background: #30b5e7;
+  -webkit-filter: contrast(125%);
+          filter: contrast(125%);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
@@ -246,12 +249,14 @@
 }
 #wpk-keliosis #wpk-content {
   padding: 0;
+  /* End form */
 }
 #wpk-keliosis #wpk-content > form {
   min-width: 700px;
   max-width: 800px;
   padding: 30px;
   /* End tabs */
+  /* End lit form button */
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs {
   display: none;
@@ -324,6 +329,20 @@
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr td {
   display: inherit;
   vertical-align: middle;
+}
+#wpk-keliosis #wpk-content > form > #wpk-listButtonForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+#wpk-keliosis #wpk-content > form > #wpk-listButtonForm > button {
+  margin-right: 20px;
+}
+#wpk-keliosis #wpk-content > form > #wpk-listButtonForm > button:last-child {
+  margin-right: 0;
 }
 #wpk-keliosis td {
   vertical-align: top;

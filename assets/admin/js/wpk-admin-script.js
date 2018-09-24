@@ -82,4 +82,47 @@ jQuery(document).ready(function ($) {
     });
   });
   /* #formAjax */
+	
+	/* Delete value in tabs active */
+	$('#' + WPK_PREFIX + 'btnResetSection').on('click', function(){
+		$('#' + WPK_PREFIX + 'options .wpk-tabs.active').each(function(){
+			var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs.active')
+			tabActive.find('input').val('');
+			tabActive.find('input[type="checkbox"]').remove();
+			tabActive.find('select').val('');
+		});
+	});
+	
+	
+	
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
