@@ -71,6 +71,7 @@ if (!defined('ABSPATH')) {
 					</th>
 					<td>
 					  <select name="<?= WPK_BTT.'_Position' ?>" id="<?= WPK_BTT.'_Position' ?>">
+					  	<option value="">-------</option>
 							<?php
 								$arraySelect = array(
 									'left' => 'Left',

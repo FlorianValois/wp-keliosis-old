@@ -14,7 +14,7 @@
 	transition: all ease .3s;
 
 	&:hover {
-		background: darken($green, 10%);
+		filter: contrast(125%);
 		transition: all ease .3s;
 	}
 }

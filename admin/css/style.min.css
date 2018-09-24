@@ -98,7 +98,8 @@
   transition: all ease .3s;
 }
 .wpk-btn-save:hover {
-  background: #76a32e;
+  -webkit-filter: contrast(125%);
+          filter: contrast(125%);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
@@ -275,13 +276,11 @@
   background: #ffffff;
   -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 3px;
   margin-bottom: 30px;
   font-family: "Open sans", sans-serif !important;
-  overflow: hidden;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card h2 {
-  padding: 20px;
+  padding: 15px 20px;
   font-weight: 300;
   font-size: 18px;
   color: #ffffff;
