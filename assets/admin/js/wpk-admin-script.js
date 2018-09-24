@@ -83,10 +83,20 @@ jQuery(document).ready(function ($) {
   });
   /* #formAjax */
 	
-	/* Delete value in tabs active */
+	/* Delete all values in tabs active */
 	$('#' + WPK_PREFIX + 'btnResetSection').on('click', function(){
 		$('#' + WPK_PREFIX + 'options .wpk-tabs.active').each(function(){
 			var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs.active')
+			tabActive.find('input').val('');
+			tabActive.find('input[type="checkbox"]').remove();
+			tabActive.find('select').val('');
+		});
+	});
+	
+	/* Delete all values in all tabs */
+	$('#' + WPK_PREFIX + 'btnResetAll').on('click', function(){
+		$('#' + WPK_PREFIX + 'options .wpk-tabs').each(function(){
+			var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs')
 			tabActive.find('input').val('');
 			tabActive.find('input[type="checkbox"]').remove();
 			tabActive.find('select').val('');
