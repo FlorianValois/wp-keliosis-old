@@ -100,10 +100,11 @@ jQuery(document).ready(function ($) {
 					tabActive.find('input').val('');
 					tabActive.find('input[type="checkbox"]').remove();
 					tabActive.find('select').val('');
+					tabActive.find('span.color-alpha').css('backgroundColor', '');
 				});
 				swal(
 					wpk_ajax.wpk_delete,
-					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f00;">' + wpk_ajax.resetSection_save_changes + '</strong>',
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f00;">' + wpk_ajax.wpk_dont_forget_save + '</strong>',
 					'success'
 				)
 			}
@@ -113,12 +114,31 @@ jQuery(document).ready(function ($) {
 
 	/* Delete all values in all tabs */
 	$('#' + WPK_PREFIX + 'btnResetAll').on('click', function () {
-		$('#' + WPK_PREFIX + 'options .wpk-tabs').each(function () {
-			var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs')
-			tabActive.find('input').val('');
-			tabActive.find('input[type="checkbox"]').remove();
-			tabActive.find('select').val('');
-		});
+		
+		swal({
+			title: wpk_ajax.resetAllSection_title,
+			text: wpk_ajax.resetAllSection_text,
+			type: 'warning',
+			showCancelButton: true,
+			confirmButtonText: wpk_ajax.wpk_yes,
+			cancelButtonText: wpk_ajax.wpk_no
+		}).then((result) => {
+			if (result.value) {
+				$('#' + WPK_PREFIX + 'options .wpk-tabs').each(function () {
+					var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs')
+					tabActive.find('input').val('');
+					tabActive.find('input[type="checkbox"]').remove();
+					tabActive.find('select').val('');
+					tabActive.find('span.color-alpha').css('backgroundColor', '');
+				});
+				swal(
+					wpk_ajax.wpk_delete,
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f00;">' + wpk_ajax.wpk_dont_forget_save + '</strong>',
+					'success'
+				)
+			}
+		})
+		
 	});
 
 

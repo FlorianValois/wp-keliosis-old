@@ -5,7 +5,7 @@
 	padding: 0;
 	content: "";
 	display: block;
-	left: 50px;
+	right: 50px;
 	bottom: 50px;
 	width: 40px;
 	height: 40px;
@@ -20,7 +20,7 @@
 	transform: translateX(-50%) translateY(-50%);
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
-	font-size: 18px;
+	font-size: 15px;
 	content: "\f0d8";
 	color: #ffffff;
 }
