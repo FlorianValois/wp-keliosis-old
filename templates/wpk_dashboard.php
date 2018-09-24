@@ -11,11 +11,11 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 
 	?>
 
-	<table id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap" cellspancing="0" cellpadding="0">
+	<table id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap">
 		<tr>
 			
 		
-		<td id="<?= WPK_PREFIX.'navigation' ?>" valign="top">
+		<td id="<?= WPK_PREFIX.'navigation' ?>">
 			<a id="<?= WPK_PREFIX.'logo' ?>" href=""><img src="https://via.placeholder.com/250x100" alt=""></a>
 			<nav>
 				<ul>
@@ -37,7 +37,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 			</nav>
 		</td>
 
-		<td id="<?= WPK_PREFIX.'content' ?>" valign="top">
+		<td id="<?= WPK_PREFIX.'content' ?>">
 			<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
 
 				<?php 

@@ -140,6 +140,8 @@
   margin: 0;
   width: 100%;
   height: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 #wpk-keliosis #wpk-navigation {
   position: relative;
@@ -147,6 +149,7 @@
   background: #ffffff;
   -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
+  padding: 0;
 }
 #wpk-keliosis #wpk-navigation #wpk-logo {
   display: block;
@@ -240,6 +243,9 @@
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
+#wpk-keliosis #wpk-content {
+  padding: 0;
+}
 #wpk-keliosis #wpk-content > form {
   min-width: 700px;
   max-width: 800px;
@@ -284,6 +290,8 @@
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr {
   display: -webkit-box;
@@ -316,6 +324,10 @@
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr td {
   display: inherit;
+  vertical-align: middle;
+}
+#wpk-keliosis td {
+  vertical-align: top;
 }
 
 .toplevel_page_wpkeliosis #wpwrap,

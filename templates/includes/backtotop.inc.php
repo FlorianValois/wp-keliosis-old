@@ -18,13 +18,13 @@ if (!defined('ABSPATH')) {
 	<div class="<?= WPK_PREFIX.'card' ?>">
 		<h2><?= __( 'Activation', 'wp-keliosis' ); ?></h2>
 		<div class="<?= WPK_PREFIX.'content' ?>">
-			<table cellspacing="0" cellpadding="0">
+			<table>
 				<tr>
 					<th>
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Display "back to top" button', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Turn on to display the "back to top" button', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<div class="checkbox-001">
 							<input type="checkbox" id="<?= WPK_BTT.'_Activation' ?>" name="<?= WPK_BTT.'_Activation' ?>" value="<?= WPK_BTT.'_Activation' ?>"<?php if(isset($data[WPK_BTT.'_Activation'])){echo'checked';} ?>>
 							<label for="<?= WPK_BTT.'_Activation' ?>">
@@ -38,7 +38,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Display on smartphone', 'wp-keliosis' ); ?></span>
 					<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose if the button is display on smartphone.', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<div class="checkbox-001">
 							<input type="checkbox" id="<?= WPK_BTT.'_ActivationSmartphone' ?>" name="<?= WPK_BTT.'_ActivationSmartphone' ?>" value="<?= WPK_BTT.'_ActivationSmartphone' ?>"<?php if(isset($data[WPK_BTT.'_ActivationSmartphone'])){echo'checked';} ?>>
 							<label for="<?= WPK_BTT.'_ActivationSmartphone' ?>">
@@ -63,7 +63,7 @@ if (!defined('ABSPATH')) {
 	<div class="<?= WPK_PREFIX.'card' ?>">
 		<h2><?= __( 'Position', 'wp-keliosis' ); ?></h2>
 		<div class="<?= WPK_PREFIX.'content' ?>">
-			<table cellspacing="0" cellpadding="0">
+			<table>
 				<tr>
 					<th>
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Position', 'wp-keliosis' ); ?></span>
@@ -110,13 +110,13 @@ if (!defined('ABSPATH')) {
   <div class="<?= WPK_PREFIX.'card' ?>">
 		<h2><?= __( 'Styling', 'wp-keliosis' ); ?></h2>
 		<div class="<?= WPK_PREFIX.'content' ?>">
-			<table cellspacing="0" cellpadding="0">
+			<table>
 				<tr>
 					<th>
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Width', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose width of button', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<input type="number" name="<?= WPK_BTT.'_Width' ?>" value="<?php echo $data[WPK_BTT.'_Width']; ?>" min="0">
 					</td>
 				</tr>
@@ -125,7 +125,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Height', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose height of button', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<input type="number" name="<?= WPK_BTT.'_Height' ?>" value="<?php echo $data[WPK_BTT.'_Height']; ?>" min="0">
 					</td>
 				</tr>
@@ -134,7 +134,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Radius', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose radius of button', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<input type="number" name="<?= WPK_BTT.'_Radius' ?>" value="<?php echo $data[WPK_BTT.'_Radius']; ?>" min="0">
 					</td>
 				</tr>
@@ -143,7 +143,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Background color', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose background color of button', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<input type="text" name="<?= WPK_BTT.'_BackgroundColor' ?>" class="color-picker" data-alpha="true" value="<?php echo $data[WPK_BTT.'_BackgroundColor']; ?>">
 					</td>
 				</tr>
@@ -152,7 +152,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Icon color', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose color of icon', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<input type="text" name="<?= WPK_BTT.'_IconColor' ?>" class="color-picker" data-alpha="true" value="<?php echo $data[WPK_BTT.'_IconColor']; ?>">
 					</td>
 				</tr>
@@ -161,7 +161,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Icon', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose icon', 'wp-keliosis' ); ?> (<a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome 5">Font Awesome 5</a>)</span>
 					</th>
-					<td valign="middle">
+					<td>
 						<input type="text" name="<?= WPK_BTT.'_Icon' ?>" value="<?php echo $data[WPK_BTT.'_Icon']; ?>" placeholder="Ex : f0d8">
 					</td>
 				</tr>
@@ -170,7 +170,7 @@ if (!defined('ABSPATH')) {
 						<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Icon size', 'wp-keliosis' ); ?></span>
 						<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose size of icon (default : 13px)', 'wp-keliosis' ); ?></span>
 					</th>
-					<td valign="middle">
+					<td>
 						<input type="number" name="<?= WPK_BTT.'_IconSize' ?>" value="<?php echo $data[WPK_BTT.'_IconSize']; ?>" min="0" max="32">
 					</td>
 				</tr>
