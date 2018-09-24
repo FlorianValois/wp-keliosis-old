@@ -12,8 +12,6 @@ if (!defined('ABSPATH')) {
 		<i class="fas fa-tachometer-alt"></i>
 		<h1><?= __( 'Dashboard', 'wp-keliosis' ); ?></h1>
 	</div>
-	
-	<input type="number" name="<?= WPK_BTT.'_HorizontalGap' ?>" value="<?php echo $data[WPK_BTT.'_HorizontalGap']; ?>" min="0">
 
 	
 </div>
