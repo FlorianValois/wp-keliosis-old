@@ -83,42 +83,46 @@
 
 .wpk-btn-save {
   display: block;
-  width: 300px;
+  width: calc(100% / 3);
   background: #92C83C;
   color: #ffffff;
   font-family: "Open sans", sans-serif;
   border: none;
   border-radius: 3px;
-  line-height: 60px;
+  line-height: 40px;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
 .wpk-btn-save:hover {
-  background: #76a32e;
+  -webkit-filter: contrast(125%);
+          filter: contrast(125%);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
 
 .wpk-btn-reset {
+  display: block;
+  width: calc(100% / 3);
   background: #5EC5EC;
   color: #ffffff;
   font-family: "Open sans", sans-serif;
   border: none;
+  border-radius: 3px;
   line-height: 40px;
   font-weight: 600;
-  min-width: 200px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
 .wpk-btn-reset:hover {
-  background: #30b5e7;
+  -webkit-filter: contrast(125%);
+          filter: contrast(125%);
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
@@ -140,6 +144,8 @@
   margin: 0;
   width: 100%;
   height: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 #wpk-keliosis #wpk-navigation {
   position: relative;
@@ -147,6 +153,7 @@
   background: #ffffff;
   -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
+  padding: 0;
 }
 #wpk-keliosis #wpk-navigation #wpk-logo {
   display: block;
@@ -240,11 +247,16 @@
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
+#wpk-keliosis #wpk-content {
+  padding: 0;
+  /* End form */
+}
 #wpk-keliosis #wpk-content > form {
   min-width: 700px;
   max-width: 800px;
   padding: 30px;
   /* End tabs */
+  /* End lit form button */
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs {
   display: none;
@@ -269,23 +281,21 @@
   background: #ffffff;
   -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 3px;
   margin-bottom: 30px;
   font-family: "Open sans", sans-serif !important;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card h2 {
-  padding: 20px;
+  padding: 15px 20px;
   font-weight: 300;
   font-size: 18px;
-  color: #707070;
-  border-bottom: 1px solid #f0f0f0;
+  color: #ffffff;
   margin: 0;
-}
-#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content {
-  padding: 20px;
+  background: #5EC5EC;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr {
   display: -webkit-box;
@@ -294,14 +304,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 30px 20px;
 }
-#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-  margin-bottom: 0;
+#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr:nth-child(even) {
+  background: rgba(61, 61, 61, 0.05);
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr th {
   display: inline-block;
@@ -322,6 +328,27 @@
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card .wpk-content table tr td {
   display: inherit;
+  vertical-align: middle;
+}
+#wpk-keliosis #wpk-content > form > #wpk-listButtonForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#wpk-keliosis #wpk-content > form > #wpk-listButtonForm.hide {
+  display: none;
+}
+#wpk-keliosis #wpk-content > form > #wpk-listButtonForm > button {
+  margin-right: 30px;
+}
+#wpk-keliosis #wpk-content > form > #wpk-listButtonForm > button:last-child {
+  margin-right: 0;
+}
+#wpk-keliosis td {
+  vertical-align: top;
 }
 
 .toplevel_page_wpkeliosis #wpwrap,

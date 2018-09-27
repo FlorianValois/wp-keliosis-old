@@ -74,7 +74,7 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
       plugins_url('/admin/js/wp-color-picker-alpha.js', dirname(__FILE__)), array( 'wp-color-picker' ), '1.2.2', $in_footer
     );
 
-    /* Fonction uplaod image WordPress */
+    /* Fonction upload image WordPress */
     wp_enqueue_media();
 
     /* Script en Ajax */
@@ -82,13 +82,20 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
       'ajax-script', 
       plugins_url('/admin/js/script.min.js', dirname(__FILE__)), array('wp-color-picker'), false, '', true
     );
+		include_once( WPK_PLUGIN_DIR_ADMIN . 'localization.php' );
     wp_localize_script(
       'ajax-script',
       'wpk_ajax', 
-        array(
-            'ajaxurl' => admin_url( 'admin-ajax.php' ),
-        ) 
-    ); 
+			$wpk_localization
+    );
+		
+		/* Translation */
+//		wp_register_script( 'wpk_translation', plugins_url('/admin/js/localization.js', dirname(__FILE__)) );
+//		$wpk_translation = array(
+//			'some_string' => __( 'Some string to translate', 'wp-keliosis' )
+//		);
+//		wp_localize_script( 'wpk_translation', 'wpk_localization', $wpk_translation );
+//		wp_enqueue_script( 'wpk_translation' );
 
     /* CSS plugin */
     wp_enqueue_style( 
@@ -97,8 +104,6 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
     );
   }
 }
-
-
 
 add_action( 'wp_ajax_' . 'wpa_49691', 'wpk_ajax_form_update_options' );
 add_action( 'wp_ajax_nopriv_' . 'wpa_49691', 'wpk_ajax_form_update_options' );
@@ -116,22 +121,22 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 
 		if($_POST['data']){
 
-			// Sauvegarde des data
-			$update_options = json_encode(array(
-				'update' => update_option( $option_name, $params )
-			));
-			
-			echo $update_options;   
-			
-			// Génération du fichier CSS "public"
-	    ob_start();
-				$data = get_option($option_name);
-				include WPK_PLUGIN_DIR.'/admin/css/style.php';
-				$content = ob_get_contents();
-			ob_end_clean();
-			$f = fopen(WPK_PLUGIN_DIR.'/public/css/style-public.css', 'w');
-			fwrite($f, $content);
-			fclose($f);
+          // Sauvegarde des data
+          $update_options = json_encode(array(
+              'update' => update_option( $option_name, $params )
+          ));
+
+          echo $update_options;   
+
+          // Generation CSS "public"
+          ob_start();
+              $data = get_option($option_name);
+              include WPK_PLUGIN_DIR.'/admin/css/style-public.php';
+              $content = ob_get_contents();
+          ob_end_clean();
+          $f = fopen(WPK_PLUGIN_DIR.'/public/css/style-public.css', 'w');
+          fwrite($f, $content);
+          fclose($f);
 
 		}
 		else{
@@ -141,9 +146,7 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 				'delete' => delete_option( $option_name )
 			));
 		}
-
 		
 		die(); 
-
 	}
 }

@@ -11,11 +11,11 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 
 	?>
 
-	<table id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap" cellspancing="0" cellpadding="0">
+	<table id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap">
 		<tr>
 			
 		
-		<td id="<?= WPK_PREFIX.'navigation' ?>" valign="top">
+		<td id="<?= WPK_PREFIX.'navigation' ?>">
 			<a id="<?= WPK_PREFIX.'logo' ?>" href=""><img src="https://via.placeholder.com/250x100" alt=""></a>
 			<nav>
 				<ul>
@@ -37,15 +37,22 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 			</nav>
 		</td>
 
-		<td id="<?= WPK_PREFIX.'content' ?>" valign="top">
+		<td id="<?= WPK_PREFIX.'content' ?>">
 			<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
 
 				<?php 
 					require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php'; 
 					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop.inc.php'; 
 				?>
+				<div id="<?= WPK_PREFIX.'listButtonForm' ?>">
+				
+					<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><?= __( 'Save changes', 'wp-keliosis' ); ?></button>
 
-				<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><?= __( 'Save changes', 'wp-keliosis' ); ?></button>
+					<button type="button" id="<?= WPK_PREFIX.'btnResetSection' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><?= __( 'Reset section', 'wp-keliosis' ); ?></button>
+					
+					<button type="button" id="<?= WPK_PREFIX.'btnResetAll' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><?= __( 'Reset all sections', 'wp-keliosis' ); ?></button>
+
+				</div>
 				
 			</form>
 		</td>

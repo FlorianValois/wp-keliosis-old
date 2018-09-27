@@ -1,18 +1,24 @@
 .#{$prefix_plugin}btn-reset {
+	display: block;
+	width: calc(100% / 3);
 	background: $blue;
 	color: $white;
 	font-family: "Open sans", sans-serif;
 	border: none;
+	border-radius: 3px;
 	line-height: 40px;
 	font-weight: 600;
-	min-width: 200px;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 13px;
 	cursor: pointer;
 	transition: all ease .3s;
 
 	&:hover {
-		background: darken($blue, 10%);
+		filter: contrast(125%);
 		transition: all ease .3s;
 	}
+	
+	
+	
+	
 }

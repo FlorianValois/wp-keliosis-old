@@ -12,5 +12,6 @@ if (!defined('ABSPATH')) {
 		<i class="fas fa-tachometer-alt"></i>
 		<h1><?= __( 'Dashboard', 'wp-keliosis' ); ?></h1>
 	</div>
+
 	
 </div>

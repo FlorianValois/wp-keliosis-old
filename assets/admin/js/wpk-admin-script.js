@@ -22,7 +22,16 @@ jQuery(document).ready(function ($) {
 	$('#' + WPK_PREFIX + 'navigation nav a').on('click', function () {
 
 		var data_name = $(this).attr('data-name');
-
+		
+		if(data_name == WPK_PREFIX + 'dashboard'){
+			console.log('ok');
+			$('#' + WPK_PREFIX + 'listButtonForm').addClass('hide');
+		}else{
+			console.log('pas ok');
+			$('#' + WPK_PREFIX + 'listButtonForm').removeClass('hide');		
+		}
+		
+		
 		$('#' + WPK_PREFIX + 'content > form > div').each(function () {
 
 			var id_content = $(this).attr('id');
@@ -32,6 +41,8 @@ jQuery(document).ready(function ($) {
 			} else {
 				$(this).removeClass('active');
 			}
+			console.log(id_content);
+			
 
 		});
 	});
@@ -63,50 +74,84 @@ jQuery(document).ready(function ($) {
 			action: 'wpa_49691',
 			data: json
 		}
-		//		console.log(postData);
 		$.ajax({
 			type: "POST",
 			data: postData,
 			dataType: "json",
 			url: wpk_ajax.ajaxurl,
 			success: function (postData) {
-				//        console.log(postData.update);
-				if (postData.update) {
-					swal({
-						position: 'center',
-						type: 'success',
-						title: 'Sauvegardé !',
-						text: 'Vos modifications ont été sauvegardées avec succès.',
-						backdrop: 'rgba(0, 0, 0, .5)'
-					})
-				} else if (postData.delete) {
-					swal({
-						position: 'center',
-						type: 'success',
-						title: 'Supprimé !',
-						text: 'Tous les champs ont été vidés avec succès !',
-						backdrop: 'rgba(0, 0, 0, .5)'
-					})
-				} else {
-					swal({
-						position: 'center',
-						type: 'info',
-						title: 'Sauvegarde non effectuée !',
-						text: 'Aucun champs n\'a été modifié.',
-						backdrop: 'rgba(0, 0, 0, .5)'
-					})
-				}
+				//        if (postData.update) {
+				swal({
+					position: 'center',
+					type: 'success',
+					title: 'Sauvegardé !',
+					text: 'Vos modifications ont été sauvegardées avec succès.',
+					backdrop: 'rgba(0, 0, 0, .75)',
+				})
 			}
+			//      }
 		});
 	});
 	/* #formAjax */
 
-	/* Detect any change of option*/
-	$("#icons-fa").change(function () {
-		var icono = $(this).val();
-		$("#view-fa").html('<i class="fa ' + icono + '"></i>');
+	/* Delete all values in tabs active */
+	$('#' + WPK_PREFIX + 'btnResetSection').on('click', function () {
+
+		swal({
+			title: wpk_ajax.resetSection_title,
+			text: wpk_ajax.resetSection_text,
+			type: 'warning',
+			showCancelButton: true,
+			confirmButtonText: wpk_ajax.wpk_yes,
+			cancelButtonText: wpk_ajax.wpk_no
+		}).then((result) => {
+			if (result.value) {
+				$('#' + WPK_PREFIX + 'options .wpk-tabs.active').each(function () {
+					var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs.active')
+					tabActive.find('input').val('');
+					tabActive.find('input[type="checkbox"]').remove();
+					tabActive.find('select').val('');
+					tabActive.find('span.color-alpha').css('backgroundColor', '');
+				});
+				swal(
+					wpk_ajax.wpk_delete,
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f00;">' + wpk_ajax.wpk_dont_forget_save + '</strong>',
+					'success'
+				)
+			}
+		})
+
 	});
 
-	/* simulate an change on select */
-	$("#icons-fa").change();
+	/* Delete all values in all tabs */
+	$('#' + WPK_PREFIX + 'btnResetAll').on('click', function () {
+		
+		swal({
+			title: wpk_ajax.resetAllSection_title,
+			text: wpk_ajax.resetAllSection_text,
+			type: 'warning',
+			showCancelButton: true,
+			confirmButtonText: wpk_ajax.wpk_yes,
+			cancelButtonText: wpk_ajax.wpk_no
+		}).then((result) => {
+			if (result.value) {
+				$('#' + WPK_PREFIX + 'options .wpk-tabs').each(function () {
+					var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs')
+					tabActive.find('input').val('');
+					tabActive.find('input[type="checkbox"]').remove();
+					tabActive.find('select').val('');
+					tabActive.find('span.color-alpha').css('backgroundColor', '');
+				});
+				swal(
+					wpk_ajax.wpk_delete,
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f00;">' + wpk_ajax.wpk_dont_forget_save + '</strong>',
+					'success'
+				)
+			}
+		})
+		
+	});
+
+
+
 });
