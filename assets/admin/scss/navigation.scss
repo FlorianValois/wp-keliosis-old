@@ -20,9 +20,10 @@
 			a {
 				position: relative;
 				display: block;
-				font-family: "Open sans", sans-serif;
+				font-family: "Poppins", sans-serif;
 				font-size: 13px;
-				color: lighten($grey, 30%);
+				font-weight: 400;
+				color: lighten($grey, 40%);
 				text-decoration: none;
 				padding: 15px 20px;
 				transition: all ease .3s;
@@ -56,7 +57,7 @@
 							display: block;
 							opacity: 0;
 							background: $blue;
-							width: 5px;
+							width: 4px;
 							height: 100%;
 							transition: all ease .3s;
 						}
@@ -75,8 +76,6 @@
 						}
 
 						&:hover {
-							background: lighten($grey, 70%);
-
 							&:before {
 								opacity: 1;
 								transition: all ease .3s;
@@ -84,38 +83,33 @@
 						}
 
 						&.active {
-							color: $grey;
-							background: lighten($grey, 65%);
-
+							color: $white;
 							span {
-								font-weight: bold;
-								color: $grey;
+								color: $white;
 							}
-
 							&:before {
 								opacity: 1;
+							width: 100%;
 							}
-						}
-					}
-
-					&.active {
-						&:before {
-							display: block;
-						}
-
-						&:after {
-							color: $grey;
-							transform: translateX(50%) translateY(-50%) rotate(-180deg);
-							transition: all ease .3s;
+//						&:after {
+//							color: $grey;
+//							transform: translateX(50%) translateY(-50%) rotate(-180deg);
+//							transition: all ease .3s;
+//						}
 						}
 					}
 				}
 
 				> ul {
-					background: lighten($grey, 70%);
-
+					background: lighten($grey, 72.5%);
 					> li {
 						> a {
+							padding-left: 60px;
+
+							&.active {
+								color: $grey;
+							}
+
 							&:before {
 								position: absolute;
 								top: 0;
@@ -124,7 +118,7 @@
 								display: block;
 								opacity: 1;
 								background: $blue;
-								width: 5px;
+								width: 4px;
 								height: 100%;
 								transition: all ease .3s;
 							}

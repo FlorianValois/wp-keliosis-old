@@ -169,9 +169,10 @@
 #wpk-keliosis #wpk-navigation ul li a {
   position: relative;
   display: block;
-  font-family: "Open sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
-  color: #8a8a8a;
+  font-weight: 400;
+  color: #a3a3a3;
   text-decoration: none;
   padding: 15px 20px;
   -webkit-transition: all ease .3s;
@@ -200,7 +201,7 @@
   display: block;
   opacity: 0;
   background: #5EC5EC;
-  width: 5px;
+  width: 4px;
   height: 100%;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
@@ -217,37 +218,29 @@
   position: relative;
   z-index: 1;
 }
-#wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover {
-  background: #f0f0f0;
-}
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:hover:before {
   opacity: 1;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active {
-  color: #3d3d3d;
-  background: #e3e3e3;
+  color: #ffffff;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active span {
-  font-weight: bold;
-  color: #3d3d3d;
+  color: #ffffff;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active:before {
   opacity: 1;
-}
-#wpk-keliosis #wpk-navigation > nav > ul > li > a.active:before {
-  display: block;
-}
-#wpk-keliosis #wpk-navigation > nav > ul > li > a.active:after {
-  color: #3d3d3d;
-  -webkit-transform: translateX(50%) translateY(-50%) rotate(-180deg);
-          transform: translateX(50%) translateY(-50%) rotate(-180deg);
-  -webkit-transition: all ease .3s;
-  transition: all ease .3s;
+  width: 100%;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > ul {
-  background: #f0f0f0;
+  background: #f6f6f6;
+}
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a {
+  padding-left: 60px;
+}
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a.active {
+  color: #3d3d3d;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a:before {
   position: absolute;
@@ -257,7 +250,7 @@
   display: block;
   opacity: 1;
   background: #5EC5EC;
-  width: 5px;
+  width: 4px;
   height: 100%;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;

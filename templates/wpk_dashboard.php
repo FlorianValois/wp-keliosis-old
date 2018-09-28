@@ -34,7 +34,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 						</a>
 						<ul>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_activation' ?>">Lorem ipsum</a>
+								<a href="" data-name="<?= WPK_BTT.'_activation' ?>" class="active">Lorem ipsum</a>
 							</li>
 							<li>
 								<a href="" data-name="<?= WPK_BTT.'_position' ?>">Lorem ipsum</a>

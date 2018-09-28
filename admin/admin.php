@@ -36,8 +36,8 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
 
     /* Google Font */
     wp_enqueue_style(
-      'opensans-css',
-      'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' 
+      'poppins-font',
+      'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' 
     );
     
     /* jQuery UI */
