@@ -21,35 +21,28 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 				<ul>
 
 					<li>
-						<a href="" title="" id="<?= WPK_PREFIX.'dashboard-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>" data-name="<?= WPK_PREFIX.'dashboard' ?>">
+						<a href="" title="" id="<?= WPK_PREFIX.'dashboard-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> active" data-name="<?= WPK_PREFIX.'dashboard' ?>">
 							<i class="fas fa-tachometer-alt"></i>
 							<span><?= __( 'Dashboard', 'wp-keliosis' ); ?></span>
 						</a>
 					</li>
 
 					<li>
-						<a href="" title="" id="<? WPK_PREFIX.'backToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> active" data-name="<?= WPK_BTT ?>">
+						<a href="" title="" id="<?= WPK_PREFIX.'backToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>" data-name="<?= WPK_BTT ?>">
 							<i class="fas fa-level-up-alt"></i>
 							<span><?= __( 'Back to top', 'wp-keliosis' ); ?></span>
 						</a>
 						<ul>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_activation' ?>" class="active">Lorem ipsum</a>
+								<a href="" data-name="<?= WPK_BTT.'_Activation' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?>">Activation</a>
 							</li>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_position' ?>">Lorem ipsum</a>
+								<a href="" data-name="<?= WPK_BTT.'_Position' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?>">Lorem ipsum</a>
 							</li>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_styling' ?>">Lorem ipsum</a>
+								<a href="" data-name="<?= WPK_BTT.'_Styling' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?>">Lorem ipsum</a>
 							</li>
 						</ul>
-					</li>
-					
-					<li>
-						<a href="" title="" id="<?= WPK_PREFIX.'dashboard-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>" data-name="<?= WPK_PREFIX.'dashboard' ?>">
-							<i class="fas fa-tachometer-alt"></i>
-							<span><?= __( 'Dashboard', 'wp-keliosis' ); ?></span>
-						</a>
 					</li>
 					
 				</ul>

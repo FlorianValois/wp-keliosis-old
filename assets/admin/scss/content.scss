@@ -1,122 +1,129 @@
 ##{$prefix_plugin}content {
-	padding: 0;
+  padding: 0;
 
-	> form {
-		min-width: 700px;
-		max-width: 800px;
-		padding: 30px;
+  > form {
+    //    min-width: 700px;
+    //    max-width: 800px;
+    //    padding: 30px;
 
-		> .#{$prefix_plugin}tabs {
-			display: none;
+    > .#{$prefix_plugin}tabs {
+      display: none;
 
-			&.active {
-				display: block;
-			}
+      &.active {
+        display: block;
+      }
 
-			.#{$prefix_plugin}card-header {
-				margin-bottom: 30px;
-				line-height: calc(100px - 60px);
-				font-size: 22px;
+      .#{$prefix_plugin}card-header {
+        background: $white;
 
-				h1 {
-					display: inline-block;
-					padding: 0;
-					margin: 0;
-					color: lighten($grey, 10%);
-					margin-left: 10px;
-				}
-			}
+        h1 {
+          display: block;
+          padding: 0;
+          margin: 0;
+          line-height: 100px;
+          font-size: 22px;
+          font-weight: 300;
+          color: lighten($grey, 10%);
+          margin-left: 30px;
+          font-family: "Poppins", sans-serif;
+        }
+      }
 
-			.#{$prefix_plugin}card {
-				border: none;
-				background: $white;
-				box-shadow: 0 1px 15px 1px rgba($black, .05);
-				margin-bottom: 30px;
-				font-family: "Open sans", sans-serif !important;
+      > .#{$prefix_plugin}container {
+        padding: 30px;
 
-				h2 {
-					padding: 15px 20px;
-					font-weight: 300;
-					font-size: 18px;
-					color: $white;
-					margin: 0;
-					background: $blue;
-				}
+        .#{$prefix_plugin}card {
+          display: none;
+          border: none;
+          background: $white;
+          //          box-shadow: 0 1px 15px 1px rgba($black, .05);
+          margin-bottom: 30px;
+          font-family: "Poppins", sans-serif !important;
 
-				.#{$prefix_plugin}content {
-					//					padding: 20px;
+          h2 {
+            padding: 15px 20px;
+            font-weight: 300;
+            font-size: 18px;
+            font-family: "Poppins", sans-serif;
+            color: $white;
+            margin: 0;
+            background: $blue;
+          }
 
-					table {
-						width: 100%;
-						border-collapse: collapse;
-						border-spacing: 0;
+          .#{$prefix_plugin}content-card {
+            //					padding: 20px;
 
-						tr {
-							display: flex;
-							align-items: center;
-							padding: 30px 20px;
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              border-spacing: 0;
 
-							//							margin-bottom: 30px;
-							//							border-bottom: 1px solid lighten($grey, 70%);
-							&:nth-child(even) {
-								background: rgba($grey, .05);
-							}
+              tr {
+                display: flex;
+                align-items: center;
+                padding: 30px;
 
-							//							&:last-child {
-							//								padding-bottom: 0;
-							//								border-bottom: 0;
-							//								margin-bottom: 0;
-							//							}
+                &:nth-child(even) {
+                  background: rgba($grey, .05);
+                }
 
-							th {
-								display: inline-block;
-								width: 60%;
-								text-align: left;
+                th {
+                  display: inline-block;
+                  width: 60%;
+                  text-align: left;
 
-								span {
-									display: block;
+                  span {
+                    display: block;
 
-									&.#{$prefix_plugin}title {
-										font-weight: 700;
-										text-transform: uppercase;
-									}
+                    &.#{$prefix_plugin}title {
+                      font-weight: 500;
+                      text-transform: uppercase;
+                    }
 
-									&.#{$prefix_plugin}description {
-										color: lighten($grey, 40%);
-										font-weight: normal;
-										font-style: italic;
-									}
-								}
-							}
+                    &.#{$prefix_plugin}description {
+                      color: lighten($grey, 40%);
+                      font-weight: 300;
+                      font-style: italic;
+                    }
+                  }
+                }
 
-							td {
-								display: inherit;
-								vertical-align: middle;
-							}
-						}
-					}
-				}
-			}
-		}
+                td {
+                  display: inherit;
+                  vertical-align: middle;
+                }
+              }
+            }
+          }
 
-		/* End tabs */
-		> ##{$prefix_plugin}listButtonForm {
-			display: flex;
-			justify-content: space-between;
-			&.hide {
-				display: none;
-			}
-			> button {
-				margin-right: 30px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
 
-				&:last-child {
-					margin-right: 0;
-				}
-			}
-		}
+    /* End tabs */
+    > ##{$prefix_plugin}listButtonForm {
+      display: none;
+      justify-content: space-between;
+      padding: 30px;
 
-		/* End lit form button */
-	}
+      &.active {
+        display: flex;
+      }
 
-	/* End form */
+      > button {
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    /* End lit form button */
+  }
+
+  /* End form */
 }

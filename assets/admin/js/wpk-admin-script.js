@@ -9,31 +9,64 @@ jQuery(document).ready(function ($) {
 
   /* START - NAVIGATION -*/
   // Open sub menu navigation
+  //  $('.' + WPK_PREFIX + 'menuTitle').on('click', function (event) {
+  //  });
+
+  // Tabs
   $('.' + WPK_PREFIX + 'menuTitle').on('click', function (event) {
     event.preventDefault();
+
+    var data_name = $(this).attr('data-name');
+
     $('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
     $('.' + WPK_PREFIX + 'menuTitle').next().hide();
     $(this).addClass('active');
     $(this).next().show();
+
+    if (data_name === WPK_PREFIX + "dashboard") {
+      $('#' + WPK_PREFIX + 'content > form > div').each(function () {
+
+        var id_content = $(this).attr('id');
+
+        if (id_content == data_name) {
+          $(this).addClass('active');
+        } else {
+          $(this).removeClass('active');
+        }
+
+      });
+    }
   });
 
-  // Tabs
-  $('#' + WPK_PREFIX + 'navigation nav a').on('click', function () {
+  $('.' + WPK_PREFIX + 'submenuTitle').on('click', function (event) {
+
+    event.preventDefault();
+
+    $('.' + WPK_PREFIX + 'submenuTitle').removeClass('active');
+    $(this).addClass('active');
 
     var data_name = $(this).attr('data-name');
 
-    $('#' + WPK_PREFIX + 'content > form > div').each(function () {
+    if (data_name === WPK_PREFIX + "dashboard") {
+      $('#' + WPK_PREFIX + 'listButtonForm').removeClass('active');
+    } else {
+      $('#' + WPK_PREFIX + 'listButtonForm').addClass('active');
+    }
+
+    $('.' + WPK_PREFIX + 'card').each(function () {
 
       var id_content = $(this).attr('id');
 
       if (id_content == data_name) {
-        $(this).addClass('active');
+        $(this).show();
       } else {
-        $(this).removeClass('active');
+        $(this).hide();
       }
 
     });
+
   });
+
   /* END - NAVIGATION - */
 
   /* SAVE CHANGES */
@@ -68,16 +101,16 @@ jQuery(document).ready(function ($) {
       dataType: "json",
       url: wpk_ajax.ajaxurl,
       success: function (postData) {
-//        if (postData.update) {
-          swal({
-            position: 'center',
-            type: 'success',
-            title: 'Sauvegardé !',
-            text: 'Vos modifications ont été sauvegardées avec succès.',
-            backdrop: 'rgba(0, 0, 0, .75)',
-          })
-        }
-//      }
+        //        if (postData.update) {
+        swal({
+          position: 'center',
+          type: 'success',
+          title: 'Sauvegardé !',
+          text: 'Vos modifications ont été sauvegardées avec succès.',
+          backdrop: 'rgba(0, 0, 0, .75)',
+        })
+      }
+      //      }
     });
   });
   /* #formAjax */
