@@ -171,12 +171,14 @@
   display: block;
   font-family: "Open sans", sans-serif;
   font-size: 13px;
+  color: #8a8a8a;
   text-decoration: none;
   padding: 15px 20px;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
 #wpk-keliosis #wpk-navigation ul li a:hover {
+  color: #5EC5EC;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
@@ -189,7 +191,6 @@
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle {
   padding-left: 60px;
-  color: #707070;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle:before {
   position: absolute;
@@ -199,7 +200,7 @@
   display: block;
   opacity: 0;
   background: #5EC5EC;
-  width: 3px;
+  width: 5px;
   height: 100%;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
@@ -225,25 +226,39 @@
   transition: all ease .3s;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active {
-  color: #ffffff;
-  background: #5EC5EC;
+  color: #3d3d3d;
+  background: #e3e3e3;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active span {
   font-weight: bold;
-  color: #ffffff;
+  color: #3d3d3d;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.wpk-menuTitle.active:before {
-  width: 100%;
-  -webkit-transition: none;
-  transition: none;
+  opacity: 1;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.active:before {
   display: block;
 }
 #wpk-keliosis #wpk-navigation > nav > ul > li > a.active:after {
-  color: #ffffff;
+  color: #3d3d3d;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(-180deg);
           transform: translateX(50%) translateY(-50%) rotate(-180deg);
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul {
+  background: #f0f0f0;
+}
+#wpk-keliosis #wpk-navigation > nav > ul > li > ul > li > a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  opacity: 1;
+  background: #5EC5EC;
+  width: 5px;
+  height: 100%;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }

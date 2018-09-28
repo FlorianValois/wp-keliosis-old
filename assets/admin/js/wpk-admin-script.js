@@ -12,10 +12,9 @@ jQuery(document).ready(function ($) {
   $('.' + WPK_PREFIX + 'menuTitle').on('click', function (event) {
     event.preventDefault();
     $('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
-    $('.' + WPK_PREFIX + 'menuTitle').next().slideUp();
+    $('.' + WPK_PREFIX + 'menuTitle').next().hide();
     $(this).addClass('active');
-    $(this).next().slideToggle();
-
+    $(this).next().show();
   });
 
   // Tabs

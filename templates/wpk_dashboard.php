@@ -34,9 +34,22 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 						</a>
 						<ul>
 							<li>
-								<a href="">Lorem ipsum</a>
+								<a href="" data-name="<?= WPK_BTT.'_activation' ?>">Lorem ipsum</a>
+							</li>
+							<li>
+								<a href="" data-name="<?= WPK_BTT.'_position' ?>">Lorem ipsum</a>
+							</li>
+							<li>
+								<a href="" data-name="<?= WPK_BTT.'_styling' ?>">Lorem ipsum</a>
 							</li>
 						</ul>
+					</li>
+					
+					<li>
+						<a href="" title="" id="<?= WPK_PREFIX.'dashboard-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>" data-name="<?= WPK_PREFIX.'dashboard' ?>">
+							<i class="fas fa-tachometer-alt"></i>
+							<span><?= __( 'Dashboard', 'wp-keliosis' ); ?></span>
+						</a>
 					</li>
 					
 				</ul>

@@ -22,11 +22,13 @@
 				display: block;
 				font-family: "Open sans", sans-serif;
 				font-size: 13px;
+				color: lighten($grey, 30%);
 				text-decoration: none;
 				padding: 15px 20px;
 				transition: all ease .3s;
 
 				&:hover {
+					color: $blue;
 					transition: all ease .3s;
 				}
 
@@ -45,7 +47,6 @@
 
 					&.#{$prefix_plugin}menuTitle {
 						padding-left: 60px;
-						color: lighten($grey, 20%);
 
 						&:before {
 							position: absolute;
@@ -55,7 +56,7 @@
 							display: block;
 							opacity: 0;
 							background: $blue;
-							width: 3px;
+							width: 5px;
 							height: 100%;
 							transition: all ease .3s;
 						}
@@ -83,17 +84,16 @@
 						}
 
 						&.active {
-							color: $white;
-							background: $blue;
+							color: $grey;
+							background: lighten($grey, 65%);
 
 							span {
 								font-weight: bold;
-								color: $white;
+								color: $grey;
 							}
 
 							&:before {
-								width: 100%;
-								transition: none;
+								opacity: 1;
 							}
 						}
 					}
@@ -104,9 +104,30 @@
 						}
 
 						&:after {
-							color: $white;
+							color: $grey;
 							transform: translateX(50%) translateY(-50%) rotate(-180deg);
 							transition: all ease .3s;
+						}
+					}
+				}
+
+				> ul {
+					background: lighten($grey, 70%);
+
+					> li {
+						> a {
+							&:before {
+								position: absolute;
+								top: 0;
+								left: 0;
+								content: "";
+								display: block;
+								opacity: 1;
+								background: $blue;
+								width: 5px;
+								height: 100%;
+								transition: all ease .3s;
+							}
 						}
 					}
 				}
