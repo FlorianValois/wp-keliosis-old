@@ -32,7 +32,13 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 							<i class="fas fa-level-up-alt"></i>
 							<span><?= __( 'Back to top', 'wp-keliosis' ); ?></span>
 						</a>
+						<ul>
+							<li>
+								<a href="">Lorem ipsum</a>
+							</li>
+						</ul>
 					</li>
+					
 				</ul>
 			</nav>
 		</td>
