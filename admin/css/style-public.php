@@ -20,7 +20,7 @@ if(isset($data[WPK_BTT.'_ActivationSmartphone'])){
 	content: "";
 	<?php
 		// Activation
-		if(isset($data[WPK_BTT.'_Activation'])){
+		if(isset($data[WPK_BTT.'_ActivationDesktop'])){
 			echo 'display: block;'.$rn;
 		}
 		else{

@@ -26,8 +26,8 @@ if (!defined('ABSPATH')) {
                         </th>
                         <td>
                             <div class="checkbox-001">
-                                <input type="checkbox" id="<?= WPK_BTT.'_Activation' ?>" name="<?= WPK_BTT.'_Activation' ?>" value="<?= WPK_BTT.'_Activation' ?>"<?php if(isset($data[WPK_BTT.'_Activation'])){echo'checked';} ?>>
-                                <label for="<?= WPK_BTT.'_Activation' ?>">
+                                <input type="checkbox" id="<?= WPK_BTT.'_ActivationDesktop' ?>" name="<?= WPK_BTT.'_ActivationDesktop' ?>" value="<?= WPK_BTT.'_ActivationDesktop' ?>"<?php if(isset($data[WPK_BTT.'_ActivationDesktop'])){echo'checked';} ?>>
+                                <label for="<?= WPK_BTT.'_ActivationDesktop' ?>">
                                     <span></span>
                                 </label>
                             </div>

@@ -1,15 +1,16 @@
-@media screen and (min-width: 320px){
+@media screen and (min-width: 640px){
 #wpk-btn_backToTop{
 	position: fixed;
 	z-index: 999;
 	padding: 0;
 	content: "";
-	display: none;
-		bottom: 0;
-	width: 0;
-	height: 0;
-	border-radius: 0;
-	background-color: #000000;
+	display: block;
+	right: 50px;
+	bottom: 50px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #dd9933;
 }
 
 #wpk-btn_backToTop:before{
@@ -19,8 +20,8 @@
 	transform: translateX(-50%) translateY(-50%);
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
-	font-size: 13px;
+	font-size: 15px;
 	content: "\f0d8";
-	color: #000000;
+	color: #1e73be;
 }
 }
