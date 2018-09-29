@@ -65,7 +65,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 				?>
 				<div id="<?= WPK_PREFIX.'listButtonForm' ?>">
 				
-					<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><?= __( 'Save changes', 'wp-keliosis' ); ?></button>
+					<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><i class="far fa-save"></i> <?= __( 'Save changes', 'wp-keliosis' ); ?></button>
 
 					<button type="button" id="<?= WPK_PREFIX.'btnResetSection' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><?= __( 'Reset section', 'wp-keliosis' ); ?></button>
 					

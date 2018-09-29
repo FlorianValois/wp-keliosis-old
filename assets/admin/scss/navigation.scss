@@ -24,7 +24,7 @@
         padding: 15px 20px;
         transition: all ease .2s;
         &:hover {
-          color: $blue;
+          color: $primary-color;
           transition: all ease .2s;
         }
         &:focus {
@@ -47,7 +47,7 @@
               content: "";
               display: block;
               opacity: 0;
-              background: $blue;
+              background: $primary-color;
               width: 0;
               height: 100%;
               transition: all ease .2s;
@@ -118,7 +118,7 @@
                 content: "";
                 display: block;
                 opacity: 1;
-                background: $blue;
+                background: $primary-color;
                 width: 4px;
                 height: 100%;
                 transition: all ease .2s;

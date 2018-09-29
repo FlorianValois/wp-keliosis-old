@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 
 ?>
 
-<div id="<?= WPK_BTT.'_Styling' ?>" class="<?= WPK_PREFIX.'tabs' ?>">
+<div id="<?= WPK_BTT.'_Styling' ?>" class="<?= WPK_PREFIX.'tabs' ?>" data-name="<?= WPK_BTT.'_Styling' ?>">
 				
 	<div class="<?= WPK_PREFIX.'card-header' ?>">
 		<h1><?= __( 'Back to top > Styling', 'wp-keliosis' ); ?></h1>
