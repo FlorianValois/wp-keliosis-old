@@ -21,26 +21,30 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 				<ul>
 
 					<li>
-						<a href="" title="" id="<?= WPK_PREFIX.'dashboard-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> active" data-name="<?= WPK_PREFIX.'dashboard' ?>">
+						<a href="" title="" id="<?= WPK_PREFIX.'dashboard-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?> active" data-name="<?= WPK_PREFIX.'dashboard' ?>">
 							<i class="fas fa-tachometer-alt"></i>
 							<span><?= __( 'Dashboard', 'wp-keliosis' ); ?></span>
 						</a>
 					</li>
-
+                </ul>
+            </nav>
+            <span class="<?= WPK_PREFIX.'title-section' ?>">Lorem ipsum</span>
+            <nav>
+                <ul>
 					<li>
-						<a href="" title="" id="<?= WPK_PREFIX.'backToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?>" data-name="<?= WPK_BTT ?>">
+						<a href="" title="" id="<?= WPK_PREFIX.'backToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_BTT ?>">
 							<i class="fas fa-level-up-alt"></i>
 							<span><?= __( 'Back to top', 'wp-keliosis' ); ?></span>
 						</a>
 						<ul>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_Activation' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?>">Activation</a>
+								<a href="" data-name="<?= WPK_BTT.'_Activation' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>">Activation</a>
 							</li>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_Position' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?>">Lorem ipsum</a>
+								<a href="" data-name="<?= WPK_BTT.'_Position' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>">Position</a>
 							</li>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_Styling' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?>">Lorem ipsum</a>
+								<a href="" data-name="<?= WPK_BTT.'_Styling' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>">Styling</a>
 							</li>
 						</ul>
 					</li>
@@ -54,7 +58,10 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 
 				<?php 
 					require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php'; 
-					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop.inc.php'; 
+//					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop.inc.php'; 
+					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/activation.inc.php'; 
+					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/position.inc.php'; 
+					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/styling.inc.php'; 
 				?>
 				<div id="<?= WPK_PREFIX.'listButtonForm' ?>">
 				
