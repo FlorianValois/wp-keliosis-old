@@ -1,21 +1,13 @@
 ##{$prefix_plugin}content {
   padding: 0;
-
   > form {
-    //    min-width: 700px;
-    //    max-width: 800px;
-    //    padding: 30px;
-
     > .#{$prefix_plugin}tabs {
       display: none;
-
       &.active {
         display: block;
       }
-
       .#{$prefix_plugin}card-header {
         background: $white;
-
         h1 {
           display: block;
           padding: 0;
@@ -28,17 +20,16 @@
           font-family: "Poppins", sans-serif;
         }
       }
-
       > .#{$prefix_plugin}container {
+        min-width: 700px;
+        max-width: 800px;
         padding: 30px;
-
         .#{$prefix_plugin}card {
           border: none;
           background: $white;
           //          box-shadow: 0 1px 15px 1px rgba($black, .05);
           margin-bottom: 30px;
           font-family: "Poppins", sans-serif !important;
-
           h2 {
             padding: 15px 20px;
             font-weight: 300;
@@ -48,37 +39,29 @@
             margin: 0;
             background: $blue;
           }
-
           .#{$prefix_plugin}content-card {
             //					padding: 20px;
-
             table {
               width: 100%;
               border-collapse: collapse;
               border-spacing: 0;
-
               tr {
                 display: flex;
                 align-items: center;
                 padding: 30px;
-
                 &:nth-child(even) {
                   background: rgba($grey, .05);
                 }
-
                 th {
                   display: inline-block;
                   width: 60%;
                   text-align: left;
-
                   span {
                     display: block;
-
                     &.#{$prefix_plugin}title {
                       font-weight: 500;
                       text-transform: uppercase;
                     }
-
                     &.#{$prefix_plugin}description {
                       color: lighten($grey, 40%);
                       font-weight: 300;
@@ -86,7 +69,6 @@
                     }
                   }
                 }
-
                 td {
                   display: inherit;
                   vertical-align: middle;
@@ -94,35 +76,30 @@
               }
             }
           }
-
           &:last-child {
             margin-bottom: 0;
           }
         }
       }
     }
-
     /* End tabs */
     > ##{$prefix_plugin}listButtonForm {
       display: none;
       justify-content: space-between;
       padding: 30px;
-
+      min-width: 700px;
+      max-width: 800px;
       &.active {
         display: flex;
       }
-
       > button {
         margin-right: 30px;
-
         &:last-child {
           margin-right: 0;
         }
       }
     }
-
     /* End lit form button */
   }
-
   /* End form */
 }

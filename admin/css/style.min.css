@@ -319,6 +319,8 @@
   font-family: "Poppins", sans-serif;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container {
+  min-width: 700px;
+  max-width: 800px;
   padding: 30px;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card {
@@ -383,6 +385,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px;
+  min-width: 700px;
+  max-width: 800px;
 }
 #wpk-keliosis #wpk-content > form > #wpk-listButtonForm.active {
   display: -webkit-box;
