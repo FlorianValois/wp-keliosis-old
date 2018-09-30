@@ -8,8 +8,8 @@ jQuery(document).ready(function ($) {
   // Active link and Open sub menu navigation
   $('.' + WPK_PREFIX + 'menuTitle').on('click', function (event) {
     event.preventDefault();
-    $('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
     $('.' + WPK_PREFIX + 'submenuTitle').removeClass('active');
+    $('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
     $('.' + WPK_PREFIX + 'menuTitle').next().hide();
     $(this).addClass('active');
     $(this).next().show();
@@ -41,23 +41,61 @@ jQuery(document).ready(function ($) {
   /* END - NAVIGATION - */
   /* Delete all values of active section */
   $('#' + WPK_PREFIX + 'btnResetSection').on('click', function () {
-    var tabActive = $('.' + WPK_PREFIX + 'tabs.open');
-    $(tabActive).each(function () {
-      tabActive.find('input').val('');
-      tabActive.find('input[type="checkbox"]').remove();
-      tabActive.find('select').val('');
-      tabActive.find('.color-alpha').css('background', 'none');
-    });
+
+    swal({
+      title: wpk_ajax.wpk_delete_value,
+      text: wpk_ajax.resetSection_text,
+      type: 'warning',
+      showCancelButton: true,
+      cancelButtonColor: '#f3545d',
+      cancelButtonText: wpk_ajax.wpk_no,
+      confirmButtonColor: '#92C83C',
+      confirmButtonText: wpk_ajax.wpk_yes
+    }).then(function (result) {
+      if (result.value) {
+        var tabActive = $('.' + WPK_PREFIX + 'tabs.open');
+        $(tabActive).each(function () {
+          tabActive.find('input').val('');
+          tabActive.find('input[type="checkbox"]').remove();
+          tabActive.find('select').val('');
+          tabActive.find('.color-alpha').css('background', 'none');
+        });
+        swal(
+          wpk_ajax.wpk_delete,
+          wpk_ajax.wpk_value_deleted,
+          'success'
+        )
+      }
+    })
+
   });
   /* Delete all values of all section */
   $('#' + WPK_PREFIX + 'btnResetAll').on('click', function () {
-    $('#' + WPK_PREFIX + 'options .wpk-tabs').each(function () {
-      var allTabs = $('#' + WPK_PREFIX + 'options .wpk-tabs');
-      allTabs.find('input').val('');
-      allTabs.find('input[type="checkbox"]').remove();
-      allTabs.find('select').val('');
-      allTabs.find('.color-alpha').css('background', 'none');
-    });
+    swal({
+      title: wpk_ajax.wpk_delete_value,
+      text: wpk_ajax.resetAllSection_text,
+      type: 'warning',
+      showCancelButton: true,
+      cancelButtonColor: '#f3545d',
+      cancelButtonText: wpk_ajax.wpk_no,
+      confirmButtonColor: '#92C83C',
+      confirmButtonText: wpk_ajax.wpk_yes
+    }).then(function (result) {
+      if (result.value) {
+        $('#' + WPK_PREFIX + 'options .wpk-tabs').each(function () {
+          var allTabs = $('#' + WPK_PREFIX + 'options .wpk-tabs');
+          allTabs.find('input').val('');
+          allTabs.find('input[type="checkbox"]').remove();
+          allTabs.find('select').val('');
+          allTabs.find('.color-alpha').css('background', 'none');
+        });
+        swal(
+          wpk_ajax.wpk_delete,
+          wpk_ajax.wpk_value_deleted,
+          'success'
+        )
+      }
+    })
   });
   /* SAVE CHANGES */
   // Excluding empty fields
@@ -92,8 +130,8 @@ jQuery(document).ready(function ($) {
         swal({
           position: 'center',
           type: 'success',
-          title: 'Sauvegardé !',
-          text: 'Vos modifications ont été sauvegardées avec succès.',
+          title: wpk_ajax.wpk_saved,
+          text: wpk_ajax.wpk_saved_message,
           backdrop: 'rgba(0, 0, 0, .75)',
         })
       }

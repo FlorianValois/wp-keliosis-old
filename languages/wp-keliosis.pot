@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-09-24 16:21+0200\n"
+"POT-Creation-Date: 2018-09-30 16:12+0200\n"
 "PO-Revision-Date: 2018-09-13 12:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: wp-keliosis.php\n"
@@ -30,163 +30,212 @@ msgid "Options"
 msgstr ""
 
 #: admin/localization.php:10
-msgid "Delete all values ?"
+msgid "You will remove all values from this section."
 msgstr ""
 
-#: admin/localization.php:11
-msgid "You will remove all values from this section"
-msgstr ""
-
-#: admin/localization.php:12
-msgid "Do not forget to save your changes."
-msgstr ""
-
-#: admin/localization.php:15
-msgid "Yes"
+#: admin/localization.php:13
+msgid "You will remove all values from all sections."
 msgstr ""
 
 #: admin/localization.php:16
-msgid "No"
+msgid "Yes"
 msgstr ""
 
 #: admin/localization.php:17
-msgid "Deleted !"
+msgid "No"
 msgstr ""
 
 #: admin/localization.php:18
+msgid "Delete values ?"
+msgstr ""
+
+#: admin/localization.php:19
+msgid "Deleted !"
+msgstr ""
+
+#: admin/localization.php:20
 msgid "Your values has been deleted."
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:13 templates/wpk_dashboard.php:33
+#: admin/localization.php:21
+msgid "Do not forget to save your changes."
+msgstr ""
+
+#: admin/localization.php:22
+msgid "Saved !"
+msgstr ""
+
+#: admin/localization.php:23
+msgid "Your changes have been saved successfully."
+msgstr ""
+
+#: templates/includes/backtotop.inc.php:12
+#: templates/includes/backtotop/activation.inc.php:12
+#: templates/includes/backtotop/position.inc.php:12
+#: templates/includes/backtotop/styling.inc.php:12
+#: templates/wpk_dashboard.php:37
 msgid "Back to top"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:17
+#: templates/includes/backtotop.inc.php:19
+#: templates/includes/backtotop/activation.inc.php:12
 msgid "Activation"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:22
+#: templates/includes/backtotop.inc.php:24
+#: templates/includes/backtotop/activation.inc.php:23
 msgid "Display \"back to top\" button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:23
+#: templates/includes/backtotop.inc.php:25
+#: templates/includes/backtotop/activation.inc.php:24
 msgid "Turn on to display the \"back to top\" button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:36
+#: templates/includes/backtotop.inc.php:38
+#: templates/includes/backtotop/activation.inc.php:37
 msgid "Display on smartphone"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:37
+#: templates/includes/backtotop.inc.php:39
+#: templates/includes/backtotop/activation.inc.php:38
 msgid "Choose if the button is display on smartphone."
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:50
+#: templates/includes/backtotop.inc.php:52
+#: templates/includes/backtotop/activation.inc.php:51
 msgid "Width smartphone"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:51
+#: templates/includes/backtotop.inc.php:53
+#: templates/includes/backtotop/activation.inc.php:52
 msgid "Choose the minimum width of smartphone to display"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:62
-#: templates/includes/backtotop.inc.php:67
+#: templates/includes/backtotop.inc.php:65
+#: templates/includes/backtotop.inc.php:70
+#: templates/includes/backtotop/position.inc.php:12
+#: templates/includes/backtotop/position.inc.php:23
 msgid "Position"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:68
+#: templates/includes/backtotop.inc.php:71
+#: templates/includes/backtotop/position.inc.php:24
 msgid "Choose position of the button between left or right"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:89
+#: templates/includes/backtotop.inc.php:92
+#: templates/includes/backtotop/position.inc.php:45
 msgid "Horizontal gap"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:90
+#: templates/includes/backtotop.inc.php:93
+#: templates/includes/backtotop/position.inc.php:46
 msgid "Choose horizontal gap of the button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:98
+#: templates/includes/backtotop.inc.php:101
+#: templates/includes/backtotop/position.inc.php:54
 msgid "Vertical gap"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:99
+#: templates/includes/backtotop.inc.php:102
+#: templates/includes/backtotop/position.inc.php:55
 msgid "Choose vertical gap of the button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:110
+#: templates/includes/backtotop.inc.php:114
+#: templates/includes/backtotop/styling.inc.php:12
 msgid "Styling"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:115
+#: templates/includes/backtotop.inc.php:119
+#: templates/includes/backtotop/styling.inc.php:23
 msgid "Width"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:116
+#: templates/includes/backtotop.inc.php:120
+#: templates/includes/backtotop/styling.inc.php:24
 msgid "Choose width of button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:124
+#: templates/includes/backtotop.inc.php:128
+#: templates/includes/backtotop/styling.inc.php:32
 msgid "Height"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:125
+#: templates/includes/backtotop.inc.php:129
+#: templates/includes/backtotop/styling.inc.php:33
 msgid "Choose height of button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:133
+#: templates/includes/backtotop.inc.php:137
+#: templates/includes/backtotop/styling.inc.php:41
 msgid "Radius"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:134
+#: templates/includes/backtotop.inc.php:138
+#: templates/includes/backtotop/styling.inc.php:42
 msgid "Choose radius of button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:142
+#: templates/includes/backtotop.inc.php:146
+#: templates/includes/backtotop/styling.inc.php:50
 msgid "Background color"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:143
+#: templates/includes/backtotop.inc.php:147
+#: templates/includes/backtotop/styling.inc.php:51
 msgid "Choose background color of button"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:151
+#: templates/includes/backtotop.inc.php:155
+#: templates/includes/backtotop/styling.inc.php:59
 msgid "Icon color"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:152
+#: templates/includes/backtotop.inc.php:156
+#: templates/includes/backtotop/styling.inc.php:60
 msgid "Choose color of icon"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:160
+#: templates/includes/backtotop.inc.php:164
+#: templates/includes/backtotop/styling.inc.php:68
 msgid "Icon"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:161
+#: templates/includes/backtotop.inc.php:165
+#: templates/includes/backtotop/styling.inc.php:69
 msgid "Choose icon"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:169
+#: templates/includes/backtotop.inc.php:173
+#: templates/includes/backtotop/styling.inc.php:77
 msgid "Icon size"
 msgstr ""
 
-#: templates/includes/backtotop.inc.php:170
+#: templates/includes/backtotop.inc.php:174
+#: templates/includes/backtotop/styling.inc.php:78
 msgid "Choose size of icon (default : 13px)"
 msgstr ""
 
-#: templates/includes/dashboard.inc.php:13 templates/wpk_dashboard.php:26
+#: templates/includes/dashboard.inc.php:12 templates/wpk_dashboard.php:26
 msgid "Dashboard"
 msgstr ""
 
-#: templates/wpk_dashboard.php:49
+#: templates/wpk_dashboard.php:31
+msgid "Front components"
+msgstr ""
+
+#: templates/wpk_dashboard.php:68
 msgid "Save changes"
 msgstr ""
 
-#: templates/wpk_dashboard.php:51
+#: templates/wpk_dashboard.php:70
 msgid "Reset section"
 msgstr ""
 
-#: templates/wpk_dashboard.php:53
+#: templates/wpk_dashboard.php:72
 msgid "Reset all sections"
 msgstr ""
 
