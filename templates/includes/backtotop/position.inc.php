@@ -9,14 +9,13 @@ if (!defined('ABSPATH')) {
 <div id="<?= WPK_BTT.'_Position' ?>" class="<?= WPK_PREFIX.'tabs' ?>" data-name="<?= WPK_BTT.'_Position' ?>">
 				
 	<div class="<?= WPK_PREFIX.'card-header' ?>">
-		<h1><?= __( 'Back to top > Position', 'wp-keliosis' ); ?></h1>
+		<h1><?= __( 'Back to top', 'wp-keliosis' ); ?> <span class="caret">></span> <span class="title"><?= __( 'Position', 'wp-keliosis' ); ?></span></h1>
 	</div>
 	
 	<div class="<?= WPK_PREFIX.'container' ?>">
         
         <!--Position -->
         <div class="<?= WPK_PREFIX.'card' ?>">
-            <h2><?= __( 'Position', 'wp-keliosis' ); ?></h2>
             <div class="<?= WPK_PREFIX.'content-card' ?>">
                 <table>
                     <tr>

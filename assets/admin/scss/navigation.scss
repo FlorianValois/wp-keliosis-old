@@ -110,6 +110,7 @@
               padding-left: 60px;
               &.active {
                 color: $grey;
+                background: rgba($black, .03);
               }
               &:before {
                 position: absolute;

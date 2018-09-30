@@ -24,8 +24,7 @@ jQuery(document).ready(function ($) {
     var data_name = $(this).attr('data-name');
     if (data_name === WPK_PREFIX + "dashboard") {
       $('#' + WPK_PREFIX + 'listButtonForm').removeClass('active');
-    }
-    else {
+    } else {
       $('#' + WPK_PREFIX + 'listButtonForm').addClass('active');
     }
     $('.' + WPK_PREFIX + 'tabs').each(function () {
@@ -33,8 +32,7 @@ jQuery(document).ready(function ($) {
       if (id_content == data_name) {
         $(this).addClass('open');
         $(this).show();
-      }
-      else {
+      } else {
         $(this).removeClass('open');
         $(this).hide();
       }
@@ -58,6 +56,7 @@ jQuery(document).ready(function ($) {
       allTabs.find('input').val('');
       allTabs.find('input[type="checkbox"]').remove();
       allTabs.find('select').val('');
+      allTabs.find('.color-alpha').css('background', 'none');
     });
   });
   /* SAVE CHANGES */
@@ -80,25 +79,25 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
     var json = $.param(getFormData($('#' + WPK_PREFIX + 'options'), true));
     var postData = {
-      action: 'wpa_49691'
-      , data: json
+      action: 'wpa_49691',
+      data: json
     }
     $.ajax({
-      type: "POST"
-      , data: postData
-      , dataType: "json"
-      , url: wpk_ajax.ajaxurl
-      , success: function (postData) {
-          //        if (postData.update) {
-          swal({
-            position: 'center'
-            , type: 'success'
-            , title: 'Sauvegardé !'
-            , text: 'Vos modifications ont été sauvegardées avec succès.'
-            , backdrop: 'rgba(0, 0, 0, .75)'
-          , })
-        }
-        //      }
+      type: "POST",
+      data: postData,
+      dataType: "json",
+      url: wpk_ajax.ajaxurl,
+      success: function (postData) {
+        //        if (postData.update) {
+        swal({
+          position: 'center',
+          type: 'success',
+          title: 'Sauvegardé !',
+          text: 'Vos modifications ont été sauvegardées avec succès.',
+          backdrop: 'rgba(0, 0, 0, .75)',
+        })
+      }
+      //      }
     });
   });
   /* #formAjax */

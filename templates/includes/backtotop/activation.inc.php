@@ -16,7 +16,6 @@ if (!defined('ABSPATH')) {
        
         <!--	Activation -->
         <div class="<?= WPK_PREFIX.'card' ?>">
-            <h2><?= __( 'Activation', 'wp-keliosis' ); ?></h2>
             <div class="<?= WPK_PREFIX.'content-card' ?>">
                 <table>
                     <tr>

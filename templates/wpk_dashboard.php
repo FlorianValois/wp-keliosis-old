@@ -28,7 +28,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 					</li>
                 </ul>
             </nav>
-            <span class="<?= WPK_PREFIX.'title-section' ?>">Lorem ipsum</span>
+            <span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front components', 'wp-keliosis' ); ?></span>
             <nav>
                 <ul>
 					<li>
