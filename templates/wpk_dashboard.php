@@ -57,20 +57,17 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 			<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
 
 				<?php 
-					require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php'; 
-//					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop.inc.php'; 
+					// Dashboard
+					require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php';
+					// Back to top
 					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/activation.inc.php'; 
 					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/position.inc.php'; 
 					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/styling.inc.php'; 
 				?>
 				<div id="<?= WPK_PREFIX.'listButtonForm' ?>">
-				
 					<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><i class="far fa-save"></i> <?= __( 'Save changes', 'wp-keliosis' ); ?></button>
-
 					<button type="button" id="<?= WPK_PREFIX.'btnResetSection' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><i class="fas fa-eraser"></i> <?= __( 'Reset section', 'wp-keliosis' ); ?></button>
-					
 					<button type="button" id="<?= WPK_PREFIX.'btnResetAll' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><i class="fas fa-eraser"></i> <?= __( 'Reset all sections', 'wp-keliosis' ); ?></button>
-
 				</div>
 				
 			</form>

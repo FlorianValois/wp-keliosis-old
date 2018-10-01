@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
 				});
 				swal(
 					wpk_ajax.wpk_delete,
-					wpk_ajax.wpk_value_deleted,
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f3545d;">' + wpk_ajax.wpk_advert_message + '</strong>',
 					'success'
 				)
 			}
@@ -91,7 +91,7 @@ jQuery(document).ready(function ($) {
 				});
 				swal(
 					wpk_ajax.wpk_delete,
-					wpk_ajax.wpk_value_deleted,
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f3545d;">' + wpk_ajax.wpk_advert_message + '</strong>',
 					'success'
 				)
 			}
