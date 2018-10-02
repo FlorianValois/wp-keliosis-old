@@ -26,11 +26,9 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 							<span><?= __( 'Dashboard', 'wp-keliosis' ); ?></span>
 						</a>
 					</li>
-                </ul>
-            </nav>
-            <span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front components', 'wp-keliosis' ); ?></span>
-            <nav>
-                <ul>
+          <li>
+          	<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front components', 'wp-keliosis' ); ?></span>
+          </li>
 					<li>
 						<a href="" title="" id="<?= WPK_PREFIX.'backToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_BTT ?>">
 							<i class="fas fa-level-up-alt"></i>

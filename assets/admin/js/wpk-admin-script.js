@@ -5,22 +5,26 @@ jQuery(document).ready(function ($) {
 	/* WP Color Picker */
 	$('.color-picker').wpColorPicker();
 	/* START - NAVIGATION -*/
-	// Active link and Open sub menu navigation
+	// Open sub-menu
 	$('.' + WPK_PREFIX + 'menuTitle').on('click', function (event) {
 		event.preventDefault();
-		$('.' + WPK_PREFIX + 'submenuTitle').removeClass('active');
 		$('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
 		$('.' + WPK_PREFIX + 'menuTitle').next().hide();
 		$(this).addClass('active');
 		$(this).next().show();
 	});
-	$('.' + WPK_PREFIX + 'submenuTitle').on('click', function (event) {
-		event.preventDefault();
-		$('.' + WPK_PREFIX + 'submenuTitle').removeClass('active');
-		$(this).addClass('active');
-	});
+	
+	// Link active
 	$('.' + WPK_PREFIX + 'linkTabs').on('click', function (event) {
 		event.preventDefault();
+		$('.' + WPK_PREFIX + 'linkTabs').removeClass('active');
+		$(this).addClass('active')
+	});
+	
+	// Open tabs
+	$('.' + WPK_PREFIX + 'linkTabs').on('click', function (event) {
+		event.preventDefault();
+		var thisData = $(this);
 		var data_name = $(this).attr('data-name');
 		if (data_name === WPK_PREFIX + "dashboard") {
 			$('#' + WPK_PREFIX + 'listButtonForm').removeClass('active');
@@ -30,9 +34,12 @@ jQuery(document).ready(function ($) {
 		$('.' + WPK_PREFIX + 'tabs').each(function () {
 			var id_content = $(this).attr('id');
 			if (id_content == data_name) {
+			console.log(thisData);
+				$(thisData).addClass('Yolo');
 				$(this).addClass('open');
 				$(this).show();
 			} else {
+				$(thisData).removeClass('Yolo');
 				$(this).removeClass('open');
 				$(this).hide();
 			}

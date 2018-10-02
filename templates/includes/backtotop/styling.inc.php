@@ -65,7 +65,7 @@ if (!defined('ABSPATH')) {
 					<tr>
 							<th>
 									<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Icon', 'wp-keliosis' ); ?></span>
-									<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose icon', 'wp-keliosis' ); ?> (<a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome 5">Font Awesome 5</a>)</span>
+									<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Choose icon', 'wp-keliosis' ); ?> (<a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome 5 Free">Font Awesome 5 Free</a>)</span>
 							</th>
 							<td>
 									<input type="text" name="<?= WPK_BTT.'_Icon' ?>" value="<?php echo $data[WPK_BTT.'_Icon']; ?>" placeholder="Ex : f0d8">
