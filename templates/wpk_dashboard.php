@@ -30,19 +30,19 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
           	<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front components', 'wp-keliosis' ); ?></span>
           </li>
 					<li>
-						<a href="" title="" id="<?= WPK_PREFIX.'backToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_BTT ?>">
+						<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_STT ?>">
 							<i class="fas fa-level-up-alt"></i>
-							<span><?= __( 'Back to top', 'wp-keliosis' ); ?></span>
+							<span><?= __( 'Scroll to top', 'wp-keliosis' ); ?></span>
 						</a>
 						<ul>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_Activation' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>">Activation</a>
+								<a href="" data-name="<?= WPK_STT.'_Activation' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>"><?= __( 'Activation', 'wp-keliosis' ); ?></a>
 							</li>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_Position' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>">Position</a>
+								<a href="" data-name="<?= WPK_STT.'_Position' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>"><?= __( 'Position', 'wp-keliosis' ); ?></a>
 							</li>
 							<li>
-								<a href="" data-name="<?= WPK_BTT.'_Styling' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>">Styling</a>
+								<a href="" data-name="<?= WPK_STT.'_Styling' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>"><?= __( 'Styling', 'wp-keliosis' ); ?></a>
 							</li>
 						</ul>
 					</li>
@@ -58,9 +58,9 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 					// Dashboard
 					require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php';
 					// Back to top
-					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/activation.inc.php'; 
-					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/position.inc.php'; 
-					require_once WPK_PLUGIN_DIR . '/templates/includes/backtotop/styling.inc.php'; 
+					require_once WPK_PLUGIN_DIR . '/templates/includes/scrollToTop/activation.inc.php'; 
+					require_once WPK_PLUGIN_DIR . '/templates/includes/scrollToTop/position.inc.php'; 
+					require_once WPK_PLUGIN_DIR . '/templates/includes/scrollToTop/styling.inc.php'; 
 				?>
 				<div id="<?= WPK_PREFIX.'listButtonForm' ?>">
 					<button type="submit" id="<?= WPK_PREFIX.'btnSaveChanges' ?>" class="<?= WPK_PREFIX.'btn-save' ?>"><i class="far fa-save"></i> <?= __( 'Save changes', 'wp-keliosis' ); ?></button>

@@ -1,0 +1,269 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Keliosis\n"
+"POT-Creation-Date: 2018-10-02 23:45+0200\n"
+"PO-Revision-Date: 2018-10-02 23:45+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-keliosis.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/admin.php:12 admin/admin.php:13
+msgid "WP Keliosis"
+msgstr "WP Keliosis"
+
+#: admin/admin.php:24 admin/admin.php:25
+msgid "Options"
+msgstr "Options"
+
+#: admin/localization.php:10
+msgid "Values for THIS section has been reset."
+msgstr "Les valeurs de cette section ont été réinitialisées."
+
+#: admin/localization.php:13
+msgid "Values for ALL sections has been reset."
+msgstr "Les valeurs de toutes les sections ont été réinitialisées."
+
+#: admin/localization.php:16
+msgid "Yes"
+msgstr "Oui"
+
+#: admin/localization.php:17
+msgid "No"
+msgstr "Non"
+
+#: admin/localization.php:18
+msgid "Delete values ?"
+msgstr "Supprimer les valeurs?"
+
+#: admin/localization.php:19
+msgid "Deleted !"
+msgstr "Supprimé !"
+
+#: admin/localization.php:20
+msgid "Your values has been deleted."
+msgstr "Vos valeurs ont été supprimées."
+
+#: admin/localization.php:21
+msgid "Do not forget to save your changes."
+msgstr "N'oubliez pas d'enregistrer vos modifications."
+
+#: admin/localization.php:22
+msgid "Save your changes ?"
+msgstr "Enregistrer vos modifications?"
+
+#: admin/localization.php:23
+msgid "You will save your changes."
+msgstr "Vous allez enregistrer vos modifications."
+
+#: admin/localization.php:24
+msgid "Saved !"
+msgstr "Sauvegardé !"
+
+#: admin/localization.php:25
+msgid "Your changes have been saved successfully."
+msgstr "Vos modifications ont été enregistrées avec succès."
+
+#: admin/localization.php:26
+msgid "You will need to save your changes later."
+msgstr "Vous devrez enregistrer vos modifications ultérieurement."
+
+#: templates/includes/dashboard.inc.php:12 templates/wpk_dashboard.php:26
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: templates/includes/dashboard.inc.php:18
+msgid "Welcome to WP-Keliosis !"
+msgstr "Bienvenue sur WP-Keliosis!"
+
+#: templates/includes/dashboard.inc.php:21
+msgid "What can i do in WP-Keliosis ?"
+msgstr "Que puis-je faire dans WP-Keliosis?"
+
+#: templates/includes/dashboard.inc.php:26
+msgid "Changelog"
+msgstr "Historique des mises à jour"
+
+#: templates/includes/dashboard.inc.php:29
+msgid "Futures updates"
+msgstr "Mises à jour futures"
+
+#: templates/includes/dashboard.inc.php:33
+msgid "Documentation"
+msgstr "Documentation"
+
+#: templates/includes/dashboard.inc.php:34
+msgid "All you need to know about the plugin is in this documentation."
+msgstr ""
+"Tout ce que vous devez savoir sur le plugin est dans cette documentation."
+
+#: templates/includes/scrolltotop/activation.inc.php:12
+#: templates/includes/scrolltotop/position.inc.php:12
+#: templates/includes/scrolltotop/styling.inc.php:12
+#: templates/wpk_dashboard.php:35
+msgid "Scroll to top"
+msgstr "Scroll vers le haut"
+
+#: templates/includes/scrolltotop/activation.inc.php:12
+msgid "Activation"
+msgstr "Activation"
+
+#: templates/includes/scrolltotop/activation.inc.php:22
+msgid "Display \"Scroll to top\" button"
+msgstr "Afficher le bouton \"défiler vers le haut\""
+
+#: templates/includes/scrolltotop/activation.inc.php:23
+msgid "Turn on to display the \"Scroll to top\" button"
+msgstr "Afficher le bouton \"défiler vers le haut\""
+
+#: templates/includes/scrolltotop/activation.inc.php:36
+msgid "Display on smartphone"
+msgstr "Affichage sur Smartphone"
+
+#: templates/includes/scrolltotop/activation.inc.php:37
+msgid "Choose if the button is display on smartphone."
+msgstr "Choisissez si le bouton est affiché sur Smartphone."
+
+#: templates/includes/scrolltotop/activation.inc.php:50
+msgid "Width smartphone"
+msgstr "Largeur smartphone"
+
+#: templates/includes/scrolltotop/activation.inc.php:51
+msgid "Choose the minimum width of smartphone to display"
+msgstr "Choisissez la largeur minimale du smartphone à afficher"
+
+#: templates/includes/scrolltotop/position.inc.php:12
+#: templates/includes/scrolltotop/position.inc.php:22
+msgid "Position"
+msgstr "Position"
+
+#: templates/includes/scrolltotop/position.inc.php:23
+msgid "Choose position of the button between left or right"
+msgstr "Choisir la position du bouton entre la gauche ou la droite"
+
+#: templates/includes/scrolltotop/position.inc.php:44
+msgid "Horizontal gap"
+msgstr "Écart horizontal"
+
+#: templates/includes/scrolltotop/position.inc.php:45
+msgid "Choose horizontal gap of the button"
+msgstr "Choisissez le décalage horizontal du bouton"
+
+#: templates/includes/scrolltotop/position.inc.php:53
+msgid "Vertical gap"
+msgstr "Écart vertical"
+
+#: templates/includes/scrolltotop/position.inc.php:54
+msgid "Choose vertical gap of the button"
+msgstr "Choisissez l'écart vertical du bouton"
+
+#: templates/includes/scrolltotop/styling.inc.php:12
+msgid "Styling"
+msgstr "Options de style"
+
+#: templates/includes/scrolltotop/styling.inc.php:22
+msgid "Width"
+msgstr "Largeur"
+
+#: templates/includes/scrolltotop/styling.inc.php:23
+msgid "Choose width of button"
+msgstr "Choisir la largeur du bouton"
+
+#: templates/includes/scrolltotop/styling.inc.php:31
+msgid "Height"
+msgstr "Hauteur"
+
+#: templates/includes/scrolltotop/styling.inc.php:32
+msgid "Choose height of button"
+msgstr "Choisir la hauteur du bouton"
+
+#: templates/includes/scrolltotop/styling.inc.php:40
+msgid "Radius"
+msgstr "Rayon"
+
+#: templates/includes/scrolltotop/styling.inc.php:41
+msgid "Choose radius of button"
+msgstr "Choisir le rayon du bouton"
+
+#: templates/includes/scrolltotop/styling.inc.php:49
+msgid "Background color"
+msgstr "Couleur de fond"
+
+#: templates/includes/scrolltotop/styling.inc.php:50
+msgid "Choose background color of button"
+msgstr "Choisir la couleur d'arrière-plan du bouton"
+
+#: templates/includes/scrolltotop/styling.inc.php:58
+msgid "Icon color"
+msgstr "Couleur de l'icône"
+
+#: templates/includes/scrolltotop/styling.inc.php:59
+msgid "Choose color of icon"
+msgstr "Choisir la couleur de l'icône"
+
+#: templates/includes/scrolltotop/styling.inc.php:67
+msgid "Icon"
+msgstr "Icône"
+
+#: templates/includes/scrolltotop/styling.inc.php:68
+msgid "Choose icon"
+msgstr "Choisir l'icône"
+
+#: templates/includes/scrolltotop/styling.inc.php:76
+msgid "Icon size"
+msgstr "Taille de l'icône"
+
+#: templates/includes/scrolltotop/styling.inc.php:77
+msgid "Choose size of icon (default : 13px)"
+msgstr "Choisissez la taille de l'icône (par défaut: 13px)"
+
+#: templates/wpk_dashboard.php:30
+msgid "Front components"
+msgstr "Composants \"front\""
+
+#: templates/wpk_dashboard.php:66
+msgid "Save changes"
+msgstr "Sauvegarder les modifications"
+
+#: templates/wpk_dashboard.php:67
+msgid "Reset section"
+msgstr "Réinitialiser la section"
+
+#: templates/wpk_dashboard.php:68
+msgid "Reset all sections"
+msgstr "Réinitialiser toutes les sections"
+
+#. Plugin Name of the plugin/theme
+msgid "WP-Keliosis"
+msgstr "WP Keliosis"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/FlorianValois/wp-keliosis/"
+msgstr "https://github.com/FlorianValois/WP-keliosis/"
+
+#. Description of the plugin/theme
+msgid "A plugin with a mountain of options to customize your WordPress site."
+msgstr ""
+"Un plugin avec une montagne d'options pour personnaliser votre site "
+"WordPress."
+
+#. Author of the plugin/theme
+msgid "Florian Valois"
+msgstr "Florian Valois"
+
+#. Author URI of the plugin/theme
+msgid "https://florian-valois.com"
+msgstr "https://florian-valois.com"

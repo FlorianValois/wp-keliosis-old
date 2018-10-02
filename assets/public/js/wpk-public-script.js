@@ -1,1 +1,1 @@
-// @koala-prepend "wpk-function/wpk-backtotop.js"
+// @koala-prepend "wpk-function/wpk-scrolltotop.js"

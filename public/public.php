@@ -35,11 +35,16 @@ if ( !function_exists( 'wpk_public_enqueue_style_script' ) ) {
   }
 }
 
-if ( !function_exists( 'wpk_backToTop_init' ) ) {
-add_action('wp_footer', 'wpk_backToTop_init');
-	function wpk_backToTop_init(){
+if ( !function_exists( 'wpk_scrollToTop_init' ) ) {
+add_action('wp_footer', 'wpk_scrollToTop_init');
+	function wpk_scrollToTop_init(){
 	?>
-	<button type="button" id="<?= WPK_PREFIX.'btn_backToTop' ?>"></button>
+	<button type="button" id="<?= WPK_PREFIX.'btn_scrollToTop' ?>"></button>
 	<?php
 	};
 }
+
+function load_plugin_textdomain() {
+  load_plugin_textdomain( 'wp-keliosis', FALSE, WPK_PLUGIN_DIR . '/languages/' );
+}
+add_action( 'plugins_loaded', 'load_plugin_textdomain' );

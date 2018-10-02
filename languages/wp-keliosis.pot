@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-10-01 11:50+0200\n"
+"POT-Creation-Date: 2018-10-02 23:42+0200\n"
 "PO-Revision-Date: 2018-09-13 12:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: wp-keliosis.php\n"
@@ -30,11 +30,11 @@ msgid "Options"
 msgstr ""
 
 #: admin/localization.php:10
-msgid "You will remove all values from this section."
+msgid "Values for THIS section has been reset."
 msgstr ""
 
 #: admin/localization.php:13
-msgid "You will remove all values from all sections."
+msgid "Values for ALL sections has been reset."
 msgstr ""
 
 #: admin/localization.php:16
@@ -81,143 +81,167 @@ msgstr ""
 msgid "You will need to save your changes later."
 msgstr ""
 
-#: templates/includes/backtotop/activation.inc.php:12
-#: templates/includes/backtotop/position.inc.php:12
-#: templates/includes/backtotop/styling.inc.php:12
-#: templates/wpk_dashboard.php:37
-msgid "Back to top"
-msgstr ""
-
-#: templates/includes/backtotop/activation.inc.php:12
-msgid "Activation"
-msgstr ""
-
-#: templates/includes/backtotop/activation.inc.php:22
-msgid "Display \"back to top\" button"
-msgstr ""
-
-#: templates/includes/backtotop/activation.inc.php:23
-msgid "Turn on to display the \"back to top\" button"
-msgstr ""
-
-#: templates/includes/backtotop/activation.inc.php:36
-msgid "Display on smartphone"
-msgstr ""
-
-#: templates/includes/backtotop/activation.inc.php:37
-msgid "Choose if the button is display on smartphone."
-msgstr ""
-
-#: templates/includes/backtotop/activation.inc.php:50
-msgid "Width smartphone"
-msgstr ""
-
-#: templates/includes/backtotop/activation.inc.php:51
-msgid "Choose the minimum width of smartphone to display"
-msgstr ""
-
-#: templates/includes/backtotop/position.inc.php:12
-#: templates/includes/backtotop/position.inc.php:22
-msgid "Position"
-msgstr ""
-
-#: templates/includes/backtotop/position.inc.php:23
-msgid "Choose position of the button between left or right"
-msgstr ""
-
-#: templates/includes/backtotop/position.inc.php:44
-msgid "Horizontal gap"
-msgstr ""
-
-#: templates/includes/backtotop/position.inc.php:45
-msgid "Choose horizontal gap of the button"
-msgstr ""
-
-#: templates/includes/backtotop/position.inc.php:53
-msgid "Vertical gap"
-msgstr ""
-
-#: templates/includes/backtotop/position.inc.php:54
-msgid "Choose vertical gap of the button"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:12
-msgid "Styling"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:22
-msgid "Width"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:23
-msgid "Choose width of button"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:31
-msgid "Height"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:32
-msgid "Choose height of button"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:40
-msgid "Radius"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:41
-msgid "Choose radius of button"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:49
-msgid "Background color"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:50
-msgid "Choose background color of button"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:58
-msgid "Icon color"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:59
-msgid "Choose color of icon"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:67
-msgid "Icon"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:68
-msgid "Choose icon"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:76
-msgid "Icon size"
-msgstr ""
-
-#: templates/includes/backtotop/styling.inc.php:77
-msgid "Choose size of icon (default : 13px)"
-msgstr ""
-
 #: templates/includes/dashboard.inc.php:12 templates/wpk_dashboard.php:26
 msgid "Dashboard"
 msgstr ""
 
-#: templates/wpk_dashboard.php:31
+#: templates/includes/dashboard.inc.php:18
+msgid "Welcome to WP-Keliosis !"
+msgstr ""
+
+#: templates/includes/dashboard.inc.php:21
+msgid "What can i do in WP-Keliosis ?"
+msgstr ""
+
+#: templates/includes/dashboard.inc.php:26
+msgid "Changelog"
+msgstr ""
+
+#: templates/includes/dashboard.inc.php:29
+msgid "Futures updates"
+msgstr ""
+
+#: templates/includes/dashboard.inc.php:33
+msgid "Documentation"
+msgstr ""
+
+#: templates/includes/dashboard.inc.php:34
+msgid "All you need to know about the plugin is in this documentation."
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:12
+#: templates/includes/scrolltotop/position.inc.php:12
+#: templates/includes/scrolltotop/styling.inc.php:12
+#: templates/wpk_dashboard.php:35
+msgid "Scroll to top"
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:12
+msgid "Activation"
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:22
+msgid "Display \"Scroll to top\" button"
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:23
+msgid "Turn on to display the \"Scroll to top\" button"
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:36
+msgid "Display on smartphone"
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:37
+msgid "Choose if the button is display on smartphone."
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:50
+msgid "Width smartphone"
+msgstr ""
+
+#: templates/includes/scrolltotop/activation.inc.php:51
+msgid "Choose the minimum width of smartphone to display"
+msgstr ""
+
+#: templates/includes/scrolltotop/position.inc.php:12
+#: templates/includes/scrolltotop/position.inc.php:22
+msgid "Position"
+msgstr ""
+
+#: templates/includes/scrolltotop/position.inc.php:23
+msgid "Choose position of the button between left or right"
+msgstr ""
+
+#: templates/includes/scrolltotop/position.inc.php:44
+msgid "Horizontal gap"
+msgstr ""
+
+#: templates/includes/scrolltotop/position.inc.php:45
+msgid "Choose horizontal gap of the button"
+msgstr ""
+
+#: templates/includes/scrolltotop/position.inc.php:53
+msgid "Vertical gap"
+msgstr ""
+
+#: templates/includes/scrolltotop/position.inc.php:54
+msgid "Choose vertical gap of the button"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:12
+msgid "Styling"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:22
+msgid "Width"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:23
+msgid "Choose width of button"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:31
+msgid "Height"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:32
+msgid "Choose height of button"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:40
+msgid "Radius"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:41
+msgid "Choose radius of button"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:49
+msgid "Background color"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:50
+msgid "Choose background color of button"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:58
+msgid "Icon color"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:59
+msgid "Choose color of icon"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:67
+msgid "Icon"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:68
+msgid "Choose icon"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:76
+msgid "Icon size"
+msgstr ""
+
+#: templates/includes/scrolltotop/styling.inc.php:77
+msgid "Choose size of icon (default : 13px)"
+msgstr ""
+
+#: templates/wpk_dashboard.php:30
 msgid "Front components"
 msgstr ""
 
-#: templates/wpk_dashboard.php:68
+#: templates/wpk_dashboard.php:66
 msgid "Save changes"
 msgstr ""
 
-#: templates/wpk_dashboard.php:69
+#: templates/wpk_dashboard.php:67
 msgid "Reset section"
 msgstr ""
 
-#: templates/wpk_dashboard.php:70
+#: templates/wpk_dashboard.php:68
 msgid "Reset all sections"
 msgstr ""
 
