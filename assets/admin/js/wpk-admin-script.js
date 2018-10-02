@@ -12,18 +12,33 @@ jQuery(document).ready(function ($) {
 		$('.' + WPK_PREFIX + 'menuTitle').next().hide();
 		$(this).addClass('active');
 		$(this).next().show();
-	});
-	
-	// Link active
-	$('.' + WPK_PREFIX + 'linkTabs').on('click', function (event) {
-		event.preventDefault();
 		$('.' + WPK_PREFIX + 'linkTabs').removeClass('active');
-		$(this).addClass('active')
+		$(this).next().children().first().find('a').addClass('active');
+		var tabsOpen = $(this).next().children().first().find('a').attr('data-name');
+		console.log(tabsOpen);
+		$('.' + WPK_PREFIX + 'tabs').each(function () {
+			var id_content = $(this).attr('id');
+			if (id_content == tabsOpen) {
+			console.log(tabsOpen);
+				$(this).addClass('open');
+				$(this).show();
+			} else {
+				$(this).removeClass('open');
+				$(this).hide();
+			}
+		});
+		if (tabsOpen === WPK_PREFIX + "dashboard") {
+			$('#' + WPK_PREFIX + 'listButtonForm').removeClass('active');
+		} else {
+			$('#' + WPK_PREFIX + 'listButtonForm').addClass('active');
+		}
 	});
 	
 	// Open tabs
 	$('.' + WPK_PREFIX + 'linkTabs').on('click', function (event) {
 		event.preventDefault();
+		$('.' + WPK_PREFIX + 'linkTabs').removeClass('active');
+		$(this).addClass('active');
 		var thisData = $(this);
 		var data_name = $(this).attr('data-name');
 		if (data_name === WPK_PREFIX + "dashboard") {
@@ -35,11 +50,9 @@ jQuery(document).ready(function ($) {
 			var id_content = $(this).attr('id');
 			if (id_content == data_name) {
 			console.log(thisData);
-				$(thisData).addClass('Yolo');
 				$(this).addClass('open');
 				$(this).show();
 			} else {
-				$(thisData).removeClass('Yolo');
 				$(this).removeClass('open');
 				$(this).hide();
 			}
