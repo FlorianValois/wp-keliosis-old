@@ -56,7 +56,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 				<?php 
 					// Dashboard
 					require_once WPK_PLUGIN_DIR . '/templates/includes/dashboard.inc.php';
-					// Back to top
+					// Scroll to top
 					require_once WPK_PLUGIN_DIR . '/templates/includes/scrollToTop/activation.inc.php'; 
 					require_once WPK_PLUGIN_DIR . '/templates/includes/scrollToTop/position.inc.php'; 
 					require_once WPK_PLUGIN_DIR . '/templates/includes/scrollToTop/styling.inc.php'; 

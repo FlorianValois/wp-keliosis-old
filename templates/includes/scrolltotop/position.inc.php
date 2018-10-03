@@ -11,7 +11,8 @@ if (!defined('ABSPATH')) {
 	<div class="<?= WPK_PREFIX.'container' ?> container-fluid">
 	
 		<h1><?= __( 'Position', 'wp-keliosis' ); ?></h1>
-        
+    <div class="row">
+			<div class="col-8">
 		<!--Position -->
 		<div class="<?= WPK_PREFIX.'card-table' ?>">
 			<table>
@@ -57,6 +58,9 @@ if (!defined('ABSPATH')) {
 					</tr>
 			</table>
 		</div>
+     
+			</div>
+    </div>
       
 	</div><!-- End container -->
 </div>
