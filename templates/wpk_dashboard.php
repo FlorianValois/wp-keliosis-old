@@ -10,25 +10,24 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 	$data = get_option('wp_keliosis');
 
 	?>
+<div id="<?= WPK_PREFIX.'header' ?>">
+	<a id="<?= WPK_PREFIX.'logo' ?>" href=""><img src="https://via.placeholder.com/250x100" alt=""></a>
+</div>
 
-	<table id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap">
-		<tr>
-			
-		
+<table id="<?= WPK_PREFIX.WPK_NAME ?>" class="wrap">
+	<tr>
 		<td id="<?= WPK_PREFIX.'navigation' ?>">
-			<a id="<?= WPK_PREFIX.'logo' ?>" href=""><img src="https://via.placeholder.com/250x100" alt=""></a>
 			<nav>
 				<ul>
-
 					<li>
 						<a href="" title="" id="<?= WPK_PREFIX.'dashboard-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?> active" data-name="<?= WPK_PREFIX.'dashboard' ?>">
 							<i class="fas fa-tachometer-alt"></i>
 							<span><?= __( 'Dashboard', 'wp-keliosis' ); ?></span>
 						</a>
 					</li>
-          <li>
-          	<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front components', 'wp-keliosis' ); ?></span>
-          </li>
+					<li>
+						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front components', 'wp-keliosis' ); ?></span>
+					</li>
 					<li>
 						<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_STT ?>">
 							<i class="fas fa-level-up-alt"></i>
@@ -46,7 +45,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 							</li>
 						</ul>
 					</li>
-					
+
 				</ul>
 			</nav>
 		</td>
@@ -67,12 +66,12 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 					<button type="button" id="<?= WPK_PREFIX.'btnResetSection' ?>" class="<?= WPK_PREFIX.'btn-reset' ?>"><i class="fas fa-eraser"></i> <?= __( 'Reset section', 'wp-keliosis' ); ?></button>
 					<button type="button" id="<?= WPK_PREFIX.'btnResetAll' ?>" class="<?= WPK_PREFIX.'btn-allreset' ?>"><i class="fas fa-trash"></i> <?= __( 'Reset all sections', 'wp-keliosis' ); ?></button>
 				</div>
-				
+
 			</form>
 		</td>
-		
-		</tr>
-	</table>
+
+	</tr>
+</table>
 	<?php
 	}
 }

@@ -7,9 +7,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div id="<?= WPK_STT.'_Position' ?>" class="<?= WPK_PREFIX.'tabs' ?>" data-name="<?= WPK_STT.'_Position' ?>">
-				
-	<div class="<?= WPK_PREFIX.'card-header' ?>"></div>
-	
+					
 	<div class="<?= WPK_PREFIX.'container' ?> container-fluid">
 	
 		<h1><?= __( 'Position', 'wp-keliosis' ); ?></h1>

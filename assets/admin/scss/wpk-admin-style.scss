@@ -17,6 +17,8 @@
 	display: none;
 }
 
+@import 'header';
+
 ##{$prefix_plugin}keliosis {
 	@import 'navigation';
 	@import 'content';

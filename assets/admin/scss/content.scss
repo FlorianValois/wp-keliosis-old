@@ -9,14 +9,6 @@
 				display: block;
 			}
 
-			.#{$prefix_plugin}card-header {
-				background: $white;
-				position: fixed;
-				width: 100%;
-				height: 100px;
-				top: 32px;
-			}
-
 			> .#{$prefix_plugin}container {
 				padding: 30px;
 				margin-top: 100px;
@@ -143,6 +135,7 @@
 		> ##{$prefix_plugin}listButtonForm {
 			display: none;
 			position: fixed;
+			z-index: 901;
 			top: 32px;
 			right: 0;
 			justify-content: flex-start;
