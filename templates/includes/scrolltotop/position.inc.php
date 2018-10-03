@@ -8,11 +8,11 @@ if (!defined('ABSPATH')) {
 
 <div id="<?= WPK_STT.'_Position' ?>" class="<?= WPK_PREFIX.'tabs' ?>" data-name="<?= WPK_STT.'_Position' ?>">
 				
-	<div class="<?= WPK_PREFIX.'card-header' ?>">
-		<h1><?= __( 'Scroll to top', 'wp-keliosis' ); ?> <span class="caret">></span> <span class="title"><?= __( 'Position', 'wp-keliosis' ); ?></span></h1>
-	</div>
+	<div class="<?= WPK_PREFIX.'card-header' ?>"></div>
 	
-	<div class="<?= WPK_PREFIX.'container' ?>">
+	<div class="<?= WPK_PREFIX.'container' ?> container-fluid">
+	
+		<h1><?= __( 'Position', 'wp-keliosis' ); ?></h1>
         
 		<!--Position -->
 		<div class="<?= WPK_PREFIX.'card-table' ?>">

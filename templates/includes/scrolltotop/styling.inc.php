@@ -8,12 +8,12 @@ if (!defined('ABSPATH')) {
 
 <div id="<?= WPK_STT.'_Styling' ?>" class="<?= WPK_PREFIX.'tabs' ?>" data-name="<?= WPK_STT.'_Styling' ?>">
 				
-	<div class="<?= WPK_PREFIX.'card-header' ?>">
-		<h1><?= __( 'Scroll to top', 'wp-keliosis' ); ?> <span class="caret">></span> <span class="title"><?= __( 'Styling', 'wp-keliosis' ); ?></span></h1>
-	</div>
+	<div class="<?= WPK_PREFIX.'card-header' ?>"></div>
 	
-	<div class="<?= WPK_PREFIX.'container' ?>">
+	<div class="<?= WPK_PREFIX.'container' ?> container-fluid">
         
+		<h1><?= __( 'Styling', 'wp-keliosis' ); ?></h1>
+		
 		<!-- Styling -->
 		<div class="<?= WPK_PREFIX.'card-table' ?>">
 			<table>

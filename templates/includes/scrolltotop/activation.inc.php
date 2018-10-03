@@ -8,19 +8,19 @@ if (!defined('ABSPATH')) {
 
 <div id="<?= WPK_STT.'_Activation' ?>" class="<?= WPK_PREFIX.'tabs' ?>" data-name="<?= WPK_STT.'_Activation' ?>">
 				
-	<div class="<?= WPK_PREFIX.'card-header' ?>">
-		<h1><?= __( 'Scroll to top', 'wp-keliosis' ); ?> <span class="caret">></span> <span class="title"><?= __( 'Activation', 'wp-keliosis' ); ?></span></h1>
-	</div>
+	<div class="<?= WPK_PREFIX.'card-header' ?>"></div>
 	
-	<div class="<?= WPK_PREFIX.'container' ?>">
+	<div class="<?= WPK_PREFIX.'container' ?> container-fluid">
        
+		<h1><?= __( 'Activation', 'wp-keliosis' ); ?></h1>
+		
 		<!--	Activation -->
 		<div class="<?= WPK_PREFIX.'card-table' ?>">
 				<table>
 						<tr>
 								<th>
-										<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Display "Scroll to top" button', 'wp-keliosis' ); ?></span>
-										<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Turn on to display the "Scroll to top" button', 'wp-keliosis' ); ?></span>
+										<span class="<?= WPK_PREFIX.'title' ?>"><?= __( 'Display button', 'wp-keliosis' ); ?></span>
+										<span class="<?= WPK_PREFIX.'description' ?>"><?= __( 'Turn on to display button', 'wp-keliosis' ); ?></span>
 								</th>
 								<td>
 										<div class="checkbox-001">

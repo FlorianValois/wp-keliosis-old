@@ -9,10 +9,10 @@ if (!defined('ABSPATH')) {
 <div id="<?= WPK_PREFIX.'dashboard' ?>" class="<?= WPK_PREFIX.'tabs' ?> active">
 				
 	<div class="<?= WPK_PREFIX.'card-header' ?>">
-		<h1><?= __( 'Dashboard', 'wp-keliosis' ); ?></h1>
 	</div>
     <div class="<?= WPK_PREFIX.'container' ?> container-fluid">
-     <div class="row">
+			<h1><?= __( 'Dashboard', 'wp-keliosis' ); ?></h1>
+      <div class="row">
        <div class="col-8">
           <div class="<?= WPK_PREFIX.'card' ?>">
             <h2><?= __( 'Welcome to WP-Keliosis !', 'wp-keliosis' ); ?></h2>
@@ -32,6 +32,7 @@ if (!defined('ABSPATH')) {
             <i class="fas fa-book"></i>
             <h2><?= __( 'Documentation', 'wp-keliosis' ); ?></h2>
             <p><?= __( 'All you need to know about the plugin is in this documentation.', 'wp-keliosis' ); ?></p>
+            <a href="#" title="<?= __( 'Access the documentation', 'wp-keliosis' ); ?>"><?= __( 'Access the documentation', 'wp-keliosis' ); ?></a>
           </div>
        </div>
      </div>

@@ -83,7 +83,6 @@
 
 .wpk-btn-save {
   display: block;
-  width: calc(100% / 3);
   background: #92C83C;
   color: #ffffff;
   font-family: "Open sans", sans-serif;
@@ -106,7 +105,6 @@
 
 .wpk-btn-reset {
   display: block;
-  width: calc(100% / 3);
   background: #5EC5EC;
   color: #ffffff;
   font-family: "Open sans", sans-serif;
@@ -121,6 +119,28 @@
   transition: all ease .3s;
 }
 .wpk-btn-reset:hover {
+  -webkit-filter: contrast(125%);
+          filter: contrast(125%);
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.wpk-btn-allreset {
+  display: block;
+  background: #f3545d;
+  color: #ffffff;
+  font-family: "Open sans", sans-serif;
+  border: none;
+  border-radius: 3px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+.wpk-btn-allreset:hover {
   -webkit-filter: contrast(125%);
           filter: contrast(125%);
   -webkit-transition: all ease .3s;
@@ -2794,31 +2814,28 @@ html {
   background: #ffffff;
   position: fixed;
   width: 100%;
+  height: 100px;
   top: 32px;
-}
-#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card-header h1 {
-  display: block;
-  padding: 0;
-  margin: 0;
-  line-height: 100px;
-  font-size: 30px;
-  font-weight: 200;
-  color: #3d3d3d, 10%;
-  margin-left: 30px;
-  font-family: "Poppins", sans-serif;
-}
-#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card-header span.caret {
-  color: #bdbdbd;
-}
-#wpk-keliosis #wpk-content > form > .wpk-tabs .wpk-card-header span.title {
-  color: #ffa534;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container {
   padding: 30px;
   margin-top: 100px;
 }
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container h1 {
+  display: block;
+  padding: 0;
+  margin: 0 0 30px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 15px;
+  background: #ffa534;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation {
   background: #ffa534;
+  text-align: center;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation svg {
   position: relative;
@@ -2828,16 +2845,23 @@ html {
   margin: 0 auto 30px;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation h2 {
-  text-align: center;
   color: #ffffff;
   font-weight: 300;
   font-size: 20px;
   margin: 0 0 30px 0;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation p {
-  text-align: center;
   color: #ffffff;
   font-size: 15px;
+  margin-bottom: 30px;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation a {
+  color: #ffa534;
+  background: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card {
   border: none;
@@ -2858,8 +2882,6 @@ html {
   border: none;
   background: #ffffff;
   font-family: "Poppins", sans-serif !important;
-  min-width: 700px;
-  max-width: 800px;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card-table table {
   width: 100%;
@@ -2895,7 +2917,7 @@ html {
   font-size: 13px;
   font-weight: 300;
   font-style: italic;
-  color: #a3a3a3;
+  color: #969696;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card-table table tr td {
   display: inherit;
@@ -2903,12 +2925,15 @@ html {
 }
 #wpk-keliosis #wpk-content > form > #wpk-listButtonForm {
   display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: fixed;
+  top: 32px;
+  right: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 30px;
-  min-width: 700px;
-  max-width: 800px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 #wpk-keliosis #wpk-content > form > #wpk-listButtonForm.active {
   display: -webkit-box;
@@ -2916,7 +2941,12 @@ html {
   display: flex;
 }
 #wpk-keliosis #wpk-content > form > #wpk-listButtonForm > button {
-  margin-right: 30px;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  padding: 0 15px;
 }
 #wpk-keliosis #wpk-content > form > #wpk-listButtonForm > button:last-child {
   margin-right: 0;

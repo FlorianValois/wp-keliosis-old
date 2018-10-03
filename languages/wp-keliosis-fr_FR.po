@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-10-02 23:45+0200\n"
-"PO-Revision-Date: 2018-10-02 23:54+0200\n"
+"POT-Creation-Date: 2018-10-03 11:07+0200\n"
+"PO-Revision-Date: 2018-10-03 11:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.0.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: wp-keliosis.php\n"
@@ -81,7 +81,7 @@ msgstr "Vos modifications ont été enregistrées avec succès."
 msgid "You will need to save your changes later."
 msgstr "Vous devrez enregistrer vos modifications ultérieurement."
 
-#: templates/includes/dashboard.inc.php:12 templates/wpk_dashboard.php:26
+#: templates/includes/dashboard.inc.php:14 templates/wpk_dashboard.php:26
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
@@ -110,24 +110,22 @@ msgid "All you need to know about the plugin is in this documentation."
 msgstr ""
 "Tout ce que vous devez savoir sur le plugin est dans cette documentation."
 
-#: templates/includes/scrolltotop/activation.inc.php:12
-#: templates/includes/scrolltotop/position.inc.php:12
-#: templates/includes/scrolltotop/styling.inc.php:12
-#: templates/wpk_dashboard.php:35
-msgid "Scroll to top"
-msgstr "Scroll vers le haut"
+#: templates/includes/dashboard.inc.php:35
+msgid "Access the documentation"
+msgstr "Accéder à la documentation"
 
-#: templates/includes/scrolltotop/activation.inc.php:12
+#: templates/includes/scrolltotop/activation.inc.php:15
+#: templates/wpk_dashboard.php:39
 msgid "Activation"
 msgstr "Activation"
 
 #: templates/includes/scrolltotop/activation.inc.php:22
-msgid "Display \"Scroll to top\" button"
-msgstr "Afficher le bouton \"défiler vers le haut\""
+msgid "Display button"
+msgstr "Afficher le bouton"
 
 #: templates/includes/scrolltotop/activation.inc.php:23
-msgid "Turn on to display the \"Scroll to top\" button"
-msgstr "Afficher le bouton \"défiler vers le haut\""
+msgid "Turn on to display button"
+msgstr "Activer pour afficher le bouton"
 
 #: templates/includes/scrolltotop/activation.inc.php:36
 msgid "Display on smartphone"
@@ -145,8 +143,9 @@ msgstr "Largeur smartphone"
 msgid "Choose the minimum width of smartphone to display"
 msgstr "Choisissez la largeur minimale du smartphone à afficher"
 
-#: templates/includes/scrolltotop/position.inc.php:12
+#: templates/includes/scrolltotop/position.inc.php:15
 #: templates/includes/scrolltotop/position.inc.php:22
+#: templates/wpk_dashboard.php:42
 msgid "Position"
 msgstr "Position"
 
@@ -170,7 +169,8 @@ msgstr "Écart vertical"
 msgid "Choose vertical gap of the button"
 msgstr "Choisissez l'écart vertical du bouton"
 
-#: templates/includes/scrolltotop/styling.inc.php:12
+#: templates/includes/scrolltotop/styling.inc.php:15
+#: templates/wpk_dashboard.php:45
 msgid "Styling"
 msgstr "Options de style"
 
@@ -232,19 +232,23 @@ msgstr "Choisissez la taille de l'icône (par défaut: 13px)"
 
 #: templates/wpk_dashboard.php:30
 msgid "Front components"
-msgstr "Composants \"front\""
+msgstr "Composants Front"
+
+#: templates/wpk_dashboard.php:35
+msgid "Scroll to top"
+msgstr "Scroll vers le haut"
 
 #: templates/wpk_dashboard.php:66
-msgid "Save changes"
-msgstr "Sauvegarder les modifications"
+msgid "Save"
+msgstr "Sauvegardé"
 
 #: templates/wpk_dashboard.php:67
 msgid "Reset section"
-msgstr "Réinitialiser la section"
+msgstr "Réinitialiser section"
 
 #: templates/wpk_dashboard.php:68
 msgid "Reset all sections"
-msgstr "Réinitialiser toutes les sections"
+msgstr "Tout réinitialiser"
 
 #. Plugin Name of the plugin/theme
 msgid "WP-Keliosis"
@@ -267,3 +271,6 @@ msgstr "Florian Valois"
 #. Author URI of the plugin/theme
 msgid "https://florian-valois.com"
 msgstr "https://florian-valois.com"
+
+#~ msgid "Save changes"
+#~ msgstr "Sauvegarder les modifications"

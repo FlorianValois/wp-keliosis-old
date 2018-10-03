@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-10-02 23:42+0200\n"
+"POT-Creation-Date: 2018-10-03 10:30+0200\n"
 "PO-Revision-Date: 2018-09-13 12:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.0.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: wp-keliosis.php\n"
@@ -109,6 +109,10 @@ msgstr ""
 msgid "All you need to know about the plugin is in this documentation."
 msgstr ""
 
+#: templates/includes/dashboard.inc.php:35
+msgid "Access the documentation"
+msgstr ""
+
 #: templates/includes/scrolltotop/activation.inc.php:12
 #: templates/includes/scrolltotop/position.inc.php:12
 #: templates/includes/scrolltotop/styling.inc.php:12
@@ -117,15 +121,16 @@ msgid "Scroll to top"
 msgstr ""
 
 #: templates/includes/scrolltotop/activation.inc.php:12
+#: templates/wpk_dashboard.php:39
 msgid "Activation"
 msgstr ""
 
 #: templates/includes/scrolltotop/activation.inc.php:22
-msgid "Display \"Scroll to top\" button"
+msgid "Display button"
 msgstr ""
 
 #: templates/includes/scrolltotop/activation.inc.php:23
-msgid "Turn on to display the \"Scroll to top\" button"
+msgid "Turn on to display button"
 msgstr ""
 
 #: templates/includes/scrolltotop/activation.inc.php:36
@@ -146,6 +151,7 @@ msgstr ""
 
 #: templates/includes/scrolltotop/position.inc.php:12
 #: templates/includes/scrolltotop/position.inc.php:22
+#: templates/wpk_dashboard.php:42
 msgid "Position"
 msgstr ""
 
@@ -170,6 +176,7 @@ msgid "Choose vertical gap of the button"
 msgstr ""
 
 #: templates/includes/scrolltotop/styling.inc.php:12
+#: templates/wpk_dashboard.php:45
 msgid "Styling"
 msgstr ""
 
@@ -234,7 +241,7 @@ msgid "Front components"
 msgstr ""
 
 #: templates/wpk_dashboard.php:66
-msgid "Save changes"
+msgid "Save"
 msgstr ""
 
 #: templates/wpk_dashboard.php:67
