@@ -45,13 +45,32 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 							</li>
 						</ul>
 					</li>
-
+					<li>
+						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Back components', 'wp-keliosis' ); ?></span>
+					</li>
+					<li>
+						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Extra components', 'wp-keliosis' ); ?></span>
+					</li>
+					<li>
+						<a href="" title="" id="<?= WPK_PREFIX.'importExport-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_IMPEXP ?>">
+							<i class="fas fa-database"></i>
+							<span><?= __( 'Import/Export', 'wp-keliosis' ); ?></span>
+						</a>
+						<ul>
+							<li>
+								<a href="" data-name="<?= WPK_IMPEXP.'_Import' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>"><?= __( 'Import', 'wp-keliosis' ); ?></a>
+							</li>
+							<li>
+								<a href="" data-name="<?= WPK_IMPEXP.'_Export' ?>" class="<?= WPK_PREFIX.'submenuTitle' ?> <?= WPK_PREFIX.'linkTabs' ?>"><?= __( 'Export', 'wp-keliosis' ); ?></a>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</td>
 
 		<td id="<?= WPK_PREFIX.'content' ?>">
-			<form id="<?= WPK_PREFIX.'options' ?>" class="formAjax" method="post" action="">
+			<form id="<?= WPK_PREFIX.'options' ?>" method="post" action="">
 
 				<?php 
 					// Dashboard
@@ -67,6 +86,18 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 					<button type="button" id="<?= WPK_PREFIX.'btnResetAll' ?>" class="<?= WPK_PREFIX.'btn-allreset' ?>"><i class="fas fa-trash"></i> <?= __( 'Reset all sections', 'wp-keliosis' ); ?></button>
 				</div>
 
+			</form>
+			
+			<form id="<?= WPK_PREFIX.'import' ?>" method="post" action="">
+			<?php
+				require_once WPK_PLUGIN_DIR . '/templates/includes/import.inc.php';
+			?>
+			</form>
+			
+			<form id="<?= WPK_PREFIX.'export' ?>" method="post" action="">
+			<?php
+				require_once WPK_PLUGIN_DIR . '/templates/includes/export.inc.php';
+			?>
 			</form>
 		</td>
 

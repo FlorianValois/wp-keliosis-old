@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
 	/* Define var */
 	var WPK_PREFIX = 'wpk-';
 	var WPK_NAME = 'keliosis';
+	/* Check URL to hide admin menu WP */
 	if (location.search == "?page=wpkeliosis") {
 		$('body').addClass('folded sticky-menu');
 	}
@@ -18,11 +19,9 @@ jQuery(document).ready(function ($) {
 		$('.' + WPK_PREFIX + 'linkTabs').removeClass('active');
 		$(this).next().children().first().find('a').addClass('active');
 		var tabsOpen = $(this).next().children().first().find('a').attr('data-name');
-		console.log(tabsOpen);
 		$('.' + WPK_PREFIX + 'tabs').each(function () {
 			var id_content = $(this).attr('id');
 			if (id_content == tabsOpen) {
-				console.log(tabsOpen);
 				$(this).addClass('open');
 				$(this).show();
 			} else {
@@ -52,7 +51,6 @@ jQuery(document).ready(function ($) {
 		$('.' + WPK_PREFIX + 'tabs').each(function () {
 			var id_content = $(this).attr('id');
 			if (id_content == data_name) {
-				console.log(thisData);
 				$(this).addClass('open');
 				$(this).show();
 			} else {

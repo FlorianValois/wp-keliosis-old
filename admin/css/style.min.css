@@ -2803,8 +2803,9 @@ html {
   font-size: 13px;
   font-weight: 600;
   color: #3d3d3d;
+  background: #f0f0f0;
   text-transform: uppercase;
-  padding: 30px 20px;
+  padding: 15px 20px;
 }
 #wpk-keliosis #wpk-content {
   padding: 0;
@@ -2991,4 +2992,5 @@ html {
 .toplevel_page_wpkeliosis #wpbody-content {
   padding-bottom: 0;
 }
+
 /*# sourceMappingURL=style.min.css.map */

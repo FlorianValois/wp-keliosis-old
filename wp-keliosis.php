@@ -29,6 +29,7 @@ define( 'WPK_PLUGIN_DIR_PUBLIC', WPK_PLUGIN_DIR.'/public/' );
 
 /* Options var */
 define( 'WPK_STT', WPK_PREFIX.'scrollToTop' );
+define( 'WPK_IMPEXP', WPK_PREFIX.'importExport' );
 
 require_once WPK_PLUGIN_DIR . '/settings.php';
 

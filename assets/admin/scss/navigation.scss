@@ -137,7 +137,8 @@
     font-size: 13px;
     font-weight: 600;
     color: $grey;
+		background: lighten($grey, 70%);
     text-transform: uppercase;
-    padding: 30px 20px;
+    padding: 15px 20px;
   }
 }
