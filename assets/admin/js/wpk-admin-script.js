@@ -166,6 +166,7 @@ jQuery(document).ready(function ($) {
 							text: wpk_ajax.wpk_save_data_message,
 							backdrop: 'rgba(0, 0, 0, .75)',
 						})
+						$('#wpk-importExport_ExportData').text($('#' + WPK_PREFIX + 'options').serialize());
 					}
 					//      }
 				});

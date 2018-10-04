@@ -1,7 +1,8 @@
 ##{$prefix_plugin}content {
 	padding: 0;
 
-	> form {
+	> form,
+	> div{
 		> .#{$prefix_plugin}tabs {
 			display: none;
 
@@ -27,6 +28,7 @@
 				}
 				
 				@import 'page/dashboard';
+				@import 'page/export';
 				
 				.#{$prefix_plugin}card {
 					border: none;

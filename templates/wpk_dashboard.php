@@ -88,17 +88,17 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 
 			</form>
 			
-			<form id="<?= WPK_PREFIX.'import' ?>" method="post" action="">
+			<div id="<?= WPK_PREFIX.'import' ?>">
 			<?php
 				require_once WPK_PLUGIN_DIR . '/templates/includes/import.inc.php';
 			?>
-			</form>
+			</div>
 			
-			<form id="<?= WPK_PREFIX.'export' ?>" method="post" action="">
+			<div id="<?= WPK_PREFIX.'export' ?>">
 			<?php
 				require_once WPK_PLUGIN_DIR . '/templates/includes/export.inc.php';
 			?>
-			</form>
+			</div>
 		</td>
 
 	</tr>
