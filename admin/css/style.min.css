@@ -2836,35 +2836,43 @@ html {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
-#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation {
-  background: #ffa534;
-  text-align: center;
-}
-#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation svg {
-  position: relative;
-  font-size: 50px;
-  color: #ffffff;
-  display: block;
-  margin: 0 auto 30px;
-}
-#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation h2 {
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 20px;
-  margin: 0 0 30px 0;
-}
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation p {
-  color: #ffffff;
+  color: #3d3d3d;
   font-size: 15px;
   margin-bottom: 30px;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation a {
-  color: #ffa534;
-  background: #ffffff;
+  display: block;
+  line-height: 50px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #ffffff;
+  background: #5EC5EC;
   text-decoration: none;
-  padding: 5px 10px;
   border-radius: 3px;
   text-transform: uppercase;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 30px;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation a svg {
+  margin-right: 10px;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation a:last-child {
+  margin-bottom: 0;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-documentation a:hover {
+  background: #3d3d3d;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-changelog li a {
+  color: #5EC5EC;
+  text-decoration: none;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-changelog li span {
+  color: #7d7d7d;
+  float: right;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card {
   border: none;
@@ -2877,9 +2885,22 @@ html {
   margin-bottom: 0;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card h2 {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 500;
   margin: 0 0 30px 0;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card p {
+  margin-bottom: 30px;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card p:last-child {
+  margin-bottom: 0;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card ul {
+  margin: 0;
+  padding-left: 15px;
+}
+#wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card ul li {
+  list-style: circle;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card-table {
   border: none;
@@ -2901,7 +2922,7 @@ html {
   padding: 30px;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card-table table tr:nth-child(even) {
-  background: rgba(61, 61, 61, 0.05);
+  background: rgba(61, 61, 61, 0.03);
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card-table table tr th {
   display: inline-block;
@@ -2970,5 +2991,4 @@ html {
 .toplevel_page_wpkeliosis #wpbody-content {
   padding-bottom: 0;
 }
-
 /*# sourceMappingURL=style.min.css.map */

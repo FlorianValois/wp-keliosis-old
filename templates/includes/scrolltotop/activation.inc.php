@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
        
 		<h1><?= __( 'Activation', 'wp-keliosis' ); ?></h1>
 		<div class="row">
-			<div class="col-8">
+			<div class="col-12">
 				
 			
 		<!--	Activation -->

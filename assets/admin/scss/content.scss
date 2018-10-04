@@ -12,7 +12,7 @@
 			> .#{$prefix_plugin}container {
 				padding: 30px;
 				margin-top: 100px;
-				
+
 				h1 {
 					display: block;
 					padding: 0;
@@ -25,42 +25,9 @@
 					color: $white;
 					font-family: "Poppins", sans-serif;
 				}
-
-				##{$prefix_plugin}documentation {
-					background: $primary-color;
-					text-align: center;
-
-					svg {
-						position: relative;
-						font-size: 50px;
-						color: $white;
-						display: block;
-						margin: 0 auto 30px;
-					}
-
-					h2 {
-						color: $white;
-						font-weight: 300;
-						font-size: 20px;
-						margin: 0 0 30px 0;
-					}
-
-					p {
-						color: $white;
-						font-size: 15px;
-						margin-bottom: 30px;
-					}
-
-					a {
-						color: $primary-color;
-						background: $white;
-						text-decoration: none;
-						padding: 5px 10px;
-						border-radius: 3px;
-						text-transform: uppercase;
-					}
-				}
-
+				
+				@import 'page/dashboard';
+				
 				.#{$prefix_plugin}card {
 					border: none;
 					background: $white;
@@ -73,9 +40,22 @@
 					}
 
 					h2 {
-						font-size: 20px;
-						font-weight: 300;
+						font-size: 18px;
+						font-weight: 500;
 						margin: 0 0 30px 0;
+					}
+					p{
+						margin-bottom: 30px;
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+					ul{
+						margin: 0;
+						padding-left: 15px;
+						li{
+							list-style: circle;
+						}
 					}
 				}
 
@@ -95,7 +75,7 @@
 							padding: 30px;
 
 							&:nth-child(even) {
-								background: rgba($grey, .05);
+								background: rgba($grey, .03);
 							}
 
 							th {

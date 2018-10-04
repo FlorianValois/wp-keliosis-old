@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-10-03 11:07+0200\n"
-"PO-Revision-Date: 2018-10-03 11:07+0200\n"
+"POT-Creation-Date: 2018-10-03 17:04+0200\n"
+"PO-Revision-Date: 2018-10-03 17:04+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -47,7 +47,7 @@ msgstr "Non"
 
 #: admin/localization.php:18
 msgid "Delete values ?"
-msgstr "Supprimer les valeurs?"
+msgstr "Supprimer les valeurs ?"
 
 #: admin/localization.php:19
 msgid "Deleted !"
@@ -63,7 +63,7 @@ msgstr "N'oubliez pas d'enregistrer vos modifications."
 
 #: admin/localization.php:22
 msgid "Save your changes ?"
-msgstr "Enregistrer vos modifications?"
+msgstr "Enregistrer vos modifications ?"
 
 #: admin/localization.php:23
 msgid "You will save your changes."
@@ -81,172 +81,163 @@ msgstr "Vos modifications ont été enregistrées avec succès."
 msgid "You will need to save your changes later."
 msgstr "Vous devrez enregistrer vos modifications ultérieurement."
 
-#: templates/includes/dashboard.inc.php:14 templates/wpk_dashboard.php:26
+#: templates/includes/dashboard.inc.php:11 templates/wpk_dashboard.php:25
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
-#: templates/includes/dashboard.inc.php:18
+#: templates/includes/dashboard.inc.php:15
 msgid "Welcome to WP-Keliosis !"
-msgstr "Bienvenue sur WP-Keliosis!"
+msgstr "Bienvenue sur WP-Keliosis !"
 
-#: templates/includes/dashboard.inc.php:21
+#: templates/includes/dashboard.inc.php:19
 msgid "What can i do in WP-Keliosis ?"
-msgstr "Que puis-je faire dans WP-Keliosis?"
+msgstr "Que puis-je faire dans WP-Keliosis ?"
 
-#: templates/includes/dashboard.inc.php:26
+#: templates/includes/dashboard.inc.php:25
 msgid "Changelog"
 msgstr "Historique des mises à jour"
 
-#: templates/includes/dashboard.inc.php:29
-msgid "Futures updates"
-msgstr "Mises à jour futures"
+#: templates/includes/dashboard.inc.php:50
+msgid "Support"
+msgstr "Support"
 
-#: templates/includes/dashboard.inc.php:33
-msgid "Documentation"
-msgstr "Documentation"
+#: templates/includes/dashboard.inc.php:51
+msgid "Read the documentation"
+msgstr "Lire la documentation"
 
-#: templates/includes/dashboard.inc.php:34
-msgid "All you need to know about the plugin is in this documentation."
-msgstr ""
-"Tout ce que vous devez savoir sur le plugin est dans cette documentation."
-
-#: templates/includes/dashboard.inc.php:35
-msgid "Access the documentation"
-msgstr "Accéder à la documentation"
-
-#: templates/includes/scrolltotop/activation.inc.php:15
-#: templates/wpk_dashboard.php:39
+#: templates/includes/scrolltotop/activation.inc.php:13
+#: templates/wpk_dashboard.php:38
 msgid "Activation"
 msgstr "Activation"
 
-#: templates/includes/scrolltotop/activation.inc.php:22
+#: templates/includes/scrolltotop/activation.inc.php:23
 msgid "Display button"
 msgstr "Afficher le bouton"
 
-#: templates/includes/scrolltotop/activation.inc.php:23
+#: templates/includes/scrolltotop/activation.inc.php:24
 msgid "Turn on to display button"
 msgstr "Activer pour afficher le bouton"
 
-#: templates/includes/scrolltotop/activation.inc.php:36
+#: templates/includes/scrolltotop/activation.inc.php:37
 msgid "Display on smartphone"
 msgstr "Affichage sur Smartphone"
 
-#: templates/includes/scrolltotop/activation.inc.php:37
+#: templates/includes/scrolltotop/activation.inc.php:38
 msgid "Choose if the button is display on smartphone."
 msgstr "Choisissez si le bouton est affiché sur Smartphone."
 
-#: templates/includes/scrolltotop/activation.inc.php:50
+#: templates/includes/scrolltotop/activation.inc.php:51
 msgid "Width smartphone"
 msgstr "Largeur smartphone"
 
-#: templates/includes/scrolltotop/activation.inc.php:51
+#: templates/includes/scrolltotop/activation.inc.php:52
 msgid "Choose the minimum width of smartphone to display"
 msgstr "Choisissez la largeur minimale du smartphone à afficher"
 
-#: templates/includes/scrolltotop/position.inc.php:15
-#: templates/includes/scrolltotop/position.inc.php:22
-#: templates/wpk_dashboard.php:42
+#: templates/includes/scrolltotop/position.inc.php:13
+#: templates/includes/scrolltotop/position.inc.php:21
+#: templates/wpk_dashboard.php:41
 msgid "Position"
 msgstr "Position"
 
-#: templates/includes/scrolltotop/position.inc.php:23
+#: templates/includes/scrolltotop/position.inc.php:22
 msgid "Choose position of the button between left or right"
 msgstr "Choisir la position du bouton entre la gauche ou la droite"
 
-#: templates/includes/scrolltotop/position.inc.php:44
+#: templates/includes/scrolltotop/position.inc.php:43
 msgid "Horizontal gap"
 msgstr "Écart horizontal"
 
-#: templates/includes/scrolltotop/position.inc.php:45
+#: templates/includes/scrolltotop/position.inc.php:44
 msgid "Choose horizontal gap of the button"
 msgstr "Choisissez le décalage horizontal du bouton"
 
-#: templates/includes/scrolltotop/position.inc.php:53
+#: templates/includes/scrolltotop/position.inc.php:52
 msgid "Vertical gap"
 msgstr "Écart vertical"
 
-#: templates/includes/scrolltotop/position.inc.php:54
+#: templates/includes/scrolltotop/position.inc.php:53
 msgid "Choose vertical gap of the button"
 msgstr "Choisissez l'écart vertical du bouton"
 
-#: templates/includes/scrolltotop/styling.inc.php:15
-#: templates/wpk_dashboard.php:45
+#: templates/includes/scrolltotop/styling.inc.php:13
+#: templates/wpk_dashboard.php:44
 msgid "Styling"
 msgstr "Options de style"
 
-#: templates/includes/scrolltotop/styling.inc.php:22
+#: templates/includes/scrolltotop/styling.inc.php:21
 msgid "Width"
 msgstr "Largeur"
 
-#: templates/includes/scrolltotop/styling.inc.php:23
+#: templates/includes/scrolltotop/styling.inc.php:22
 msgid "Choose width of button"
 msgstr "Choisir la largeur du bouton"
 
-#: templates/includes/scrolltotop/styling.inc.php:31
+#: templates/includes/scrolltotop/styling.inc.php:30
 msgid "Height"
 msgstr "Hauteur"
 
-#: templates/includes/scrolltotop/styling.inc.php:32
+#: templates/includes/scrolltotop/styling.inc.php:31
 msgid "Choose height of button"
 msgstr "Choisir la hauteur du bouton"
 
-#: templates/includes/scrolltotop/styling.inc.php:40
+#: templates/includes/scrolltotop/styling.inc.php:39
 msgid "Radius"
 msgstr "Rayon"
 
-#: templates/includes/scrolltotop/styling.inc.php:41
+#: templates/includes/scrolltotop/styling.inc.php:40
 msgid "Choose radius of button"
 msgstr "Choisir le rayon du bouton"
 
-#: templates/includes/scrolltotop/styling.inc.php:49
+#: templates/includes/scrolltotop/styling.inc.php:48
 msgid "Background color"
 msgstr "Couleur de fond"
 
-#: templates/includes/scrolltotop/styling.inc.php:50
+#: templates/includes/scrolltotop/styling.inc.php:49
 msgid "Choose background color of button"
 msgstr "Choisir la couleur d'arrière-plan du bouton"
 
-#: templates/includes/scrolltotop/styling.inc.php:58
+#: templates/includes/scrolltotop/styling.inc.php:57
 msgid "Icon color"
 msgstr "Couleur de l'icône"
 
-#: templates/includes/scrolltotop/styling.inc.php:59
+#: templates/includes/scrolltotop/styling.inc.php:58
 msgid "Choose color of icon"
 msgstr "Choisir la couleur de l'icône"
 
-#: templates/includes/scrolltotop/styling.inc.php:67
+#: templates/includes/scrolltotop/styling.inc.php:66
 msgid "Icon"
 msgstr "Icône"
 
-#: templates/includes/scrolltotop/styling.inc.php:68
+#: templates/includes/scrolltotop/styling.inc.php:67
 msgid "Choose icon"
 msgstr "Choisir l'icône"
 
-#: templates/includes/scrolltotop/styling.inc.php:76
+#: templates/includes/scrolltotop/styling.inc.php:75
 msgid "Icon size"
 msgstr "Taille de l'icône"
 
-#: templates/includes/scrolltotop/styling.inc.php:77
+#: templates/includes/scrolltotop/styling.inc.php:76
 msgid "Choose size of icon (default : 13px)"
 msgstr "Choisissez la taille de l'icône (par défaut: 13px)"
 
-#: templates/wpk_dashboard.php:30
+#: templates/wpk_dashboard.php:29
 msgid "Front components"
 msgstr "Composants Front"
 
-#: templates/wpk_dashboard.php:35
+#: templates/wpk_dashboard.php:34
 msgid "Scroll to top"
 msgstr "Scroll vers le haut"
 
-#: templates/wpk_dashboard.php:66
+#: templates/wpk_dashboard.php:65
 msgid "Save"
 msgstr "Sauvegardé"
 
-#: templates/wpk_dashboard.php:67
+#: templates/wpk_dashboard.php:66
 msgid "Reset section"
 msgstr "Réinitialiser section"
 
-#: templates/wpk_dashboard.php:68
+#: templates/wpk_dashboard.php:67
 msgid "Reset all sections"
 msgstr "Tout réinitialiser"
 
@@ -271,6 +262,20 @@ msgstr "Florian Valois"
 #. Author URI of the plugin/theme
 msgid "https://florian-valois.com"
 msgstr "https://florian-valois.com"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentation"
+
+#~ msgid "All you need to know about the plugin is in this documentation."
+#~ msgstr ""
+#~ "Tout ce que vous devez savoir sur le plugin se trouve dans la "
+#~ "documentation."
+
+#~ msgid "Access the documentation"
+#~ msgstr "Accéder à la documentation"
+
+#~ msgid "Futures updates"
+#~ msgstr "Mises à jour futures"
 
 #~ msgid "Save changes"
 #~ msgstr "Sauvegarder les modifications"

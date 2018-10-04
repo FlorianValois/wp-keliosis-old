@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
         
 		<h1><?= __( 'Styling', 'wp-keliosis' ); ?></h1>
 		<div class="row">
-			<div class="col-8">
+			<div class="col-12">
 		<!-- Styling -->
 		<div class="<?= WPK_PREFIX.'card-table' ?>">
 			<table>

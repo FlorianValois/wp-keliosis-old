@@ -1,0 +1,53 @@
+##{$prefix_plugin}documentation {
+
+	p {
+		color: $grey;
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+
+	a {
+		display: block;
+		//		text-align: center;
+		line-height: 50px;
+		padding: 0 15px;
+		font-size: 15px;
+		color: $white;
+		background: $blue;
+		text-decoration: none;
+		border-radius: 3px;
+		text-transform: uppercase;
+		transition: all ease .2s;
+		margin-bottom: 30px;
+
+		svg {
+			margin-right: 10px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			background: $grey;
+			transition: all ease .3s;
+		}
+	}
+}
+
+##{$prefix_plugin}changelog {
+	li {
+		//		display: flex;
+		//		justify-content: space-between;
+
+		a {
+			color: $blue;
+			text-decoration: none;
+		}
+
+		span {
+			color: lighten($grey, 25%);
+			float: right;
+		}
+	}
+}
