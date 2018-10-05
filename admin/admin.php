@@ -150,3 +150,23 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 		die(); 
 	}
 }
+
+add_action( 'wp_ajax_' . 'wpk_exportData', 'wpk_exportData_function' );
+add_action( 'wp_ajax_nopriv_' . 'wpk_exportData', 'wpk_exportData_function' );
+if ( !function_exists( 'wpk_exportData_function' ) ) {
+	function wpk_exportData_function(){
+
+		global $wpdb;
+		
+		$results = $wpdb->get_results( "SELECT option_value FROM {$wpdb->prefix}options WHERE option_name = 'wp_keliosis'", OBJECT );
+		$string = '';
+		
+		foreach($results[0] as $key){
+			$string .= $key;
+		}
+		
+		echo $string;
+		
+		die();
+	}
+}

@@ -166,7 +166,6 @@ jQuery(document).ready(function ($) {
 							text: wpk_ajax.wpk_save_data_message,
 							backdrop: 'rgba(0, 0, 0, .75)',
 						})
-						$('#wpk-importExport_ExportData').text($('#' + WPK_PREFIX + 'options').serialize());
 					}
 					//      }
 				});
@@ -174,4 +173,19 @@ jQuery(document).ready(function ($) {
 		})
 	});
 	/* #formAjax */
+	$('#' + WPK_PREFIX + 'btnExport').on('click', function (e) {
+		e.preventDefault();
+		var postData = {
+			action: 'wpk_exportData'
+		}
+		$.ajax({
+			type: "POST",
+			data: postData,
+			dataType: "html",
+			url: wpk_ajax.ajaxurl,
+			success: function (response) {
+				$('#wpk-importExport_ExportData').text(response);
+			}
+		});
+	});
 });
