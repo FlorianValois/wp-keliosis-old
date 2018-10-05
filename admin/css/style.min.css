@@ -2891,6 +2891,7 @@ html {
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container #wpk-importExport_ExportData,
 #wpk-keliosis #wpk-content > div > .wpk-tabs > .wpk-container #wpk-importExport_ExportData {
   width: 100%;
+  font-size: 13px;
 }
 #wpk-keliosis #wpk-content > form > .wpk-tabs > .wpk-container .wpk-card,
 #wpk-keliosis #wpk-content > div > .wpk-tabs > .wpk-container .wpk-card {

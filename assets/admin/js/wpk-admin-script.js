@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
 	/* Define var */
 	var WPK_PREFIX = 'wpk-';
 	var WPK_NAME = 'keliosis';
+	var WPK_IMPEXP = WPK_PREFIX + 'importExport';
 	/* Check URL to hide admin menu WP */
 	if (location.search == "?page=wpkeliosis") {
 		$('body').addClass('folded sticky-menu');
