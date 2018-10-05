@@ -2,7 +2,7 @@
 	padding: 0;
 
 	> form,
-	> div{
+	> div {
 		> .#{$prefix_plugin}tabs {
 			display: none;
 
@@ -26,10 +26,10 @@
 					color: $white;
 					font-family: "Poppins", sans-serif;
 				}
-				
+
 				@import 'page/dashboard';
 				@import 'page/export';
-				
+
 				.#{$prefix_plugin}card {
 					border: none;
 					background: $white;
@@ -46,16 +46,20 @@
 						font-weight: 500;
 						margin: 0 0 30px 0;
 					}
-					p{
+
+					p {
 						margin-bottom: 30px;
-						&:last-child{
+
+						&:last-child {
 							margin-bottom: 0;
 						}
 					}
-					ul{
+
+					ul {
 						margin: 0;
 						padding-left: 15px;
-						li{
+
+						li {
 							list-style: circle;
 						}
 					}
@@ -115,18 +119,14 @@
 
 		/* End tabs */
 		> ##{$prefix_plugin}listButtonForm {
-			display: none;
 			position: fixed;
 			z-index: 901;
 			top: 32px;
 			right: 0;
+			display: flex;
 			justify-content: flex-start;
 			padding: 30px;
 			flex-wrap: wrap;
-
-			&.active {
-				display: flex;
-			}
 
 			> button {
 				font-family: "Poppins", sans-serif !important;

@@ -2984,23 +2984,19 @@ html {
 }
 #wpk-keliosis #wpk-content > form > #wpk-listButtonForm,
 #wpk-keliosis #wpk-content > div > #wpk-listButtonForm {
-  display: none;
   position: fixed;
   z-index: 901;
   top: 32px;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-#wpk-keliosis #wpk-content > form > #wpk-listButtonForm.active,
-#wpk-keliosis #wpk-content > div > #wpk-listButtonForm.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 #wpk-keliosis #wpk-content > form > #wpk-listButtonForm > button,
 #wpk-keliosis #wpk-content > div > #wpk-listButtonForm > button {

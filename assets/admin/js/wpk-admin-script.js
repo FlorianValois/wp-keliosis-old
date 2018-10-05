@@ -30,11 +30,6 @@ jQuery(document).ready(function ($) {
 				$(this).hide();
 			}
 		});
-		if (tabsOpen === WPK_PREFIX + "dashboard") {
-			$('#' + WPK_PREFIX + 'listButtonForm').removeClass('active');
-		} else {
-			$('#' + WPK_PREFIX + 'listButtonForm').addClass('active');
-		}
 	});
 
 	// Open tabs
@@ -44,11 +39,6 @@ jQuery(document).ready(function ($) {
 		$(this).addClass('active');
 		var thisData = $(this);
 		var data_name = $(this).attr('data-name');
-		if (data_name === WPK_PREFIX + "dashboard") {
-			$('#' + WPK_PREFIX + 'listButtonForm').removeClass('active');
-		} else {
-			$('#' + WPK_PREFIX + 'listButtonForm').addClass('active');
-		}
 		$('.' + WPK_PREFIX + 'tabs').each(function () {
 			var id_content = $(this).attr('id');
 			if (id_content == data_name) {
@@ -182,10 +172,25 @@ jQuery(document).ready(function ($) {
 		$.ajax({
 			type: "POST",
 			data: postData,
-			dataType: "html",
+			dataType: "json",
 			url: wpk_ajax.ajaxurl,
-			success: function (response) {
-				$('#wpk-importExport_ExportData').text(response);
+			success: function (postData) {
+				swal({
+					position: 'center',
+					type: 'success',
+					showCancelButton: true,
+					cancelButtonColor: '#f3545d',
+					cancelButtonText: wpk_ajax.wpk_close,
+					showConfirmButton: false,
+					title: wpk_ajax.wpk_export_done,
+					html:
+					'<br><strong>' +
+					'<a href="' + postData.export_data + '" target="_blank" download>' +
+					wpk_ajax.wpk_download_file +
+					'</a>' +
+					'</strong>',
+					backdrop: 'rgba(0, 0, 0, .75)',
+				})
 			}
 		});
 	});

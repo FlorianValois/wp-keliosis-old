@@ -25,7 +25,7 @@ if (!defined('ABSPATH')) {
 								</th>
 								<td>
 										<div class="checkbox-001">
-												<input type="checkbox" id="<?= WPK_STT.'_ActivationDesktop' ?>" name="<?= WPK_STT.'_ActivationDesktop' ?>" value="<?= WPK_STT.'_ActivationDesktop' ?>"<?php if(isset($data[WPK_STT.'_ActivationDesktop'])){echo'checked';} ?>>
+												<input type="checkbox" id="<?= WPK_STT.'_ActivationDesktop' ?>" name="<?= WPK_STT.'_ActivationDesktop' ?>" value="<?= WPK_STT.'_ActivationDesktop_ON' ?>" <?php if(isset($data[WPK_STT.'_ActivationDesktop'])){echo'checked';} ?>>
 												<label for="<?= WPK_STT.'_ActivationDesktop' ?>">
 														<span></span>
 												</label>
@@ -39,7 +39,7 @@ if (!defined('ABSPATH')) {
 								</th>
 								<td>
 										<div class="checkbox-001">
-												<input type="checkbox" id="<?= WPK_STT.'_ActivationSmartphone' ?>" name="<?= WPK_STT.'_ActivationSmartphone' ?>" value="<?= WPK_STT.'_ActivationSmartphone' ?>"<?php if(isset($data[WPK_STT.'_ActivationSmartphone'])){echo'checked';} ?>>
+												<input type="checkbox" id="<?= WPK_STT.'_ActivationSmartphone' ?>" name="<?= WPK_STT.'_ActivationSmartphone' ?>" value="<?= WPK_STT.'_ActivationSmartphone_ON' ?>"<?php if(isset($data[WPK_STT.'_ActivationSmartphone'])){echo'checked';} ?>>
 												<label for="<?= WPK_STT.'_ActivationSmartphone' ?>">
 														<span></span>
 												</label>

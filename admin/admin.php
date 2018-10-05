@@ -156,17 +156,32 @@ add_action( 'wp_ajax_nopriv_' . 'wpk_exportData', 'wpk_exportData_function' );
 if ( !function_exists( 'wpk_exportData_function' ) ) {
 	function wpk_exportData_function(){
 
-		global $wpdb;
+		ob_start();
 		
-		$results = $wpdb->get_results( "SELECT option_value FROM {$wpdb->prefix}options WHERE option_name = 'wp_keliosis'", OBJECT );
-		$string = '';
+			global $wpdb;
+
+			$results = $wpdb->get_results( "SELECT option_value FROM {$wpdb->prefix}options WHERE option_name = 'wp_keliosis'", OBJECT );
+			$string = '';
+
+			foreach($results[0] as $key){
+				$string .= $key;
+			}
+
+			echo $string;
 		
-		foreach($results[0] as $key){
-			$string .= $key;
-		}
+			$content = ob_get_contents();
 		
-		echo $string;
+		ob_end_clean();
+		$f = fopen(WPK_PLUGIN_DIR.'/admin/export-data-wp-keliosis.txt', 'w');
+		fwrite($f, $content);
+		fclose($f);
 		
+		$str = str_replace('\\', '/', get_home_url().'/wp-content/plugins/'.WPK_PLUGIN_NAME.'/admin/export-data-wp-keliosis.txt');
+				
+		echo json_encode(array(
+			'export_data' => $str
+		));
+				
 		die();
 	}
 }

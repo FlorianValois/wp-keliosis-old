@@ -43,8 +43,3 @@ add_action('wp_footer', 'wpk_scrollToTop_init');
 	<?php
 	};
 }
-
-function load_plugin_textdomain() {
-  load_plugin_textdomain( 'wp-keliosis', FALSE, WPK_PLUGIN_DIR . '/languages/' );
-}
-add_action( 'plugins_loaded', 'load_plugin_textdomain' );
