@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-10-05 16:37+0200\n"
+"POT-Creation-Date: 2018-10-05 17:00+0200\n"
 "PO-Revision-Date: 2018-09-13 12:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -133,20 +133,12 @@ msgstr ""
 msgid "Report a bug"
 msgstr ""
 
-#: templates/includes/export.inc.php:18 templates/wpk_dashboard.php:64
+#: templates/includes/export.inc.php:11 templates/wpk_dashboard.php:64
 msgid "Export"
-msgstr ""
-
-#: templates/includes/export.inc.php:22
-msgid "Export your data"
 msgstr ""
 
 #: templates/includes/import.inc.php:11 templates/wpk_dashboard.php:61
 msgid "Import"
-msgstr ""
-
-#: templates/includes/import.inc.php:15
-msgid "Import your data"
 msgstr ""
 
 #: templates/includes/scrolltotop/activation.inc.php:13
@@ -266,7 +258,7 @@ msgid "Choose size of icon (default : 13px)"
 msgstr ""
 
 #: templates/wpk_dashboard.php:29
-msgid "Front components"
+msgid "Front options"
 msgstr ""
 
 #: templates/wpk_dashboard.php:34
@@ -274,11 +266,11 @@ msgid "Scroll to top"
 msgstr ""
 
 #: templates/wpk_dashboard.php:49
-msgid "Back components"
+msgid "Back options"
 msgstr ""
 
 #: templates/wpk_dashboard.php:52
-msgid "Extra components"
+msgid "Other options"
 msgstr ""
 
 #: templates/wpk_dashboard.php:57

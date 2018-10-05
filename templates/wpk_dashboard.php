@@ -26,7 +26,7 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 						</a>
 					</li>
 					<li>
-						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front components', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Front options', 'wp-keliosis' ); ?></span>
 					</li>
 					<li>
 						<a href="" title="" id="<?= WPK_PREFIX.'scrollToTop-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_STT ?>">
@@ -46,10 +46,10 @@ if ( !function_exists( 'wpk_dashboard' ) ) {
 						</ul>
 					</li>
 					<li>
-						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Back components', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Back options', 'wp-keliosis' ); ?></span>
 					</li>
 					<li>
-						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Extra components', 'wp-keliosis' ); ?></span>
+						<span class="<?= WPK_PREFIX.'title-section' ?>"><?= __( 'Other options', 'wp-keliosis' ); ?></span>
 					</li>
 					<li>
 						<a href="" title="" id="<?= WPK_PREFIX.'importExport-item' ?>" class="<?= WPK_PREFIX.'menuTitle' ?> <?= WPK_PREFIX.'subList' ?>" data-name="<?= WPK_IMPEXP ?>">

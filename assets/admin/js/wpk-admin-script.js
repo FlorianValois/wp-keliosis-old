@@ -182,10 +182,10 @@ jQuery(document).ready(function ($) {
 					cancelButtonColor: '#f3545d',
 					cancelButtonText: wpk_ajax.wpk_close,
 					showConfirmButton: false,
-					title: wpk_ajax.wpk_export_done,
+					title: wpk_ajax.wpk_export_done + ' !',
 					html:
 					'<br><strong>' +
-					'<a href="' + postData.export_data + '" target="_blank" download>' +
+					'<a href="' + postData.export_data + '" target="_blank" class="download-link" download><i class="fas fa-download"></i> ' +
 					wpk_ajax.wpk_download_file +
 					'</a>' +
 					'</strong>',

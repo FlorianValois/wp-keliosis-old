@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP-Keliosis\n"
-"POT-Creation-Date: 2018-10-05 16:40+0200\n"
-"PO-Revision-Date: 2018-10-05 16:40+0200\n"
+"POT-Creation-Date: 2018-10-05 16:59+0200\n"
+"PO-Revision-Date: 2018-10-05 17:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -133,21 +133,13 @@ msgstr "Contacter le support"
 msgid "Report a bug"
 msgstr "Reporter un bug"
 
-#: templates/includes/export.inc.php:18 templates/wpk_dashboard.php:64
+#: templates/includes/export.inc.php:11 templates/wpk_dashboard.php:64
 msgid "Export"
 msgstr "Exporter"
-
-#: templates/includes/export.inc.php:22
-msgid "Export data"
-msgstr "Exporter les données"
 
 #: templates/includes/import.inc.php:11 templates/wpk_dashboard.php:61
 msgid "Import"
 msgstr "Importer"
-
-#: templates/includes/import.inc.php:15
-msgid "Import data"
-msgstr "Importer les données"
 
 #: templates/includes/scrolltotop/activation.inc.php:13
 #: templates/wpk_dashboard.php:38
@@ -266,20 +258,20 @@ msgid "Choose size of icon (default : 13px)"
 msgstr "Choisissez la taille de l'icône (par défaut: 13px)"
 
 #: templates/wpk_dashboard.php:29
-msgid "Front components"
-msgstr "Composants Front"
+msgid "Front options"
+msgstr "Options Front"
 
 #: templates/wpk_dashboard.php:34
 msgid "Scroll to top"
 msgstr "Scroll vers le haut"
 
 #: templates/wpk_dashboard.php:49
-msgid "Back components"
-msgstr "Composants Back"
+msgid "Back options"
+msgstr "Options Back"
 
 #: templates/wpk_dashboard.php:52
-msgid "Extra components"
-msgstr "Composants Autres"
+msgid "Other options"
+msgstr "Autres options"
 
 #: templates/wpk_dashboard.php:57
 msgid "Import/Export"
@@ -318,6 +310,15 @@ msgstr "Florian Valois"
 #. Author URI of the plugin/theme
 msgid "https://florian-valois.com"
 msgstr "https://florian-valois.com"
+
+#~ msgid "Export data"
+#~ msgstr "Exporter les données"
+
+#~ msgid "Import data"
+#~ msgstr "Importer les données"
+
+#~ msgid "Extra components"
+#~ msgstr "Composants Autres"
 
 #~ msgid "Documentation"
 #~ msgstr "Documentation"
