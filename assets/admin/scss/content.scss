@@ -1,11 +1,8 @@
 ##{$prefix_plugin}content {
 	padding: 0;
 
-	> form {
-		min-width: 700px;
-		max-width: 800px;
-		padding: 30px;
-
+	> form,
+	> div {
 		> .#{$prefix_plugin}tabs {
 			display: none;
 
@@ -13,38 +10,66 @@
 				display: block;
 			}
 
-			.#{$prefix_plugin}card-header {
-				margin-bottom: 30px;
-				line-height: calc(100px - 60px);
-				font-size: 22px;
+			> .#{$prefix_plugin}container {
+				padding: 30px;
+				margin-top: 100px;
 
 				h1 {
-					display: inline-block;
+					display: block;
 					padding: 0;
-					margin: 0;
-					color: lighten($grey, 10%);
-					margin-left: 10px;
-				}
-			}
-
-			.#{$prefix_plugin}card {
-				border: none;
-				background: $white;
-				box-shadow: 0 1px 15px 1px rgba($black, .05);
-				margin-bottom: 30px;
-				font-family: "Open sans", sans-serif !important;
-
-				h2 {
-					padding: 15px 20px;
-					font-weight: 300;
+					margin: 0 0 30px;
+					line-height: 40px;
 					font-size: 18px;
+					font-weight: 400;
+					padding: 0 15px;
+					background: $primary-color;
 					color: $white;
-					margin: 0;
-					background: $blue;
+					font-family: "Poppins", sans-serif;
 				}
 
-				.#{$prefix_plugin}content {
-					//					padding: 20px;
+				@import 'page/dashboard';
+				@import 'page/export';
+
+				.#{$prefix_plugin}card {
+					border: none;
+					background: $white;
+					font-family: "Poppins", sans-serif !important;
+					padding: 30px;
+					margin-bottom: 30px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					h2 {
+						font-size: 18px;
+						font-weight: 500;
+						margin: 0 0 30px 0;
+					}
+
+					p {
+						margin-top: 0;
+						margin-bottom: 30px;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+
+					ul {
+						margin: 0;
+						padding-left: 15px;
+
+						li {
+							list-style: circle;
+						}
+					}
+				}
+
+				.#{$prefix_plugin}card-table {
+					border: none;
+					background: $white;
+					font-family: "Poppins", sans-serif !important;
 
 					table {
 						width: 100%;
@@ -54,19 +79,11 @@
 						tr {
 							display: flex;
 							align-items: center;
-							padding: 30px 20px;
+							padding: 30px;
 
-							//							margin-bottom: 30px;
-							//							border-bottom: 1px solid lighten($grey, 70%);
 							&:nth-child(even) {
-								background: rgba($grey, .05);
+								background: rgba($grey, .03);
 							}
-
-							//							&:last-child {
-							//								padding-bottom: 0;
-							//								border-bottom: 0;
-							//								margin-bottom: 0;
-							//							}
 
 							th {
 								display: inline-block;
@@ -77,14 +94,16 @@
 									display: block;
 
 									&.#{$prefix_plugin}title {
-										font-weight: 700;
+										font-size: 15px;
+										font-weight: 500;
 										text-transform: uppercase;
 									}
 
 									&.#{$prefix_plugin}description {
-										color: lighten($grey, 40%);
-										font-weight: normal;
+										font-size: 13px;
+										font-weight: 300;
 										font-style: italic;
+										color: lighten($grey, 35%);
 									}
 								}
 							}
@@ -101,13 +120,22 @@
 
 		/* End tabs */
 		> ##{$prefix_plugin}listButtonForm {
+			position: fixed;
+			z-index: 901;
+			top: 32px;
+			right: 0;
 			display: flex;
-			justify-content: space-between;
-			&.hide {
-				display: none;
-			}
+			justify-content: flex-start;
+			padding: 30px;
+			flex-wrap: wrap;
+
 			> button {
-				margin-right: 30px;
+				font-family: "Poppins", sans-serif !important;
+				font-size: 13px;
+				font-weight: 400;
+				margin-bottom: 15px;
+				margin-right: 15px;
+				padding: 0 15px;
 
 				&:last-child {
 					margin-right: 0;

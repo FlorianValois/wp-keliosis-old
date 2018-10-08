@@ -1,6 +1,5 @@
 .#{$prefix_plugin}btn-reset {
 	display: block;
-	width: calc(100% / 3);
 	background: $blue;
 	color: $white;
 	font-family: "Open sans", sans-serif;
@@ -17,8 +16,4 @@
 		filter: contrast(125%);
 		transition: all ease .3s;
 	}
-	
-	
-	
-	
 }

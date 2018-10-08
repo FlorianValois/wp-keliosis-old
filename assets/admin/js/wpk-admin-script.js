@@ -1,63 +1,122 @@
 jQuery(document).ready(function ($) {
-
-	// Define var
+	/* Define var */
 	var WPK_PREFIX = 'wpk-';
 	var WPK_NAME = 'keliosis';
-
+	var WPK_IMPEXP = WPK_PREFIX + 'importExport';
+	/* Check URL to hide admin menu WP */
+	if (location.search == "?page=wpkeliosis") {
+		$('body').addClass('folded sticky-menu');
+	}
 	/* WP Color Picker */
 	$('.color-picker').wpColorPicker();
-
 	/* START - NAVIGATION -*/
-	// Open sub menu navigation
+	// Open sub-menu
 	$('.' + WPK_PREFIX + 'menuTitle').on('click', function (event) {
 		event.preventDefault();
 		$('.' + WPK_PREFIX + 'menuTitle').removeClass('active');
-		$('.' + WPK_PREFIX + 'menuTitle').next().slideUp();
+		$('.' + WPK_PREFIX + 'menuTitle').next().hide();
 		$(this).addClass('active');
-		$(this).next().slideToggle();
-
+		$(this).next().show();
+		$('.' + WPK_PREFIX + 'linkTabs').removeClass('active');
+		$(this).next().children().first().find('a').addClass('active');
+		var tabsOpen = $(this).next().children().first().find('a').attr('data-name');
+		$('.' + WPK_PREFIX + 'tabs').each(function () {
+			var id_content = $(this).attr('id');
+			if (id_content == tabsOpen) {
+				$(this).addClass('open');
+				$(this).show();
+			} else {
+				$(this).removeClass('open');
+				$(this).hide();
+			}
+		});
 	});
 
-	// Tabs
-	$('#' + WPK_PREFIX + 'navigation nav a').on('click', function () {
-
+	// Open tabs
+	$('.' + WPK_PREFIX + 'linkTabs').on('click', function (event) {
+		event.preventDefault();
+		$('.' + WPK_PREFIX + 'linkTabs').removeClass('active');
+		$(this).addClass('active');
+		var thisData = $(this);
 		var data_name = $(this).attr('data-name');
-		
-		if(data_name == WPK_PREFIX + 'dashboard'){
-			console.log('ok');
-			$('#' + WPK_PREFIX + 'listButtonForm').addClass('hide');
-		}else{
-			console.log('pas ok');
-			$('#' + WPK_PREFIX + 'listButtonForm').removeClass('hide');		
-		}
-		
-		
-		$('#' + WPK_PREFIX + 'content > form > div').each(function () {
-
+		$('.' + WPK_PREFIX + 'tabs').each(function () {
 			var id_content = $(this).attr('id');
-
 			if (id_content == data_name) {
-				$(this).addClass('active');
+				$(this).addClass('open');
+				$(this).show();
 			} else {
-				$(this).removeClass('active');
+				$(this).removeClass('open');
+				$(this).hide();
 			}
-			console.log(id_content);
-			
-
 		});
 	});
 	/* END - NAVIGATION - */
+	/* Delete all values of active section */
+	$('#' + WPK_PREFIX + 'btnResetSection').on('click', function () {
 
+		swal({
+			title: wpk_ajax.wpk_delete_value,
+			text: wpk_ajax.wpk_resetSection,
+			type: 'warning',
+			showCancelButton: true,
+			cancelButtonColor: '#f3545d',
+			cancelButtonText: wpk_ajax.wpk_no,
+			confirmButtonColor: '#92C83C',
+			confirmButtonText: wpk_ajax.wpk_yes
+		}).then(function (result) {
+			if (result.value) {
+				var tabActive = $('.' + WPK_PREFIX + 'tabs.open');
+				$(tabActive).each(function () {
+					tabActive.find('input').val('');
+					tabActive.find('input[type="checkbox"]').remove();
+					tabActive.find('select').val('');
+					tabActive.find('.color-alpha').css('background', 'none');
+				});
+				swal(
+					wpk_ajax.wpk_delete,
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f3545d;">' + wpk_ajax.wpk_advert_message + '</strong>',
+					'success'
+				)
+			}
+		})
+
+	});
+	/* Delete all values of all section */
+	$('#' + WPK_PREFIX + 'btnResetAll').on('click', function () {
+		swal({
+			title: wpk_ajax.wpk_delete_value,
+			text: wpk_ajax.wpk_resetAllSection,
+			type: 'warning',
+			showCancelButton: true,
+			cancelButtonColor: '#f3545d',
+			cancelButtonText: wpk_ajax.wpk_no,
+			confirmButtonColor: '#92C83C',
+			confirmButtonText: wpk_ajax.wpk_yes
+		}).then(function (result) {
+			if (result.value) {
+				$('#' + WPK_PREFIX + 'options .wpk-tabs').each(function () {
+					var allTabs = $('#' + WPK_PREFIX + 'options .wpk-tabs');
+					allTabs.find('input').val('');
+					allTabs.find('input[type="checkbox"]').remove();
+					allTabs.find('select').val('');
+					allTabs.find('.color-alpha').css('background', 'none');
+				});
+				swal(
+					wpk_ajax.wpk_delete,
+					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f3545d;">' + wpk_ajax.wpk_advert_message + '</strong>',
+					'success'
+				)
+			}
+		})
+	});
 	/* SAVE CHANGES */
 	// Excluding empty fields
 	function getFormData($form, no_empty) {
 		var formData = $('#' + WPK_PREFIX + 'options').serializeArray();
 		var formData_array = {};
-
 		$.each(formData, function (i, item) {
 			formData_array[item['name']] = item['value'];
 		});
-
 		if (no_empty) {
 			$.each(formData_array, function (key, value) {
 				if ($.trim(value) === "" || $.trim(value) === "0") delete formData_array[key];
@@ -65,14 +124,50 @@ jQuery(document).ready(function ($) {
 		}
 		return formData_array;
 	}
-
 	// Save changes
 	$('#' + WPK_PREFIX + 'options').on('submit', function (e) {
 		e.preventDefault();
-		var json = $.param(getFormData($('#' + WPK_PREFIX + 'options'), true));
+		swal({
+			title: wpk_ajax.wpk_save_data,
+			text: wpk_ajax.wpk_save_data_message,
+			type: 'warning',
+			showCancelButton: true,
+			cancelButtonColor: '#f3545d',
+			cancelButtonText: wpk_ajax.wpk_no,
+			confirmButtonColor: '#92C83C',
+			confirmButtonText: wpk_ajax.wpk_yes
+		}).then(function (result) {
+			if (result.value) {
+				var json = $.param(getFormData($('#' + WPK_PREFIX + 'options'), true));
+				var postData = {
+					action: 'wpa_49691',
+					data: json
+				}
+				$.ajax({
+					type: "POST",
+					data: postData,
+					dataType: "json",
+					url: wpk_ajax.ajaxurl,
+					success: function (postData) {
+						//        if (postData.update) {
+						swal({
+							position: 'center',
+							type: 'success',
+							title: wpk_ajax.wpk_saved,
+							text: wpk_ajax.wpk_save_data_message,
+							backdrop: 'rgba(0, 0, 0, .75)',
+						})
+					}
+					//      }
+				});
+			}
+		})
+	});
+	/* #formAjax */
+	$('#' + WPK_PREFIX + 'btnExport').on('click', function (e) {
+		e.preventDefault();
 		var postData = {
-			action: 'wpa_49691',
-			data: json
+			action: 'wpk_exportData'
 		}
 		$.ajax({
 			type: "POST",
@@ -80,78 +175,23 @@ jQuery(document).ready(function ($) {
 			dataType: "json",
 			url: wpk_ajax.ajaxurl,
 			success: function (postData) {
-				//        if (postData.update) {
 				swal({
 					position: 'center',
 					type: 'success',
-					title: 'Sauvegardé !',
-					text: 'Vos modifications ont été sauvegardées avec succès.',
+					showCancelButton: true,
+					cancelButtonColor: '#f3545d',
+					cancelButtonText: wpk_ajax.wpk_close,
+					showConfirmButton: false,
+					title: wpk_ajax.wpk_export_done + ' !',
+					html:
+					'<br><strong>' +
+					'<a href="' + postData.export_data + '" target="_blank" class="download-link" download><i class="fas fa-download"></i> ' +
+					wpk_ajax.wpk_download_file +
+					'</a>' +
+					'</strong>',
 					backdrop: 'rgba(0, 0, 0, .75)',
 				})
 			}
-			//      }
 		});
 	});
-	/* #formAjax */
-
-	/* Delete all values in tabs active */
-	$('#' + WPK_PREFIX + 'btnResetSection').on('click', function () {
-
-		swal({
-			title: wpk_ajax.resetSection_title,
-			text: wpk_ajax.resetSection_text,
-			type: 'warning',
-			showCancelButton: true,
-			confirmButtonText: wpk_ajax.wpk_yes,
-			cancelButtonText: wpk_ajax.wpk_no
-		}).then((result) => {
-			if (result.value) {
-				$('#' + WPK_PREFIX + 'options .wpk-tabs.active').each(function () {
-					var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs.active')
-					tabActive.find('input').val('');
-					tabActive.find('input[type="checkbox"]').remove();
-					tabActive.find('select').val('');
-					tabActive.find('span.color-alpha').css('backgroundColor', '');
-				});
-				swal(
-					wpk_ajax.wpk_delete,
-					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f00;">' + wpk_ajax.wpk_dont_forget_save + '</strong>',
-					'success'
-				)
-			}
-		})
-
-	});
-
-	/* Delete all values in all tabs */
-	$('#' + WPK_PREFIX + 'btnResetAll').on('click', function () {
-		
-		swal({
-			title: wpk_ajax.resetAllSection_title,
-			text: wpk_ajax.resetAllSection_text,
-			type: 'warning',
-			showCancelButton: true,
-			confirmButtonText: wpk_ajax.wpk_yes,
-			cancelButtonText: wpk_ajax.wpk_no
-		}).then((result) => {
-			if (result.value) {
-				$('#' + WPK_PREFIX + 'options .wpk-tabs').each(function () {
-					var tabActive = $('#' + WPK_PREFIX + 'options .wpk-tabs')
-					tabActive.find('input').val('');
-					tabActive.find('input[type="checkbox"]').remove();
-					tabActive.find('select').val('');
-					tabActive.find('span.color-alpha').css('backgroundColor', '');
-				});
-				swal(
-					wpk_ajax.wpk_delete,
-					wpk_ajax.wpk_value_deleted + '<br><strong style="color: #f00;">' + wpk_ajax.wpk_dont_forget_save + '</strong>',
-					'success'
-				)
-			}
-		})
-		
-	});
-
-
-
 });

@@ -36,8 +36,8 @@ if ( !function_exists( 'wpk_admin_enqueue_style_script' ) ) {
 
     /* Google Font */
     wp_enqueue_style(
-      'opensans-css',
-      'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' 
+      'poppins-font',
+      'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' 
     );
     
     /* jQuery UI */
@@ -148,5 +148,40 @@ if ( !function_exists( 'wpk_ajax_form_update_options' ) ) {
 		}
 		
 		die(); 
+	}
+}
+
+add_action( 'wp_ajax_' . 'wpk_exportData', 'wpk_exportData_function' );
+add_action( 'wp_ajax_nopriv_' . 'wpk_exportData', 'wpk_exportData_function' );
+if ( !function_exists( 'wpk_exportData_function' ) ) {
+	function wpk_exportData_function(){
+
+		ob_start();
+		
+			global $wpdb;
+
+			$results = $wpdb->get_results( "SELECT option_value FROM {$wpdb->prefix}options WHERE option_name = 'wp_keliosis'", OBJECT );
+			$string = '';
+
+			foreach($results[0] as $key){
+				$string .= $key;
+			}
+
+			echo $string;
+		
+			$content = ob_get_contents();
+		
+		ob_end_clean();
+		$f = fopen(WPK_PLUGIN_DIR.'/admin/export-data-wp-keliosis.txt', 'w');
+		fwrite($f, $content);
+		fclose($f);
+		
+		$str = str_replace('\\', '/', get_home_url().'/wp-content/plugins/'.WPK_PLUGIN_NAME.'/admin/export-data-wp-keliosis.txt');
+				
+		echo json_encode(array(
+			'export_data' => $str
+		));
+				
+		die();
 	}
 }
